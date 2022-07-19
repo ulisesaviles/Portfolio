@@ -9,19 +9,19 @@ import styles from "../styles/pages/Home.module.css";
 import Layout from "../components/layout";
 
 // Main react component
-export default function Home() {
+export default function AboutMe() {
   return (
     <div className={styles.container}>
       {/* Headers */}
       <Head>
-        <title>Ulises Aviles | Home</title>
+        <title>Ulises Aviles | About me</title>
         <meta name="description" content="Description" />
       </Head>
 
       {/* Content */}
-      <Layout selectedTabName="HOME">
+      <Layout selectedTabName="ABOUT ME">
         <main className={styles.main}>
-          <h1 className={styles.title}>Home</h1>
+          <h1 className={styles.title}>About me</h1>
         </main>
       </Layout>
     </div>

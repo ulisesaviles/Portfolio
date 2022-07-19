@@ -92,7 +92,7 @@ export default function NavBar({ selectedTabName }: props) {
         {/* Contact btn */}
         <Link href="/contact">
           <a className={`${styles.contact} ${styles.contactPopup}`}>
-            LET&apos;S WORK TOGETHER
+            LET&apos;S WORK TOGETHER!
           </a>
         </Link>
       </nav>
@@ -151,7 +151,7 @@ export default function NavBar({ selectedTabName }: props) {
 
           {/* Contact btn */}
           <Link href="/contact">
-            <a className={styles.contact}>LET&apos;S WORK TOGETHER</a>
+            <a className={styles.contact}>LET&apos;S WORK TOGETHER!</a>
           </Link>
         </nav>
       </header>

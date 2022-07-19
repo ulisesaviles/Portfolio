@@ -11,6 +11,10 @@
   font-family: SF-pro;
   src: url(../public/fonts/SFProDisplay-Regular.ttf);
 }
+@font-face {
+  font-family: SF-pro-bold;
+  src: url(../public/fonts/SFProDisplay-Regular.ttf);
+}
 
 /* Variables */
 :root {
@@ -27,7 +31,7 @@
 /** Safari */
 @media not all and (min-resolution: 0.001dpcm) {
   :root {
-    --strongFont: Lato-bold;
+    --strongFont: SF-pro-bold;
   }
 }
 

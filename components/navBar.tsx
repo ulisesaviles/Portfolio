@@ -151,7 +151,7 @@ export default function NavBar({ selectedTabName }: props) {
 
           {/* Contact btn */}
           <Link href="/contact">
-            <a className={styles.contact}>LET'S WORK TOGETHER</a>
+            <a className={styles.contact}>LET&apos;S WORK TOGETHER</a>
           </Link>
         </nav>
       </header>

@@ -1,5 +1,5 @@
 .header {
-  font-family: Lato;
+  font-family: Lato-bold;
   display: flex;
   flex-direction: row;
   padding: 20px 5vw;
@@ -70,6 +70,7 @@
   background-color: rgba(0, 0, 0, 0);
   border: 0;
   left: 5vw;
+  transition: none;
 }
 
 .hamburguer {
@@ -87,6 +88,7 @@
   box-shadow: 5px 0 40px rgba(0, 0, 0, 0.1);
   padding: 100px 30px 0;
   transition: var(--transition);
+  font-family: Lato;
 }
 
 .navItemTxtPopup {

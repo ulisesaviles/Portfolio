@@ -64,7 +64,11 @@ export default function NavBar({ selectedTabName }: props) {
         <Link href="/">
           <a
             className={`${styles.navItemTxt} ${styles.navItemTxtPopup} ${
-              styles[selectedTabName === "HOME" ? "navItemSelected" : null]
+              styles[
+                selectedTabName === "HOME"
+                  ? "navItemSelected"
+                  : "navItemUnselected"
+              ]
             }`}
           >
             HOME
@@ -73,7 +77,11 @@ export default function NavBar({ selectedTabName }: props) {
         <Link href="/projects">
           <a
             className={`${styles.navItemTxt} ${styles.navItemTxtPopup} ${
-              styles[selectedTabName === "PROJECTS" ? "navItemSelected" : null]
+              styles[
+                selectedTabName === "PROJECTS"
+                  ? "navItemSelected"
+                  : "navItemUnselected"
+              ]
             }`}
           >
             PROJECTS
@@ -82,7 +90,11 @@ export default function NavBar({ selectedTabName }: props) {
         <Link href="/aboutMe">
           <a
             className={`${styles.navItemTxt} ${styles.navItemTxtPopup} ${
-              styles[selectedTabName === "ABOUT ME" ? "navItemSelected" : null]
+              styles[
+                selectedTabName === "ABOUT ME"
+                  ? "navItemSelected"
+                  : "navItemUnselected"
+              ]
             }`}
           >
             ABOUT ME
@@ -120,7 +132,11 @@ export default function NavBar({ selectedTabName }: props) {
           <Link href="/">
             <a
               className={`${styles.navItemTxt} ${
-                styles[selectedTabName === "HOME" ? "navItemSelected" : null]
+                styles[
+                  selectedTabName === "HOME"
+                    ? "navItemSelected"
+                    : "navItemUnselected"
+                ]
               }`}
             >
               HOME
@@ -130,7 +146,9 @@ export default function NavBar({ selectedTabName }: props) {
             <a
               className={`${styles.navItemTxt} ${
                 styles[
-                  selectedTabName === "PROJECTS" ? "navItemSelected" : null
+                  selectedTabName === "PROJECTS"
+                    ? "navItemSelected"
+                    : "navItemUnselected"
                 ]
               }`}
             >
@@ -141,7 +159,9 @@ export default function NavBar({ selectedTabName }: props) {
             <a
               className={`${styles.navItemTxt} ${
                 styles[
-                  selectedTabName === "ABOUT ME" ? "navItemSelected" : null
+                  selectedTabName === "ABOUT ME"
+                    ? "navItemSelected"
+                    : "navItemUnselected"
                 ]
               }`}
             >

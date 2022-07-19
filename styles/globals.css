@@ -31,7 +31,7 @@
 /** Lato on phones looks ugly */
 @media screen and (max-width: 400px) {
   :root {
-    --strongFont: SF-pro-bold;
+    --strongFont: Lato-bold;
   }
 }
 

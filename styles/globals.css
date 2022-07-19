@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: SF-pro-bold;
-  src: url(../public/fonts/SFProDisplay-Regular.ttf);
+  src: url(../public/fonts/SF-Pro-Display-Bold.otf);
 }
 
 /* Variables */
@@ -28,8 +28,8 @@
   --btnShadowHovered: 0px 5px 40px rgba(0, 0, 0, 0.25);
 }
 
-/** Safari */
-@media not all and (min-resolution: 0.001dpcm) {
+/** Lato on phones looks ugly */
+@media screen and (max-width: 400px) {
   :root {
     --strongFont: SF-pro-bold;
   }

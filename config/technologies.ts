@@ -137,6 +137,7 @@ export const clickUp: Technology = {
   name: "ClickUp",
 };
 
+// All of them
 export const allTechnologies: Technology[] = [
   github,
   firebaseCloudFunctions,

@@ -30,7 +30,8 @@ export default function Home() {
             <div className={styles.coverUpperSectionContainer}>
               <div className={styles.coverTextContainer}>
                 <h1 className={styles.title}>
-                  I&apos;m Ulises Aviles, <br />
+                  I&apos;m Ulises Aviles,
+                  <br />
                   full-stack developer.
                 </h1>
                 <p className={styles.description}>

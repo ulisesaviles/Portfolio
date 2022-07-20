@@ -32,7 +32,7 @@
 }
 
 .navItemTxt {
-  color: var(--fontSecundary);
+  color: var(--fontSecondary);
   transition: var(--transition);
   font-size: 15px;
 }
@@ -71,6 +71,7 @@
   border: 0;
   left: 5vw;
   transition: none;
+  z-index: 2;
 }
 
 .hamburguer {
@@ -89,6 +90,7 @@
   padding: 100px 30px 0;
   transition: var(--transition);
   font-family: var(--strongFont);
+  z-index: 1;
 }
 
 .navItemTxtPopup {
@@ -111,6 +113,7 @@
 
 .popupBackgroundDisplayed {
   opacity: 100%;
+  z-index: 1;
 }
 
 .popupHidden {

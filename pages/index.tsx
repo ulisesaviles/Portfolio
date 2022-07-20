@@ -10,7 +10,7 @@ import styles from "../styles/pages/Home.module.css";
 import Layout from "../components/layout";
 
 // Assets
-import me from "../public/assets/me.jpeg";
+import me from "../public/assets/people/me.jpeg";
 
 // Main react component
 export default function Home() {

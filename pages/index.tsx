@@ -35,10 +35,10 @@ export default function Home() {
                   full-stack developer.
                 </h1>
                 <p className={styles.description}>
-                  I am 20 year old full-stack developer with bast experience
-                  with frameworks and tools like NextJS, React native and
-                  firebase that allow me to create entire ecosystems of apps. I
-                  am a computer science student and a lifelong learner.
+                  I&apos;m 21 year old full-stack developer with bast experience
+                  building solutions that go from static site development to
+                  entire ecosystems of mobile and web apps. I&apos;m currently
+                  in 6th semester of computer science.
                 </p>
               </div>
               <div className={styles.meImageContainer}>

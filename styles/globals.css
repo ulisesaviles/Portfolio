@@ -29,11 +29,11 @@
 }
 
 /** Lato on phones looks ugly */
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   :root {
     --strongFont: Lato-bold;
   }
-}
+} */
 
 /* Global */
 html,

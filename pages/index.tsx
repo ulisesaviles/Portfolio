@@ -35,10 +35,10 @@ export default function Home() {
                   full-stack developer.
                 </h1>
                 <p className={styles.description}>
-                  I&apos;m 21 year old full-stack developer with bast experience
-                  building solutions that go from static site development to
-                  entire ecosystems of mobile and web apps. I&apos;m currently
-                  in 6th semester of computer science.
+                  I&apos;m a 21 year old full-stack developer with bast
+                  experience building solutions that go from static site
+                  development to entire ecosystems of mobile and web apps.
+                  I&apos;m currently in 6th semester of computer science.
                 </p>
               </div>
               <div className={styles.meImageContainer}>
@@ -49,6 +49,8 @@ export default function Home() {
               <a className={styles.coverCallToAction}>CONTACT ME!</a>
             </Link>
           </div>
+
+          <div style={{ height: 50 }} />
 
           {/* Projects */}
 

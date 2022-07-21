@@ -15,15 +15,15 @@ import Layout from "../../components/layout";
 import { getProjectsIds, getProjectWithId } from "../../config/helpers";
 
 // SEO related
-export async function getStaticPaths() {
+export const getStaticPaths = () => {
   const paths = getProjectsIds().map((id) => ({ params: { id } }));
   return {
     paths: paths,
     fallback: true, // false or 'blocking'
   };
-}
+};
 
-export const getStaticProps = async (context: GetStaticPropsContext) => {
+export const getStaticProps = (context: GetStaticPropsContext) => {
   const projectId = context.params.id as string;
   const project = getProjectWithId(projectId);
   return { props: { project } };
@@ -46,6 +46,7 @@ export default function Project({
       <Layout selectedTabName="PROJECT">
         <main className={styles.main}>
           <h1 className={styles.title}>Project: {project.title}</h1>
+          <p>{project.description.short}</p>
         </main>
       </Layout>
     </div>

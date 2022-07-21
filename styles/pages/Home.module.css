@@ -142,3 +142,130 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* What I do */
+.whatIDoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.whatIDoContentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.whatIDoLeftContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.whatIDoItemContainer {
+  background-color: var(--backgroundContainer);
+  border-radius: 15px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  margin: 0 0 20px;
+  transition: var(--transition);
+}
+.whatIDoItemContainer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+.whatIdOUnderline {
+  background-color: var(--fontAccent);
+  border-radius: 10px;
+  width: 70%;
+  margin-top: 5px;
+  height: 4px;
+}
+.whatIDoItem {
+  font-family: var(--strongFont);
+  text-align: center;
+  width: max-content;
+  margin: 0;
+  font-size: 20px;
+}
+.whatIDoRightContainer {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--backgroundContainer);
+  border-radius: 40px;
+  padding: 30px 50px 50px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+}
+.whatIDoTitle {
+  align-self: flex-start;
+  margin: 0;
+  font-size: 30px;
+}
+.whatIDoDescription {
+  margin: 30px 0;
+  color: var(--fontSecondary);
+  font-size: 20px;
+  line-height: 30px;
+}
+@media screen and (max-width: 1400px) {
+  .whatIDoContainer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .whatIDoContainer {
+    width: 90%;
+  }
+  .whatIDoRightContainer {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .whatIDoContainer {
+    width: 100%;
+  }
+  .whatIDoRightContainer {
+    width: 50%;
+  }
+  .whatIDoContentContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .whatIDoLeftContainer {
+    width: 100%;
+    align-self: flex-start;
+    overflow-x: scroll;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .whatIDoItemContainer {
+    background-color: var(--backgroundContainer);
+    border-radius: 15px;
+    min-width: 320px;
+    height: 60px;
+    margin: 0 20px 30px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .whatIDoRightContainer {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .whatIDoRightContainer {
+    box-shadow: 0 0 0 0;
+    background-color: var(--background);
+    border-radius: 40px;
+    padding: 30px 50px 50px;
+    width: 80%;
+  }
+}

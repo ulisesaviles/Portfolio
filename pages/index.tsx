@@ -1,7 +1,9 @@
+// React imports
+import { useState } from "react";
+
 // NextJS imports
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 
 // Styles
 import styles from "../styles/pages/Home.module.css";
@@ -16,6 +18,44 @@ import me from "../public/assets/people/me.jpeg";
 
 // Main react component
 export default function Home() {
+  // State handlers
+  const [whatIDoSelectedIndex, setWhatIDoSelectedIndex] = useState(0);
+
+  // Data
+  const whatIDoData = [
+    {
+      title: "Discovery & Product Design",
+      decription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+    },
+    {
+      title: "Web Development",
+      decription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+    },
+    {
+      title: "Mobile apps",
+      decription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+    },
+    {
+      title: "Ecommerce",
+      decription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+    },
+    {
+      title: "Enterprise Solutions",
+      decription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+    },
+    {
+      title: "Support & Maintenance",
+      decription:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+    },
+  ];
+
+  // JSX
   return (
     <div className={styles.container}>
       {/* Headers */}
@@ -58,9 +98,42 @@ export default function Home() {
             <ProjectCardsContainer />
           </section>
 
-          <div style={{ height: 50 }} />
+          <div style={{ height: 30 }} />
 
           {/* What I do */}
+          <section className={styles.whatIDoContainer}>
+            <h2 className={styles.sectionTitle}>What I do</h2>
+            <div className={styles.whatIDoContentContainer}>
+              <div className={styles.whatIDoLeftContainer}>
+                {whatIDoData.map((item) => {
+                  const index = whatIDoData.indexOf(item);
+                  return (
+                    <div
+                      key={item.title}
+                      className={styles.whatIDoItemContainer}
+                      onClick={() => setWhatIDoSelectedIndex(index)}
+                    >
+                      <h4 className={styles.whatIDoItem}>{item.title}</h4>
+                      {whatIDoSelectedIndex === index ? (
+                        <div className={styles.whatIdOUnderline} />
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
+              <div className={styles.whatIDoRightContainer}>
+                <h3 className={styles.whatIDoTitle}>
+                  {whatIDoData[whatIDoSelectedIndex].title}
+                </h3>
+                <p className={styles.whatIDoDescription}>
+                  {whatIDoData[whatIDoSelectedIndex].decription}
+                </p>
+                <Button href="/contact" fontSize={15} txt="Got an idea?" />
+              </div>
+            </div>
+          </section>
+
+          <div style={{ height: 50 }} />
 
           {/* Tech */}
 

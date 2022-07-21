@@ -31,11 +31,12 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 
 // Main react component
 export default function Project({ project }: { project: ProjectType }) {
+  const pageTitle = `Ulises Aviles | ${project.title}`;
   return (
     <div className={styles.container}>
       {/* Headers */}
       <Head>
-        <title>Ulises Aviles | {project.title}</title>
+        <title>{pageTitle}</title>
         <meta name="description" content="Description" />
       </Head>
 

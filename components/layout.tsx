@@ -20,6 +20,11 @@ export default function Layout({ children, selectedTabName }: props) {
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="lang" content="en" />
+        <meta
+          property="og:image"
+          content="https://raw.githubusercontent.com/ulisesaviles/Portfolio/main/public/assets/og.jpg"
+        />
       </Head>
       <NavBar selectedTabName={selectedTabName} />
       {children}

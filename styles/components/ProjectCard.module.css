@@ -1,6 +1,6 @@
 /* Container */
 .projectsCardsContainer {
-  padding: 10px 20px 30px;
+  padding: 10px 20px 30px 20px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;

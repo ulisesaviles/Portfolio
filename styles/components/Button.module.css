@@ -1,0 +1,16 @@
+.button {
+  background-color: var(--btnBackground);
+  border-radius: 12px;
+  padding: 10px 35px;
+  font-size: 14px;
+  color: white;
+  font-family: Lato-bold;
+  box-shadow: var(--btnShadow);
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--btnShadowHovered);
+  opacity: 0.95;
+}

@@ -24,7 +24,7 @@ export const getStaticPaths = () => {
   const paths = getProjectsIds().map((id) => ({ params: { id } }));
   return {
     paths: paths,
-    fallback: true, // false or 'blocking'
+    fallback: false,
   };
 };
 

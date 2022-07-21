@@ -23,6 +23,7 @@
   --fontPrimary: rgb(50, 50, 50);
   --fontSecondary: rgba(50, 50, 50, 0.7);
   --transition: all 0.1s ease-in-out;
+  --transitionSlow: all 0.2s ease-in-out;
   --btnBackground: var(--fontPrimary);
   --btnShadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
   --btnShadowHovered: 0px 5px 40px rgba(0, 0, 0, 0.3);

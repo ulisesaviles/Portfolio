@@ -13,28 +13,26 @@ import Layout from "../../components/layout";
 
 // Helpers
 import { getProjectsIds, getProjectWithId } from "../../config/helpers";
-import { tendrishDashboard } from "../../config/projects";
 
 // SEO related
 export const getStaticProps = ({ params }: GetStaticPropsContext) => {
   const projectId = params.id as string;
   const project = getProjectWithId(projectId);
-  // return { props: { project } };
-  return { props: { project: tendrishDashboard } };
+  return { props: { project } };
 };
 
 export const getStaticPaths = () => {
   const paths = getProjectsIds().map((id) => ({ params: { id } }));
   return {
     paths: paths,
-    fallback: true, // false or 'blocking'
+    fallback: "blocking", // false or 'blocking'
   };
 };
 
 // Main react component
-export default function Project({
+const Project = ({
   project,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const pageTitle = `Ulises Aviles | ${project.title}`;
   return (
     <div className={styles.container}>
@@ -53,4 +51,6 @@ export default function Project({
       </Layout>
     </div>
   );
-}
+};
+
+export default Project;

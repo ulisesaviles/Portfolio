@@ -8,6 +8,8 @@ import styles from "../styles/pages/Home.module.css";
 
 // Components
 import Layout from "../components/layout";
+import ProjectCardsContainer from "../components/projectCardsContainer";
+import Button from "../components/button";
 
 // Assets
 import me from "../public/assets/people/me.jpeg";
@@ -26,7 +28,7 @@ export default function Home() {
       <Layout selectedTabName="HOME">
         <main className={styles.main}>
           {/* Cover */}
-          <div className={styles.coverContainer}>
+          <section className={styles.coverContainer}>
             <div className={styles.coverUpperSectionContainer}>
               <div className={styles.coverTextContainer}>
                 <h1 className={styles.title}>
@@ -38,21 +40,25 @@ export default function Home() {
                   I&apos;m a 21 year old full-stack developer with bast
                   experience building solutions that go from static site
                   development to entire ecosystems of mobile and web apps.
-                  I&apos;m currently in 6th semester of computer science.
+                  I&apos;m currently in senior year of computer science.
                 </p>
               </div>
               <div className={styles.meImageContainer}>
                 <Image src={me} alt="" className={styles.meImage} />
               </div>
             </div>
-            <Link href="/contact">
-              <a className={styles.coverCallToAction}>CONTACT ME!</a>
-            </Link>
-          </div>
+            <Button href="/contact" txt="Contact me!" fontSize={20} />
+          </section>
 
           <div style={{ height: 50 }} />
 
           {/* Projects */}
+          <section className={styles.projectsContainer}>
+            <h2 className={styles.sectionTitle}>Projects</h2>
+            <ProjectCardsContainer />
+          </section>
+
+          <div style={{ height: 50 }} />
 
           {/* What I do */}
 

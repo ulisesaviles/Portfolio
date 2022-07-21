@@ -13,6 +13,7 @@ import { IoMenu } from "react-icons/io5";
 // Types
 import { availableTabs } from "../types/navigation";
 import { sleep } from "../config/helpers";
+import Button from "./button";
 type props = {
   selectedTabName: availableTabs;
 };
@@ -90,11 +91,7 @@ export default function NavBar({ selectedTabName }: props) {
         </Link>
 
         {/* Contact btn */}
-        <Link href="/contact">
-          <a className={`${styles.contact} ${styles.contactPopup}`}>
-            LET&apos;S WORK TOGETHER!
-          </a>
-        </Link>
+        <Button href="/contact" fontSize={17} txt="Contact me!" />
       </nav>
 
       {/* Header */}
@@ -150,9 +147,10 @@ export default function NavBar({ selectedTabName }: props) {
           </Link>
 
           {/* Contact btn */}
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <a className={styles.contact}>LET&apos;S WORK TOGETHER!</a>
-          </Link>
+          </Link> */}
+          <Button href="/contact" fontSize={14} txt="LET'S WORK TOGETHER!" />
         </nav>
       </header>
     </>

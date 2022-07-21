@@ -96,10 +96,10 @@ export const tendrishDashboard: Project = {
 // All projects
 export const allProjects: Project[] = [
   tendrishDashboard,
-  // tendrishDashboard,
-  // tendrishDashboard,
-  // tendrishDashboard,
-  // tendrishDashboard,
-  // tendrishDashboard,
-  // tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
 ];

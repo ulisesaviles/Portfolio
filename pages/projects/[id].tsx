@@ -2,7 +2,6 @@
 import Head from "next/head";
 
 // Types
-import { Project as ProjectType } from "../../types/projects";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 
 // Styles
@@ -25,7 +24,7 @@ export const getStaticPaths = () => {
   const paths = getProjectsIds().map((id) => ({ params: { id } }));
   return {
     paths: paths,
-    fallback: "blocking", // false or 'blocking'
+    fallback: true, // false or 'blocking'
   };
 };
 

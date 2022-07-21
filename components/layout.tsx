@@ -1,9 +1,6 @@
 // NextJS imports
 import Head from "next/head";
 
-// Styles
-import styles from "../styles/pages/Home.module.css";
-
 // Components
 import NavBar from "../components/navBar";
 

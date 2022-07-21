@@ -1,22 +1,13 @@
 // Types
 import { Project } from "../types/projects";
 
-// Technologies
-import {
-  firebaseCloudFunctions,
-  firebaseFirestore,
-  github,
-  nodeJS,
-  reactJS,
-  typeScript,
-} from "./technologies";
-
 // Assets
 import me from "../public/assets/people/me.jpeg";
 import tendrishImages from "../public/assets/projects/tendrishDashboard/index";
 
 // Actual projects
 export const tendrishDashboard: Project = {
+  id: "tendrishDashboard",
   title: "Tendrish dashobard",
   category: "Large free-lance project",
   cover: tendrishImages.cover,
@@ -31,12 +22,12 @@ export const tendrishDashboard: Project = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
       technologies: [
-        reactJS,
-        typeScript,
-        github,
-        firebaseCloudFunctions,
-        firebaseFirestore,
-        nodeJS,
+        "ReactJS",
+        "TypeScript",
+        "Github",
+        "Cloud functions",
+        "Firestore",
+        "NodeJS",
       ],
     },
     timeLine: {
@@ -103,4 +94,12 @@ export const tendrishDashboard: Project = {
 };
 
 // All projects
-export const allProjects: Project[] = [tendrishDashboard];
+export const allProjects: Project[] = [
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+  tendrishDashboard,
+];

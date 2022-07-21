@@ -1,6 +1,6 @@
 // Infered types
 import { StaticImageData } from "next/image";
-import { Technology } from "./technologies";
+import { TechnologyName } from "./technologies";
 
 // Local types
 type ProjectCategory =
@@ -13,6 +13,7 @@ type ProjectCategory =
 
 // Actual project type
 export type Project = {
+  id: string;
   title: string;
   category: ProjectCategory;
   cover: StaticImageData;
@@ -24,7 +25,7 @@ export type Project = {
   developmentProcess: {
     technologies: {
       description: string;
-      technologies: Technology[];
+      technologies: TechnologyName[];
     };
     timeLine: {
       weeks: number;

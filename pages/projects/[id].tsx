@@ -13,12 +13,14 @@ import Layout from "../../components/layout";
 
 // Helpers
 import { getProjectsIds, getProjectWithId } from "../../config/helpers";
+import { tendrishDashboard } from "../../config/projects";
 
 // SEO related
-export const getStaticProps = (context: GetStaticPropsContext) => {
-  const projectId = context.params.id as string;
+export const getStaticProps = ({ params }: GetStaticPropsContext) => {
+  const projectId = params.id as string;
   const project = getProjectWithId(projectId);
-  return { props: { project } };
+  // return { props: { project } };
+  return { props: { project: tendrishDashboard } };
 };
 
 export const getStaticPaths = () => {

@@ -3,7 +3,7 @@ import Head from "next/head";
 
 // Types
 import { Project as ProjectType } from "../../types/projects";
-import { GetStaticPropsContext } from "next";
+import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 
 // Styles
 import styles from "../../styles/pages/Home.module.css";
@@ -30,7 +30,9 @@ export const getStaticProps = async (context: GetStaticPropsContext) => {
 };
 
 // Main react component
-export default function Project({ project }: { project: ProjectType }) {
+export default function Project({
+  project,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const pageTitle = `Ulises Aviles | ${project.title}`;
   return (
     <div className={styles.container}>

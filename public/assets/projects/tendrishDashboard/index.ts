@@ -2,8 +2,8 @@
 import agenda from "./Agenda.jpg";
 import createRecipe from "./CreateRecipe.jpg";
 import mockup from "./Mockup.jpg";
-import recipeFinder from "./Recipe finder.jpg";
-import stats from "./RecipeStats.jpg";
+import recipeFinder from "./RecipeFinder.jpg";
+import stats from "./stats.jpg";
 import userFinder from "./UserFinder.jpg";
 
 // Exporter

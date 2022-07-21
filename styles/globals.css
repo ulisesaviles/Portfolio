@@ -26,6 +26,8 @@
   --btnBackground: var(--fontPrimary);
   --btnShadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
   --btnShadowHovered: 0px 5px 40px rgba(0, 0, 0, 0.25);
+  --background: rgb(253, 253, 253);
+  --backgroundContainer: rgb(255, 255, 255);
 }
 
 /** Lato on phones looks ugly */
@@ -35,6 +37,22 @@
   }
 }
 
+/* Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--background);
+  z-index: 10;
+  height: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(200, 200, 200);
+  border-radius: 6px;
+  transition: var(--transition);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(220, 220, 220);
+}
+
 /* Global */
 html,
 body {
@@ -42,15 +60,19 @@ body {
   margin: 0;
   font-family: SF-pro;
   color: var(--fontPrimary);
-  background-color: rgb(253, 253, 253);
+  background-color: var(--background);
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
-
 h1,
-h2 {
+h2,
+h3,
+h4 {
   font-family: var(--strongFont);
+}
+h2 {
+  text-transform: uppercase;
+  margin: 20px 0 10px;
 }

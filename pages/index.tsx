@@ -15,6 +15,7 @@ import Button from "../components/button";
 
 // Assets
 import me from "../public/assets/people/me.jpeg";
+import { sleep } from "../config/helpers";
 
 // Main react component
 export default function Home() {
@@ -54,6 +55,17 @@ export default function Home() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
     },
   ];
+  const [whatIDo, setWhatIDo] = useState(whatIDoData[whatIDoSelectedIndex]);
+  const [whatIDoRightClass, setWhatIDoRightClass] = useState("displayed");
+
+  // Handlers
+  const hanldeWhatIDo = async (index: number) => {
+    setWhatIDoSelectedIndex(index);
+    setWhatIDoRightClass("hidden");
+    await sleep(200);
+    setWhatIDo(whatIDoData[index]);
+    setWhatIDoRightClass("displayed");
+  };
 
   // JSX
   return (
@@ -111,22 +123,28 @@ export default function Home() {
                     <div
                       key={item.title}
                       className={styles.whatIDoItemContainer}
-                      onClick={() => setWhatIDoSelectedIndex(index)}
+                      onClick={() => hanldeWhatIDo(index)}
                     >
                       <h4 className={styles.whatIDoItem}>{item.title}</h4>
-                      {whatIDoSelectedIndex === index ? (
-                        <div className={styles.whatIdOUnderline} />
-                      ) : null}
+                      <div
+                        className={`${styles.whatIdOUnderline} ${
+                          styles[
+                            whatIDoSelectedIndex !== index
+                              ? "hidden"
+                              : "displayed"
+                          ]
+                        }`}
+                      />
                     </div>
                   );
                 })}
               </div>
-              <div className={styles.whatIDoRightContainer}>
-                <h3 className={styles.whatIDoTitle}>
-                  {whatIDoData[whatIDoSelectedIndex].title}
-                </h3>
+              <div
+                className={`${styles.whatIDoRightContainer} ${styles[whatIDoRightClass]}`}
+              >
+                <h3 className={styles.whatIDoTitle}>{whatIDo.title}</h3>
                 <p className={styles.whatIDoDescription}>
-                  {whatIDoData[whatIDoSelectedIndex].decription}
+                  {whatIDo.decription}
                 </p>
                 <Button href="/contact" fontSize={15} txt="Got an idea?" />
               </div>

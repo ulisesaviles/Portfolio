@@ -25,7 +25,7 @@
   --transition: all 0.1s ease-in-out;
   --btnBackground: var(--fontPrimary);
   --btnShadow: 0px 3px 30px rgba(0, 0, 0, 0.25);
-  --btnShadowHovered: 0px 5px 40px rgba(0, 0, 0, 0.25);
+  --btnShadowHovered: 0px 5px 40px rgba(0, 0, 0, 0.3);
   --background: rgb(253, 253, 253);
   --backgroundContainer: rgb(255, 255, 255);
 }

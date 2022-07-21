@@ -15,18 +15,18 @@ import Layout from "../../components/layout";
 import { getProjectsIds, getProjectWithId } from "../../config/helpers";
 
 // SEO related
+export const getStaticProps = (context: GetStaticPropsContext) => {
+  const projectId = context.params.id as string;
+  const project = getProjectWithId(projectId);
+  return { props: { project } };
+};
+
 export const getStaticPaths = () => {
   const paths = getProjectsIds().map((id) => ({ params: { id } }));
   return {
     paths: paths,
     fallback: true, // false or 'blocking'
   };
-};
-
-export const getStaticProps = (context: GetStaticPropsContext) => {
-  const projectId = context.params.id as string;
-  const project = getProjectWithId(projectId);
-  return { props: { project } };
 };
 
 // Main react component

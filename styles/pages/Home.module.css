@@ -271,4 +271,11 @@
     width: 80%;
     text-align: center;
   }
+  .whatIDoItemContainer {
+    min-width: 300px;
+    max-height: 60px;
+  }
+  .whatIDoItem {
+    font-size: 18px;
+  }
 }

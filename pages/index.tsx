@@ -15,7 +15,11 @@ import Button from "../components/button";
 
 // Assets
 import me from "../public/assets/people/me.jpeg";
+
+// Helper functions
 import { sleep } from "../config/helpers";
+
+// Data
 import { allTechnologies } from "../config/technologies";
 
 // Main react component

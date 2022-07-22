@@ -46,7 +46,7 @@ export default function AboutMe() {
             </div>
           </section>
 
-          <div style={{ marginTop: -10 }} />
+          <div style={{ height: 30 }} />
 
           {/* Why I'm a developer */}
           <section className={styles.sectionContainer}>

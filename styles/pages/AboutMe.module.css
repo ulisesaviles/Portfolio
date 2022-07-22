@@ -13,11 +13,11 @@
   align-items: center;
 }
 .coverUpperSectionContainer {
+  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  min-height: 50vh;
 }
 .coverTextContainer {
   max-width: 63%;
@@ -34,7 +34,7 @@
   color: var(--fontSecondary);
   font-size: 25px;
   margin: 15px 0 20px;
-  line-height: 35px;
+  line-height: 38px;
 }
 .meImageContainer {
   width: 30%;
@@ -77,6 +77,7 @@
 @media screen and (max-width: 900px) {
   .coverUpperSectionContainer {
     flex-direction: column-reverse;
+    margin-top: 0;
   }
   .meImageContainer {
     width: 60%;
@@ -92,7 +93,7 @@
   }
   .description {
     font-size: 25px;
-    margin: 15px 0 50px;
+    margin: 15px 0 10px;
     line-height: 42px;
   }
 }
@@ -133,7 +134,7 @@
     font-size: 50px;
   }
   .description {
-    margin: 15px 0 50px;
+    margin: 15px 0 10px;
     font-size: 20px;
     line-height: 28px;
   }

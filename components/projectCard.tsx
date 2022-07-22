@@ -12,7 +12,13 @@ const ProjectCard = ({ project }: { project: Project }) => {
     <div className={styles.container}>
       <div className={styles.imageSuperContainer}>
         <div className={styles.imageContainer}>
-          <Image src={project.cover} alt="" layout="fixed" height={200} />
+          <Image
+            src={project.cover}
+            alt=""
+            layout="fixed"
+            height={200}
+            style={{ borderRadius: 12 }}
+          />
         </div>
       </div>
       <div className={styles.txtContainer}>

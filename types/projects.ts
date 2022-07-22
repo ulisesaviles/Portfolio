@@ -11,12 +11,15 @@ type ProjectCategory =
   | "Small school project"
   | "Small project";
 
+export type ProjectSize = "large" | "medium" | "small";
+
 // Actual project type
 export type Project = {
   id: string;
   title: string;
   category: ProjectCategory;
   cover: StaticImageData;
+  size: ProjectSize;
   type: "mobile-app" | "web-app" | "static web site";
   description: {
     short: string;

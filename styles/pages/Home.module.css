@@ -288,4 +288,7 @@
     font-size: 18px;
     margin: 0 30px;
   }
+  .whatIDoTitle {
+    align-self: center;
+  }
 }

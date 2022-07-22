@@ -161,15 +161,30 @@ export default function Home() {
               {allTechnologies.map((tech) => (
                 <div key={tech.name} className={styles.tech}>
                   <h1 className={styles.techLogo}>{tech.logo({})}</h1>
-                  <h1 className={styles.techName}>{tech.name}</h1>
+                  <h3 className={styles.techName}>{tech.name}</h3>
                 </div>
               ))}
             </div>
           </section>
 
-          <div style={{ height: 50 }} />
+          <div style={{ height: 30 }} />
 
           {/* Call to action */}
+          <section className={styles.callContainer}>
+            <h2 className={styles.sectionTitle}>
+              Let&apos;s build something great!
+            </h2>
+            <p className={styles.callDescription}>
+              I&apos;m passionate about helping people achieve better results.
+              I&apos;ll put all my effort into it with you.
+              <br />
+              I&apos;d love to hear your idea and turn it into an app or
+              website!
+            </p>
+            <Button txt="get in touch!" fontSize={16} href="/contact" />
+          </section>
+
+          <div style={{ height: 50 }} />
         </main>
       </Layout>
     </div>

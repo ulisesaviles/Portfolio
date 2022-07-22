@@ -25,7 +25,7 @@ export default function AboutMe() {
       </Head>
 
       {/* Content */}
-      <Layout selectedTabName="HOME">
+      <Layout selectedTabName="ABOUT ME">
         <main className={styles.main}>
           {/* Cover */}
           <section className={styles.coverContainer}>
@@ -50,7 +50,9 @@ export default function AboutMe() {
 
           {/* Why I'm a developer */}
           <section className={styles.sectionContainer}>
-            <h2 className={styles.sectionTitle}>Why I&apos;m a developer</h2>
+            <h2 className={styles.sectionTitle}>
+              About Why I&apos;m a developer
+            </h2>
             <p className={styles.txt}>
               As stated, I have allways loved to solve problems using logic and
               doing business.

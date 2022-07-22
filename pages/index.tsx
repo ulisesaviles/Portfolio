@@ -16,6 +16,7 @@ import Button from "../components/button";
 // Assets
 import me from "../public/assets/people/me.jpeg";
 import { sleep } from "../config/helpers";
+import { allTechnologies } from "../config/technologies";
 
 // Main react component
 export default function Home() {
@@ -154,6 +155,19 @@ export default function Home() {
           <div style={{ height: 50 }} />
 
           {/* Tech */}
+          <section className={styles.techContainer}>
+            <h2 className={styles.sectionTitle}>My favorite technologies</h2>
+            <div className={styles.techsContainer}>
+              {allTechnologies.map((tech) => (
+                <div key={tech.name} className={styles.tech}>
+                  <h1 className={styles.techLogo}>{tech.logo({})}</h1>
+                  <h3 className={styles.techName}>{tech.name}</h3>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <div style={{ height: 50 }} />
 
           {/* Call to action */}
         </main>

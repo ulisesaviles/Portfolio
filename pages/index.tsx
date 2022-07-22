@@ -4,6 +4,7 @@ import { useState } from "react";
 // NextJS imports
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 // Styles
 import styles from "../styles/pages/Home.module.css";
@@ -112,6 +113,9 @@ export default function Home() {
           {/* Projects */}
           <section className={styles.projectsContainer}>
             <h2 className={styles.sectionTitle}>Projects</h2>
+            <Link href="/projects">
+              <a className={styles.viewAll}>View all</a>
+            </Link>
             <ProjectCardsContainer />
           </section>
 

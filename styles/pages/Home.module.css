@@ -329,12 +329,19 @@
 .techLogo {
   font-size: 40px;
   margin: 0;
+  color: var(--fontSecondary);
 }
 .techName {
+  color: var(--fontSecondary);
   margin: 0;
   font-size: 16px;
   text-align: center;
-  color: inherit;
+}
+.tech:hover > .techName {
+  color: var(--fontPrimary);
+}
+.tech:hover > .techLogo {
+  color: var(--fontPrimary);
 }
 @media screen and (max-width: 1250px) {
   .techContainer {

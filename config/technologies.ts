@@ -10,7 +10,6 @@ import {
   IoLogoHtml5,
   IoLogoCss3,
   IoLogoNodejs,
-  IoLogoNpm,
 } from "react-icons/io5";
 import {
   SiNextdotjs,
@@ -102,11 +101,6 @@ export const nodeJS: Technology = {
   name: "NodeJS",
 };
 
-export const npm: Technology = {
-  logo: IoLogoNpm,
-  name: "npm",
-};
-
 export const yarn: Technology = {
   logo: SiYarn,
   name: "yarn",
@@ -152,7 +146,6 @@ export const allTechnologies: Technology[] = [
   html,
   css,
   nodeJS,
-  npm,
   yarn,
   redux,
   adobeXd,

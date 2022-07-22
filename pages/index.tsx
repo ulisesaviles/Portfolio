@@ -161,7 +161,7 @@ export default function Home() {
               {allTechnologies.map((tech) => (
                 <div key={tech.name} className={styles.tech}>
                   <h1 className={styles.techLogo}>{tech.logo({})}</h1>
-                  <h3 className={styles.techName}>{tech.name}</h3>
+                  <h1 className={styles.techName}>{tech.name}</h1>
                 </div>
               ))}
             </div>

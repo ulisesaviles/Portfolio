@@ -1,0 +1,146 @@
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15vw;
+}
+
+/* Cover */
+.coverContainer {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coverUpperSectionContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 50vh;
+}
+.coverTextContainer {
+  max-width: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.title {
+  font-size: 70px;
+  margin: 0;
+}
+.description {
+  color: var(--fontSecondary);
+  font-size: 25px;
+  margin: 15px 0 20px;
+  line-height: 35px;
+}
+.meImageContainer {
+  width: 30%;
+  height: 30%;
+  border-radius: 1000px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 1300px) {
+  .coverContainer {
+    width: 75vw;
+  }
+  .main {
+    padding: 0 12.5vw;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .coverContainer {
+    width: 80vw;
+  }
+  .main {
+    padding: 0 10vw;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .title {
+    font-size: 60px;
+  }
+  .description {
+    color: var(--fontSecondary);
+    font-size: 25px;
+    margin: 15px 0 20px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .coverUpperSectionContainer {
+    flex-direction: column-reverse;
+  }
+  .meImageContainer {
+    width: 60%;
+    height: 60%;
+    margin: 40px 0 20px;
+  }
+  .coverTextContainer {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 25px;
+    margin: 15px 0 50px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+}
+.txt {
+  color: var(--fontSecondary);
+  margin: 0;
+  font-size: 22px;
+  line-height: 37px;
+}
+.aInText {
+  color: var(--fontAccent);
+}
+.aInText:hover {
+  text-decoration: underline;
+}
+.youKnowMe {
+  color: var(--fontSecondary);
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+@media screen and (max-width: 570px) {
+  .meImageContainer {
+    width: 80%;
+    height: 80%;
+    margin: 15px 0 20px;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .description {
+    margin: 15px 0 50px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .txt {
+    color: var(--fontSecondary);
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

@@ -50,13 +50,13 @@ export default function Projects() {
           <section className={styles.textSectionContainer}>
             <h2 className={styles.sectionTitle}>How can we work together?</h2>
             <p className={styles.txt}>
-              It doesn't matter if you have a whole structure or just a blurry
-              idea of the project you want to develop,
+              It doesn&apos;t matter if you have a whole structure or just a
+              blurry idea of the project you want to develop,
               <Link href="/contact">
                 <a className={styles.aInTxt}> get in touch with me </a>
               </Link>
-              and let's have a chat about it. I would love to work with you and
-              your company!
+              and let&apos;s have a chat about it. I would love to work with you
+              and your company!
             </p>
           </section>
 
@@ -79,7 +79,7 @@ export default function Projects() {
               <Link href="/contact">
                 <a className={styles.aInTxt}>
                   {" "}
-                  I'm always open to hear a good offer! Contact me
+                  I&apos;m always open to hear a good offer! Contact me
                 </a>
               </Link>
               , I would love to be part of a great team.
@@ -98,7 +98,7 @@ export default function Projects() {
           <section className={styles.techContainer}>
             <h2 className={styles.sectionTitle}>My favorite technologies</h2>
             <p className={styles.techTxt}>
-              I'm always making research about new tools that will help me
+              I&apos;m always making research about new tools that will help me
               develop great projects for my clients. However, when it is
               possible, I like to stick with the technologies that I know the
               best to ensure that I deliver the best quality projects that can

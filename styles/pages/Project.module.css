@@ -84,8 +84,9 @@
   text-align: center;
 }
 .sectionTitle {
-  font-size: 25pxpx;
+  font-size: 25px;
   margin: 0;
+  text-align: center;
 }
 .whatThisProjectIs {
   color: var(--fontSecondary);
@@ -170,6 +171,7 @@
 .suggestion {
   color: var(--fontSecondary);
   margin: 10px 0 5px;
+  text-align: center;
 }
 .toolsUsedContainer {
   display: flex;
@@ -289,5 +291,16 @@
   }
   .devProcessDescription {
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .devProcessContainer {
+    width: 80vw;
+    padding: 0 10vw;
+    background-color: var(--background);
+    box-shadow: 0 0 0 0;
+  }
+  .devProcessHeadersContainer {
+    width: 90vw;
   }
 }

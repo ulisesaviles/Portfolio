@@ -7,7 +7,10 @@ import btnStyles from "../styles/components/Button.module.css";
 
 // Components
 import Layout from "../components/layout";
-import Link from "next/link";
+
+// Notifications https://fkhadra.github.io/react-toastify
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Icons
 import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from "react-icons/si";
@@ -18,7 +21,27 @@ export default function Contact() {
   const handleSocialMediaClick = (
     socialMedia: "linkedin" | "github" | "whatsapp" | "mail"
   ) => {
-    alert(socialMedia);
+    if (socialMedia === "linkedin")
+      window.open("https://www.linkedin.com/in/ulises-aviles-07b06b1a4/");
+    if (socialMedia === "github")
+      window.open("https://github.com/ulisesaviles/");
+    if (socialMedia === "whatsapp" || socialMedia === "mail") {
+      navigator.clipboard.writeText(
+        socialMedia === "whatsapp"
+          ? "+5216644053411"
+          : "ulisesaviles.dev@gmail.com"
+      );
+      const message = `My ${socialMedia} was coppied to your clipboard!`;
+      toast.success(message, {
+        position: "bottom-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   };
 
   // JSX
@@ -124,6 +147,19 @@ export default function Contact() {
               </div>
             </form>
           </section>
+
+          {/* Notifications */}
+          <ToastContainer
+            position="bottom-center"
+            autoClose={1000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
         </main>
       </Layout>
     </div>

@@ -5,6 +5,7 @@ import mockup from "./Mockup.jpg";
 import recipeFinder from "./RecipeFinder.jpg";
 import stats from "./stats.jpg";
 import userFinder from "./UserFinder.jpg";
+import qr from "./qr.png";
 
 // Exporter
 const Images = {
@@ -16,5 +17,6 @@ const Images = {
     recipeFinder,
     userFinder,
   },
+  qr,
 };
 export default Images;

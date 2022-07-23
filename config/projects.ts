@@ -50,7 +50,7 @@ export const tendrishDashboard: Project = {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
       link: "https://admin.tendrishmealplan.com/",
-      // qr: me,
+      qr: tendrishImages.qr,
     },
   },
   type: "web-app",

@@ -40,6 +40,11 @@
   color: var(--fontPrimary);
   transform: translateY(-2px);
 }
+.navItemTxt:focus {
+  color: var(--fontPrimary);
+  transform: translateY(-2px);
+  outline: 0;
+}
 
 .navItemSelected {
   color: var(--fontPrimary);

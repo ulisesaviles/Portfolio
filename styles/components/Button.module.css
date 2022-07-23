@@ -9,9 +9,17 @@
   transition: var(--transition);
   text-transform: uppercase;
   text-align: center;
+  outline: 0;
+  border: 0;
 }
 .button:hover {
   transform: translateY(-2px);
   box-shadow: var(--btnShadowHovered);
   opacity: 0.95;
+}
+.button:focus {
+  transform: translateY(-2px);
+  box-shadow: var(--btnShadowHovered);
+  opacity: 0.95;
+  outline: 0;
 }

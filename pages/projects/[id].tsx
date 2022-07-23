@@ -15,6 +15,7 @@ import {
   getProjectsIds,
   getProjectWithId,
   getTechnologies,
+  sleep,
 } from "../../config/helpers";
 import Image from "next/image";
 import Button from "../../components/button";
@@ -55,13 +56,18 @@ const Project = ({
   const [selectedDevProcess, setSelectedDevProcess] = useState(
     devProcessOptions[0]
   );
+  const [devProcessContentIsHidden, setDevProcessContentIsHidden] =
+    useState(false);
 
   // Functions
-  const handleSelecHeader = (headerId) => {
+  const handleSelecHeader = async (headerId: string) => {
     for (let i = 0; i < devProcessOptions.length; i++) {
       const option = devProcessOptions[i];
       if (option.id === headerId) {
+        setDevProcessContentIsHidden(true);
+        await sleep(200);
         setSelectedDevProcess(option);
+        setDevProcessContentIsHidden(false);
         return;
       }
     }
@@ -138,7 +144,11 @@ const Project = ({
                 </div>
               ))}
             </div>
-            <div className={styles.devProcessContentContainer}>
+            <div
+              className={`${styles.devProcessContentContainer} ${
+                styles[devProcessContentIsHidden ? "hidden" : null]
+              }`}
+            >
               <div className={styles.devProcessLeftContainer}>
                 {selectedDevProcess.id === "technologies" ? (
                   <div className={styles.toolsUsedContainer}>
@@ -162,11 +172,16 @@ const Project = ({
                   <div className={styles.teamContainer}>
                     {project.developmentProcess.team.members.map((member) => (
                       <div className={styles.memberContainer} key={member.name}>
-                        <Image
-                          src={member.img}
-                          alt=""
-                          className={styles.memberImg}
-                        />
+                        <div
+                          className={styles.memberImgContainer}
+                          key={member.name}
+                        >
+                          <Image
+                            src={member.img}
+                            alt=""
+                            className={styles.memberImg}
+                          />
+                        </div>
                         <h3 className={styles.memberName}>{member.name}</h3>
                       </div>
                     ))}
@@ -175,11 +190,13 @@ const Project = ({
                   <div className={styles.deploymentContainer}>
                     {project.developmentProcess.deployment.qr ? (
                       <div className={styles.viewProjectContainer}>
-                        <Image
-                          src={project.developmentProcess.deployment.qr}
-                          alt=""
-                          className={styles.qr}
-                        />
+                        <div className={styles.qrContainer}>
+                          <Image
+                            src={project.developmentProcess.deployment.qr}
+                            alt=""
+                            className={styles.qr}
+                          />
+                        </div>
                         <a
                           className={styles.viewProject}
                           href={project.developmentProcess.deployment.link}

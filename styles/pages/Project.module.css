@@ -77,3 +77,217 @@
     align-self: center;
   }
 }
+
+/* What this project is about */
+.whatThisProjectIsContainer {
+  width: 80vw;
+  text-align: center;
+}
+.sectionTitle {
+  font-size: 25pxpx;
+  margin: 0;
+}
+.whatThisProjectIs {
+  color: var(--fontSecondary);
+  font-size: 18px;
+  line-height: 30px;
+  margin: 10px 0 20px;
+}
+
+/* Dev process */
+.devProcessContainer {
+  width: calc(80vw - 120px);
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  min-height: 300px;
+}
+.devProcessHeadersContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.devProcessHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--fontSecondary);
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 20px 20px 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  min-width: max-content;
+}
+.devProcessHeaderContainer:hover {
+  color: var(--fontPrimary);
+}
+.devProcessHeader {
+  min-width: max-content;
+  margin: 0;
+}
+.selectedHeader {
+  color: var(--fontPrimary);
+}
+.devProcessHeaderUnderline {
+  background-color: var(--fontAccent);
+  height: 3px;
+  border-radius: 100px;
+  width: 120%;
+  margin-top: 5px;
+  transition: var(--transition);
+}
+.hidden {
+  opacity: 0;
+}
+.devProcessContentContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: var(--transitionSlow);
+}
+.devProcessLeftContainer {
+  width: 40%;
+}
+.devProcessRightContainer {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.devProcessDescription {
+  color: var(--fontSecondary);
+  font-size: 17px;
+  line-height: 27px;
+  margin: 0;
+}
+.suggestion {
+  color: var(--fontSecondary);
+  margin: 10px 0 5px;
+}
+.toolsUsedContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.techContainer {
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  align-items: center;
+  margin: 0 0 30px;
+  color: var(--fontSecondary);
+  transition: var(--transition);
+  min-width: min-content;
+}
+.techContainer:hover {
+  color: var(--fontPrimary);
+  transform: scale(1.1);
+}
+.techLogo {
+  margin: 0;
+  font-size: 50px;
+}
+.techName {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+.timelineContainer {
+  color: var(--fontSecondary);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+.numberOfWeeks {
+  font-size: 60px;
+  margin: 0;
+}
+.weeks {
+  margin: 0;
+}
+.memberImgContainer {
+  border-radius: 1000px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 120px;
+  height: 120px;
+  display: flex;
+}
+.teamContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.memberContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px 20px;
+}
+.memberName {
+  margin: 5px;
+  font-size: 16px;
+  color: var(--fontSecondary);
+}
+.qrContainer {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.viewProjectContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.viewProject {
+  margin: 10px 0 0;
+  color: var(--fontAccent);
+}
+.viewProject:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  .devProcessHeader {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .devProcessHeadersContainer {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .devProcessContentContainer {
+    flex-direction: column;
+  }
+  .devProcessLeftContainer {
+    width: 100%;
+  }
+  .devProcessRightContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .devProcessDescription {
+    text-align: center;
+  }
+}

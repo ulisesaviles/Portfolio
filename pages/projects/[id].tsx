@@ -111,7 +111,7 @@ const Project = ({
             </p>
           </section>
 
-          <div style={{ height: 50 }} />
+          <div style={{ height: 30 }} />
 
           {/* Dev process */}
           <section className={styles.devProcessContainer}>

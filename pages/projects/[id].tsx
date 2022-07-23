@@ -263,8 +263,9 @@ const Project = ({
             </div>
           </section>
 
+          <div style={{ height: 50 }} />
+
           {/* Call to action */}
-          {/* What this project is about */}
           <section className={styles.whatThisProjectIsContainer}>
             <h2 className={styles.sectionTitle}>
               WOULD YOU LIKE TO BUILD SOMETHING SIMILAR?
@@ -277,6 +278,8 @@ const Project = ({
             </p>
             <Button fontSize={18} href="/contact" txt="Let's do it!" />
           </section>
+
+          <div style={{ height: 50 }} />
         </main>
       </Layout>
     </div>

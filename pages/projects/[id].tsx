@@ -5,13 +5,20 @@ import Head from "next/head";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 
 // Styles
-import styles from "../../styles/pages/Home.module.css";
+import styles from "../../styles/pages/Project.module.css";
 
 // Components
 import Layout from "../../components/layout";
 
 // Helpers
-import { getProjectsIds, getProjectWithId } from "../../config/helpers";
+import {
+  getProjectsIds,
+  getProjectWithId,
+  getTechnologies,
+} from "../../config/helpers";
+import Image from "next/image";
+import Button from "../../components/button";
+import { useState } from "react";
 
 // SEO related
 export const getStaticProps = ({ params }: GetStaticPropsContext) => {
@@ -32,7 +39,35 @@ export const getStaticPaths = () => {
 const Project = ({
   project,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  // Data
+  const devProcessOptions: {
+    id: "technologies" | "timeLine" | "team" | "deployment";
+    name: string;
+  }[] = [
+    { id: "technologies", name: "Tools used" },
+    { id: "timeLine", name: "Timeline" },
+    { id: "team", name: "Team behind the project" },
+    { id: "deployment", name: "Deployment" },
+  ];
+
+  // Constants
   const pageTitle = `Ulises Aviles | ${project.title}`;
+  const [selectedDevProcess, setSelectedDevProcess] = useState(
+    devProcessOptions[0]
+  );
+
+  // Functions
+  const handleSelecHeader = (headerId) => {
+    for (let i = 0; i < devProcessOptions.length; i++) {
+      const option = devProcessOptions[i];
+      if (option.id === headerId) {
+        setSelectedDevProcess(option);
+        return;
+      }
+    }
+  };
+
+  // JSX
   return (
     <div className={styles.container}>
       {/* Headers */}
@@ -44,8 +79,187 @@ const Project = ({
       {/* Content */}
       <Layout selectedTabName="PROJECT">
         <main className={styles.main}>
-          <h1 className={styles.title}>Project: {project.title}</h1>
-          <p>{project.description.short}</p>
+          {/* Cover */}
+          <section className={styles.coverContainer}>
+            <div className={styles.coverImgContainer}>
+              <Image className={styles.coverImg} src={project.cover} alt="" />
+            </div>
+            <div className={styles.coverTextContainer}>
+              <h1 className={styles.title}>{project.title}</h1>
+              <p className={styles.category}>{project.category}</p>
+              <p className={styles.shortDescription}>
+                {project.description.short}
+              </p>
+              <p className={styles.similar}>Want to build something similar?</p>
+              <Button fontSize={15} href="/contact" txt="Let's get to it!" />
+            </div>
+          </section>
+
+          <div style={{ height: 50 }} />
+
+          {/* What this project is about */}
+          <section className={styles.whatThisProjectIsContainer}>
+            <h2 className={styles.sectionTitle}>WHAT THIS PROJECT IS ABOUT</h2>
+            <p className={styles.whatThisProjectIs}>
+              {project.description.large}
+            </p>
+          </section>
+
+          <div style={{ height: 50 }} />
+
+          {/* Dev process */}
+          <section className={styles.devProcessContainer}>
+            <h2 className={styles.sectionTitle}>Development process</h2>
+            <div className={styles.devProcessHeadersContainer}>
+              {devProcessOptions.map((header) => (
+                <div
+                  className={styles.devProcessHeaderContainer}
+                  key={header.id}
+                  onClick={() => handleSelecHeader(header.id)}
+                >
+                  <h3
+                    className={`${styles.devProcessHeader} ${
+                      styles[
+                        header.id === selectedDevProcess.id
+                          ? "selectedHeader"
+                          : null
+                      ]
+                    }`}
+                  >
+                    {header.name}
+                  </h3>
+                  <div
+                    className={`${styles.devProcessHeaderUnderline} ${
+                      styles[
+                        header.id !== selectedDevProcess.id ? "hidden" : null
+                      ]
+                    }`}
+                  />
+                </div>
+              ))}
+            </div>
+            <div className={styles.devProcessContentContainer}>
+              <div className={styles.devProcessLeftContainer}>
+                {selectedDevProcess.id === "technologies" ? (
+                  <div className={styles.toolsUsedContainer}>
+                    {getTechnologies(
+                      project.developmentProcess.technologies.technologies
+                    ).map((tech) => (
+                      <div key={tech.name} className={styles.techContainer}>
+                        <h1 className={styles.techLogo}>{tech.logo({})}</h1>
+                        <h3 className={styles.techName}>{tech.name}</h3>
+                      </div>
+                    ))}
+                  </div>
+                ) : selectedDevProcess.id === "timeLine" ? (
+                  <div className={styles.timelineContainer}>
+                    <h1 className={styles.numberOfWeeks}>
+                      {project.developmentProcess.timeLine.weeks}
+                    </h1>
+                    <h3 className={styles.weeks}>Weeks</h3>
+                  </div>
+                ) : selectedDevProcess.id === "team" ? (
+                  <div className={styles.teamContainer}>
+                    {project.developmentProcess.team.members.map((member) => (
+                      <div className={styles.memberContainer} key={member.name}>
+                        <Image
+                          src={member.img}
+                          alt=""
+                          className={styles.memberImg}
+                        />
+                        <h3 className={styles.memberName}>{member.name}</h3>
+                      </div>
+                    ))}
+                  </div>
+                ) : selectedDevProcess.id === "deployment" ? (
+                  <div className={styles.deploymentContainer}>
+                    {project.developmentProcess.deployment.qr ? (
+                      <div className={styles.viewProjectContainer}>
+                        <Image
+                          src={project.developmentProcess.deployment.qr}
+                          alt=""
+                          className={styles.qr}
+                        />
+                        <a
+                          className={styles.viewProject}
+                          href={project.developmentProcess.deployment.link}
+                        >
+                          View project
+                        </a>
+                      </div>
+                    ) : (
+                      <p>This project is not publically available</p>
+                    )}
+                  </div>
+                ) : null}
+              </div>
+              <div className={styles.devProcessRightContainer}>
+                <p className={styles.devProcessDescription}>
+                  {
+                    project.developmentProcess[selectedDevProcess.id]
+                      .description
+                  }
+                </p>
+                <p className={styles.suggestion}>
+                  Do you have a suggestion to improve this project?
+                </p>
+                <Button href="/contact" fontSize={15} txt="Let me know it!" />
+              </div>
+            </div>
+          </section>
+
+          <div style={{ height: 50 }} />
+
+          {/* Features */}
+          <section className={styles.featuresSectionContainer}>
+            <h2 className={styles.sectionTitle}>Principal features</h2>
+            <div className={styles.featuresContainer}>
+              {project.features.map((feature) => {
+                const index = project.features.indexOf(feature);
+                return (
+                  <div
+                    key={index}
+                    className={`${styles.featureContainer} ${
+                      styles[index % 2 === 0 ? "featureLeft" : "featureRight"]
+                    }`}
+                  >
+                    <div
+                      className={`${styles.featureImgContainer} ${
+                        styles[index % 2 === 0 ? "imgLeft" : "imgRight"]
+                      }`}
+                    >
+                      <Image
+                        src={feature.img}
+                        alt=""
+                        className={styles.featureImg}
+                      />
+                    </div>
+                    <div className={styles.featureTxtContainer}>
+                      <h3 className={styles.featureName}>{feature.title}</h3>
+                      <p className={styles.featureDescription}>
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* Call to action */}
+          {/* What this project is about */}
+          <section className={styles.whatThisProjectIsContainer}>
+            <h2 className={styles.sectionTitle}>
+              WOULD YOU LIKE TO BUILD SOMETHING SIMILAR?
+            </h2>
+            <p className={styles.whatThisProjectIs}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed
+              ultricies suscipit, augue lorem interdum est, at auctor odio nibh
+              ut massa.
+            </p>
+            <Button fontSize={18} href="/contact" txt="Let's do it!" />
+          </section>
         </main>
       </Layout>
     </div>

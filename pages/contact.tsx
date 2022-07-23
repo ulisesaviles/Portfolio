@@ -141,7 +141,7 @@ export default function Contact() {
               {/* Submit */}
               <div className={styles.submitSectionContainer}>
                 <p className={styles.letsStart}>
-                  Let's start building something great!
+                  Let&apos;s start building something great!
                 </p>
                 <input type={"submit"} className={btnStyles.button} />
               </div>

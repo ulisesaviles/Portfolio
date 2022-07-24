@@ -7,7 +7,7 @@
   align-self: flex-start;
   max-width: calc(100vw - 50px);
   overflow-x: scroll;
-  justify-content: center;
+  justify-content: space-between;
 }
 .projectsCardsContainer::-webkit-scrollbar-thumb {
   background-color: rgb(230, 230, 230);

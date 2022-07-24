@@ -10,14 +10,17 @@ import Button from "./button";
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.imageSuperContainer}>
+      <div
+        className={styles.imageSuperContainer}
+        style={{ borderRadius: 12, overflow: "hidden" }}
+      >
         <div className={styles.imageContainer}>
           <Image
             src={project.cover}
             alt=""
             layout="fixed"
             height={200}
-            style={{ borderRadius: 12 }}
+            style={{ borderRadius: 12, overflow: "hidden" }}
           />
         </div>
       </div>

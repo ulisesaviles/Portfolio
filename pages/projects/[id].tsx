@@ -157,7 +157,7 @@ const Project = ({
                     ).map((tech) => (
                       <div key={tech.name} className={styles.techContainer}>
                         <h1 className={styles.techLogo}>{tech.logo({})}</h1>
-                        <h3 className={styles.techName}>{tech.name}</h3>
+                        <p className={styles.techName}>{tech.name}</p>
                       </div>
                     ))}
                   </div>

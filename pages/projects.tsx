@@ -109,7 +109,7 @@ export default function Projects() {
               {allTechnologies.map((tech) => (
                 <div key={tech.name} className={styles.tech}>
                   <h1 className={styles.techLogo}>{tech.logo({})}</h1>
-                  <h3 className={styles.techName}>{tech.name}</h3>
+                  <p className={styles.techName}>{tech.name}</p>
                 </div>
               ))}
             </div>

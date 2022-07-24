@@ -188,21 +188,23 @@
   margin: 0 0 30px;
   transition: var(--transition);
   min-width: min-content;
-}
-.techContainer:hover {
-  color: var(--fontPrimary);
-  transform: scale(1.1);
+  color: var(--fontSecondary);
 }
 .techLogo {
   margin: 0;
   font-size: 50px;
-  color: var(--fontSecondary);
+  color: inherit;
 }
 .techName {
   margin: 0;
   font-size: 14px;
   text-align: center;
-  color: var(--fontSecondary);
+  color: inherit;
+  font-family: var(--strongFont);
+}
+.techContainer:hover {
+  color: var(--fontPrimary);
+  transform: scale(1.1);
 }
 .timelineContainer {
   color: var(--fontSecondary);

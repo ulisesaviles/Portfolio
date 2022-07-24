@@ -354,6 +354,7 @@
   margin: 0;
   font-size: 16px;
   text-align: center;
+  font-family: var(--strongFont);
 }
 .tech:hover > .techName {
   color: var(--fontPrimary);

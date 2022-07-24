@@ -78,3 +78,7 @@
     max-width: calc(100vw - 50px);
   }
 }
+
+.container:last-child {
+  margin: 0 25px;
+}

@@ -26,7 +26,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </div>
       <div className={styles.txtContainer}>
         <h3 className={styles.title}>{project.title}</h3>
-        <h5 className={styles.category}>{project.category}</h5>
+        <p className={styles.category}>{project.category}</p>
         <h4 className={styles.type}>{project.type}</h4>
         <p className={styles.description}>{project.description.short}</p>
       </div>

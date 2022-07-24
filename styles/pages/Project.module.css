@@ -155,6 +155,7 @@
 }
 .devProcessLeftContainer {
   width: 40%;
+  transition: var(--transition);
 }
 .devProcessRightContainer {
   width: 55%;

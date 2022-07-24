@@ -2,6 +2,9 @@
 import { Project, ProjectSize } from "../types/projects";
 import { Technology, TechnologyName } from "../types/technologies";
 
+// HTTP
+import axios from "axios";
+
 // Import data
 import { allProjects } from "./projects";
 import { allTechnologies } from "./technologies";
@@ -40,4 +43,9 @@ export const getTechnologies = (names: TechnologyName[]) => {
     if (names.includes(technology.name)) arr.push(technology);
   }
   return arr;
+};
+
+// Queries
+export const query = async (method: string, data?: Object) => {
+  return await axios.post(`https://www.ulisesaviles.dev/api/${method}`, data);
 };

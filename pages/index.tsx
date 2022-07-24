@@ -134,7 +134,7 @@ export default function Home() {
                       className={styles.whatIDoItemContainer}
                       onClick={() => hanldeWhatIDo(index)}
                     >
-                      <h5
+                      <p
                         className={`${styles.whatIDoItem} ${
                           styles[
                             whatIDoSelectedIndex === index
@@ -144,7 +144,7 @@ export default function Home() {
                         }`}
                       >
                         {item.title}
-                      </h5>
+                      </p>
                       <div
                         className={`${styles.whatIdOUnderline} ${
                           styles[
@@ -179,7 +179,7 @@ export default function Home() {
               {allTechnologies.map((tech) => (
                 <div key={tech.name} className={styles.tech}>
                   <h1 className={styles.techLogo}>{tech.logo({})}</h1>
-                  <h5 className={styles.techName}>{tech.name}</h5>
+                  <p className={styles.techName}>{tech.name}</p>
                 </div>
               ))}
             </div>

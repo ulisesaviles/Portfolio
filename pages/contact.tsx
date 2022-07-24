@@ -20,14 +20,13 @@ import emailjs from "@emailjs/browser";
 
 // Icons
 import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from "react-icons/si";
-import { query } from "../config/helpers";
 
 // Main react component
 export default function Contact() {
   // Constants
-  const serviceID = process.env.EMAILJS_SERVICE_ID;
-  const templateID = process.env.EMAILJS_TEMPLATE_ID;
-  const publicKey = process.env.EMAILJS_PUBLIC_KEY;
+  const serviceID = "service_6favyzr";
+  const templateID = "portfolioContactForm";
+  const publicKey = "5WlNPqH9j2o7SvQqD";
   const [inputValues, setInputValues] = useState({
     name: "",
     company: "",
@@ -72,8 +71,7 @@ export default function Contact() {
     // Notificate User
     toast.promise(
       // Send email
-      query("sendEmail", inputValues),
-      // emailjs.send(serviceID, templateID, inputValues, publicKey),
+      emailjs.send(serviceID, templateID, inputValues, publicKey),
       {
         error: "There was an error sending your email😒",
         success: "Sent succesfully!🎉",

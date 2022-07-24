@@ -134,7 +134,17 @@ export default function Home() {
                       className={styles.whatIDoItemContainer}
                       onClick={() => hanldeWhatIDo(index)}
                     >
-                      <h4 className={styles.whatIDoItem}>{item.title}</h4>
+                      <h4
+                        className={`${styles.whatIDoItem} ${
+                          styles[
+                            whatIDoSelectedIndex === index
+                              ? "whatIDoItemSelected"
+                              : "whatIDoItemUnselected"
+                          ]
+                        }`}
+                      >
+                        {item.title}
+                      </h4>
                       <div
                         className={`${styles.whatIdOUnderline} ${
                           styles[

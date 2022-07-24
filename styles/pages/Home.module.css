@@ -207,6 +207,9 @@
   margin: 0;
   font-size: 20px;
 }
+.whatIDoItemUnselected {
+  color: var(--fontSecondary);
+}
 .whatIDoRightContainer {
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   background-color: var(--backgroundContainer);

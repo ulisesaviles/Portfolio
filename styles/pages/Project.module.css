@@ -186,7 +186,6 @@
   width: 26%;
   align-items: center;
   margin: 0 0 30px;
-  color: var(--fontSecondary);
   transition: var(--transition);
   min-width: min-content;
 }
@@ -197,11 +196,13 @@
 .techLogo {
   margin: 0;
   font-size: 50px;
+  color: var(--fontSecondary);
 }
 .techName {
   margin: 0;
   font-size: 14px;
   text-align: center;
+  color: var(--fontSecondary);
 }
 .timelineContainer {
   color: var(--fontSecondary);

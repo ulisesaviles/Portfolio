@@ -1,3 +1,6 @@
+// React imports
+import { FormEvent, useState } from "react";
+
 // NextJS imports
 import Head from "next/head";
 
@@ -12,11 +15,26 @@ import Layout from "../components/layout";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// Email sender
+import emailjs from "@emailjs/browser";
+
 // Icons
 import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from "react-icons/si";
 
 // Main react component
 export default function Contact() {
+  // Constants
+  const serviceID = process.env.EMAILJS_SERVICE_ID;
+  const templateID = process.env.EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.EMAILJS_PUBLIC_KEY;
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    company: "",
+    email: "",
+    city: "",
+    message: "",
+  });
+
   // Functions
   const handleSocialMediaClick = (
     socialMedia: "linkedin" | "github" | "whatsapp" | "mail"
@@ -42,6 +60,74 @@ export default function Contact() {
         progress: undefined,
       });
     }
+  };
+
+  const submitEmail = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Validate inputs
+    if (!validateInputs()) return;
+
+    // Notificate User
+    toast.promise(
+      // Send email
+      emailjs.send(serviceID, templateID, inputValues, publicKey),
+      {
+        error: "There was an error sending your email😒",
+        success: "Sent succesfully!🎉",
+        pending: "Sending",
+      },
+      {
+        position: "bottom-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+      }
+    );
+  };
+
+  const validateEmail = (email: string) => {
+    const emailRegex =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return emailRegex.test(email);
+  };
+
+  const validateInputs = (): boolean => {
+    let errorMessage: string;
+
+    // Message
+    if (inputValues.message.length < 5)
+      errorMessage = "Enter a message of at least 5 characters.";
+
+    // City
+    if (inputValues.city.length < 5)
+      errorMessage = "Enter your city and country correctly.";
+
+    // Email
+    if (!validateEmail(inputValues.email)) errorMessage = "Enter a valid email";
+
+    // Company
+    if (typeof inputValues.company !== "string")
+      errorMessage = "Enter the name of your company.";
+
+    // Name
+    if (inputValues.name.length < 3)
+      errorMessage = "Enter your name correctly.";
+
+    // Notificate error
+    if (errorMessage != undefined) {
+      toast.error(errorMessage, {
+        position: "bottom-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+      });
+      return false;
+    }
+
+    return true;
   };
 
   // JSX
@@ -99,21 +185,31 @@ export default function Contact() {
 
           {/* Form */}
           <section className={styles.formContainer}>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert("Submit");
-              }}
-            >
+            <form onSubmit={submitEmail}>
               {/* Name */}
               <h2 className={styles.inputName}>Your name</h2>
-              <input className={styles.input} placeholder="Enter your name" />
+              <input
+                className={styles.input}
+                placeholder="Enter your name"
+                onChange={(e) =>
+                  setInputValues({
+                    ...inputValues,
+                    name: e.target.value,
+                  })
+                }
+              />
 
               {/* Company */}
               <h2 className={styles.inputName}>Your company</h2>
               <input
                 className={styles.input}
-                placeholder="Enter the name of your company"
+                placeholder="(Optional)"
+                onChange={(e) =>
+                  setInputValues({
+                    ...inputValues,
+                    company: e.target.value,
+                  })
+                }
               />
 
               {/* Email */}
@@ -122,6 +218,12 @@ export default function Contact() {
                 className={styles.input}
                 placeholder="Enter your email to contact you"
                 type={"email"}
+                onChange={(e) =>
+                  setInputValues({
+                    ...inputValues,
+                    email: e.target.value,
+                  })
+                }
               />
 
               {/* City */}
@@ -129,6 +231,12 @@ export default function Contact() {
               <input
                 className={styles.input}
                 placeholder="Enter your city and country"
+                onChange={(e) =>
+                  setInputValues({
+                    ...inputValues,
+                    city: e.target.value,
+                  })
+                }
               />
 
               {/* Message */}
@@ -136,6 +244,12 @@ export default function Contact() {
               <textarea
                 className={`${styles.input} ${styles.textArea}`}
                 placeholder="Let me know why you are reaching out!"
+                onChange={(e) =>
+                  setInputValues({
+                    ...inputValues,
+                    message: e.target.value,
+                  })
+                }
               />
 
               {/* Submit */}

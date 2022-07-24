@@ -188,69 +188,79 @@ export default function Contact() {
             <form onSubmit={submitEmail}>
               {/* Name */}
               <h2 className={styles.inputName}>Your name</h2>
-              <input
-                className={styles.input}
-                placeholder="Enter your name"
-                onChange={(e) =>
-                  setInputValues({
-                    ...inputValues,
-                    name: e.target.value,
-                  })
-                }
-              />
+              <div className={styles.inputContainer}>
+                <input
+                  className={styles.input}
+                  placeholder="Enter your name"
+                  onChange={(e) =>
+                    setInputValues({
+                      ...inputValues,
+                      name: e.target.value,
+                    })
+                  }
+                />
+              </div>
 
               {/* Company */}
               <h2 className={styles.inputName}>Your company</h2>
-              <input
-                className={styles.input}
-                placeholder="(Optional)"
-                onChange={(e) =>
-                  setInputValues({
-                    ...inputValues,
-                    company: e.target.value,
-                  })
-                }
-              />
+              <div className={styles.inputContainer}>
+                <input
+                  className={styles.input}
+                  placeholder="(Optional)"
+                  onChange={(e) =>
+                    setInputValues({
+                      ...inputValues,
+                      company: e.target.value,
+                    })
+                  }
+                />
+              </div>
 
               {/* Email */}
               <h2 className={styles.inputName}>Your email</h2>
-              <input
-                className={styles.input}
-                placeholder="Enter your email to contact you"
-                type={"email"}
-                onChange={(e) =>
-                  setInputValues({
-                    ...inputValues,
-                    email: e.target.value,
-                  })
-                }
-              />
+              <div className={styles.inputContainer}>
+                <input
+                  className={styles.input}
+                  placeholder="Enter your email to contact you"
+                  type={"email"}
+                  onChange={(e) =>
+                    setInputValues({
+                      ...inputValues,
+                      email: e.target.value,
+                    })
+                  }
+                />
+              </div>
 
               {/* City */}
               <h2 className={styles.inputName}>City, country</h2>
-              <input
-                className={styles.input}
-                placeholder="Enter your city and country"
-                onChange={(e) =>
-                  setInputValues({
-                    ...inputValues,
-                    city: e.target.value,
-                  })
-                }
-              />
+              <div className={styles.inputContainer}>
+                <input
+                  className={styles.input}
+                  placeholder="Enter your city and country"
+                  onChange={(e) =>
+                    setInputValues({
+                      ...inputValues,
+                      city: e.target.value,
+                    })
+                  }
+                />
+              </div>
 
               {/* Message */}
               <h2 className={styles.inputName}>Message</h2>
-              <textarea
-                className={`${styles.input} ${styles.textArea}`}
-                placeholder="Let me know why you are reaching out!"
-                onChange={(e) =>
-                  setInputValues({
-                    ...inputValues,
-                    message: e.target.value,
-                  })
-                }
-              />
+              <div className={styles.inputContainer}>
+                <textarea
+                  className={`${styles.input} ${styles.textArea}`}
+                  placeholder="Let me know why you are reaching out!"
+                  onChange={(e) =>
+                    setInputValues({
+                      ...inputValues,
+                      message: e.target.value,
+                    })
+                  }
+                />
+              </div>
 
               {/* Submit */}
               <div className={styles.submitSectionContainer}>

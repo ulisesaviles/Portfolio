@@ -56,16 +56,19 @@
   font-size: 16px;
 }
 .input {
-  margin-bottom: 20px;
   border: 0;
   background-color: white;
   padding: 10px 20px;
-  border-radius: 10px;
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: calc(100% - 40px);
   font-family: SF-pro;
   font-size: 16px;
   transition: var(--transition);
+}
+.inputContainer {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .input:focus {
   outline: 1px dotted var(--fontSecondary);

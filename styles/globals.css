@@ -70,7 +70,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--fontPrimary);
+  /* color: var(--fontPrimary); */
   font-family: var(--strongFont);
 }
 h2 {

@@ -20,7 +20,7 @@ export type Project = {
   category: ProjectCategory;
   cover: StaticImageData;
   size: ProjectSize;
-  type: "mobile-app" | "web-app" | "static web site";
+  type: "mobile-app" | "web-app" | "static web site" | "console game";
   description: {
     short: string;
     large: string;

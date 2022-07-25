@@ -11,7 +11,7 @@ import Button from "../components/button";
 import ProjectCardsContainer from "../components/projectCardsContainer";
 
 // Data
-import { allTechnologies } from "../config/technologies";
+import { favTechnologies } from "../config/technologies";
 
 // Main react component
 export default function Projects() {
@@ -106,7 +106,7 @@ export default function Projects() {
               maintain. Some of them are to following:
             </p>
             <div className={styles.techsContainer}>
-              {allTechnologies.map((tech) => (
+              {favTechnologies.map((tech) => (
                 <div key={tech.name} className={styles.tech}>
                   <h1 className={styles.techLogo}>{tech.logo({})}</h1>
                   <p className={styles.techName}>{tech.name}</p>

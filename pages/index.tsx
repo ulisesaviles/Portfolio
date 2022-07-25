@@ -21,7 +21,7 @@ import me from "../public/assets/people/me.jpeg";
 import { sleep } from "../config/helpers";
 
 // Data
-import { allTechnologies } from "../config/technologies";
+import { favTechnologies } from "../config/technologies";
 
 // Main react component
 export default function Home() {
@@ -176,7 +176,7 @@ export default function Home() {
           <section className={styles.techContainer}>
             <h2 className={styles.sectionTitle}>My favorite technologies</h2>
             <div className={styles.techsContainer}>
-              {allTechnologies.map((tech) => (
+              {favTechnologies.map((tech) => (
                 <div key={tech.name} className={styles.tech}>
                   <h1 className={styles.techLogo}>{tech.logo({})}</h1>
                   <p className={styles.techName}>{tech.name}</p>

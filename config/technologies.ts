@@ -23,6 +23,7 @@ import {
   SiStripe,
   SiJirasoftware,
   SiClickup,
+  SiCplusplus,
 } from "react-icons/si";
 
 // Actual technologies
@@ -131,8 +132,39 @@ export const clickUp: Technology = {
   name: "ClickUp",
 };
 
+export const cPlusPlus: Technology = {
+  logo: SiCplusplus,
+  name: "C++",
+};
+
 // All of them
 export const allTechnologies: Technology[] = [
+  github,
+  firebaseCloudFunctions,
+  firebaseFirestore,
+  reactJS,
+  nextJS,
+  reactNative,
+  expo,
+  eas,
+  typeScript,
+  javaScript,
+  html,
+  css,
+  nodeJS,
+  yarn,
+  redux,
+  adobeXd,
+  adobePhotoshop,
+  python,
+  stripe,
+  jira,
+  clickUp,
+  cPlusPlus,
+];
+
+// Favs
+export const favTechnologies: Technology[] = [
   github,
   firebaseCloudFunctions,
   firebaseFirestore,

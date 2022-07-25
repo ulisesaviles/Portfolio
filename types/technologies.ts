@@ -23,7 +23,8 @@ export type TechnologyName =
   | "Stripe"
   | "Jira"
   | "ClickUp"
-  | "C++";
+  | "C++"
+  | "Vercel";
 
 export type Technology = {
   logo: IconType;

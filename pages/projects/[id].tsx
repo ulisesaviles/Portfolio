@@ -242,16 +242,18 @@ const Project = ({
                       styles[index % 2 === 0 ? "featureLeft" : "featureRight"]
                     }`}
                   >
-                    <div
-                      className={`${styles.featureImgContainer} ${
-                        styles[index % 2 === 0 ? "imgLeft" : "imgRight"]
-                      }`}
-                    >
-                      <Image
-                        src={feature.img}
-                        alt=""
-                        className={styles.featureImg}
-                      />
+                    <div className={styles.featureImgSupercontainer}>
+                      <div
+                        className={`${styles.featureImgContainer} ${
+                          styles[`featureImg_${feature.img.type}`]
+                        } ${styles[index % 2 === 0 ? "imgLeft" : "imgRight"]}`}
+                      >
+                        <Image
+                          src={feature.img.src}
+                          alt=""
+                          className={styles.featureImg}
+                        />
+                      </div>
                     </div>
                     <div className={styles.featureTxtContainer}>
                       <h3 className={styles.featureName}>{feature.title}</h3>

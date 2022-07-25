@@ -332,15 +332,24 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 0;
-  perspective: 100vw;
   align-items: center;
 }
-.featureImgContainer {
+.featureImgSupercontainer {
+  perspective: 100vw;
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featureImgContainer {
+  height: 100%;
   transform-style: preserve-3d;
   border-radius: 30px;
   display: flex;
   overflow: hidden;
+}
+.featureImg_phone {
+  max-width: calc(80vw * 0.2);
 }
 .imgLeft {
   transform: rotateY(20deg);
@@ -375,6 +384,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  .featureImgSupercontainer {
+    width: 100%;
+    max-width: calc(800px * 0.7);
+  }
   .featureImgContainer {
     transform: rotateY(0);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -382,6 +395,12 @@
     margin-bottom: 30px;
     max-width: calc(800px * 0.7);
     border-radius: 20px;
+  }
+  .featureImg_desktop {
+    width: 100%;
+  }
+  .featureImg_phone {
+    width: 50%;
   }
   .featureTxtContainer {
     width: 100%;

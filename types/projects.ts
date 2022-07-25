@@ -47,6 +47,9 @@ export type Project = {
   features: {
     title: string;
     description: string;
-    img: StaticImageData;
+    img: {
+      src: StaticImageData;
+      type: "phone" | "desktop";
+    };
   }[];
 };

@@ -20,14 +20,14 @@ export const tendrishDashboard: Project = {
   size: "large",
   description: {
     short:
-      "The Tendrish dashboard is a web-app made with ReactJS and a Firebase backend that lets Tendrish's nutritionists create and edit recipes, check their agenda and much more.",
+      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
     large:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie  orci, eget condimentum nisi consequat vitae.\nDonec lectus felis, varius quis bibendum eu, convallis nec eros. Nam ultricies interdum laoreet. Integer non est sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ut viverra sem. Mauris in tortor sit amet purus tristique accumsan.\nSuspendisse ac diam velit. Suspendisse tellus velit, cursus id mi at, commodo semper ante.",
+      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
   },
   developmentProcess: {
     technologies: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
       technologies: [
         "ReactJS",
         "TypeScript",
@@ -40,11 +40,10 @@ export const tendrishDashboard: Project = {
     timeLine: {
       weeks: 25,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
     },
     team: {
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+      description: "I developed this project on my own.",
       members: [
         {
           img: me,
@@ -54,48 +53,60 @@ export const tendrishDashboard: Project = {
     },
     deployment: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      link: "https://admin.tendrishmealplan.com/",
-      qr: tendrishImages.qr,
+        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
+      // link: "https://admin.tendrishmealplan.com/",
+      // qr: tendrishImages.qr,
     },
   },
   type: "web-app",
   features: [
     {
-      title: "APP USER'S STATS",
+      title: "APP'S PERFORMANCE'S STATS",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
       img: { src: tendrishImages.features.stats, type: "desktop" },
+    },
+    {
+      title: "CREATE INGREDIENTS",
+      description:
+        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
+      img: { src: tendrishImages.features.ingredients, type: "desktop" },
     },
     {
       title: "CREATE RECIPES",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
       img: { src: tendrishImages.features.createRecipe, type: "desktop" },
-    },
-    {
-      title: "CHECK THE ADMIN'S AGENDA",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.agenda, type: "desktop" },
     },
     {
       title: "VIEW EXISTING RECIPES",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
       img: { src: tendrishImages.features.recipeFinder, type: "desktop" },
     },
     {
-      title: "EDIT USER'S MEAL PLANS",
+      title: "Manage admin profiles",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.userFinder, type: "desktop" },
+        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
+      img: { src: tendrishImages.features.profiles, type: "desktop" },
     },
     {
       title: "CHECK THE ADMIN'S AGENDA",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "In the mobile app, users can make appointments with nutritionists, which consists of a video call were nutritionists gather more information about the user to personalize their meal plan according to their specific needs. In this page, nutritionists can check their agendas to look if they have appointments scheduled.",
       img: { src: tendrishImages.features.agenda, type: "desktop" },
+    },
+    {
+      title: "EDIT USER'S MEAL PLANS",
+      description:
+        "Once the appoint finishes, nutritionists can edit the user's meal plan to personalize it according to their needs. This page allows them to do that, as well as enter notes about their appointment and change other user's settings like the servings the should eat of each recipe.",
+      img: { src: tendrishImages.features.userFinder, type: "desktop" },
+    },
+    {
+      title: "Dark mode",
+      description:
+        "Working on the night? No problem! Just use the dark mode to work more comfortably (or if you just prefer to use it).",
+      img: { src: tendrishImages.features.darkMode, type: "desktop" },
     },
   ],
 };

@@ -273,10 +273,10 @@ const Project = ({
               WOULD YOU LIKE TO BUILD SOMETHING SIMILAR?
             </h2>
             <p className={styles.whatThisProjectIs}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed
-              ultricies suscipit, augue lorem interdum est, at auctor odio nibh
-              ut massa.
+              If you made it this far, I assume you are probably interested in
+              this project. I hoped you liked it! If you did, don't doubt in
+              contacting me to build something similar, I would be happy to hear
+              your idea develop it!
             </p>
             <Button fontSize={18} href="/contact" txt="Let's do it!" />
           </section>

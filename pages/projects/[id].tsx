@@ -205,7 +205,9 @@ const Project = ({
                         </a>
                       </div>
                     ) : (
-                      <p>This project is not publically available</p>
+                      <p className={styles.notPublic}>
+                        (This project is not publically available)
+                      </p>
                     )}
                   </div>
                 ) : null}

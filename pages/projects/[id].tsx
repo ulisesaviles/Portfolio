@@ -274,9 +274,9 @@ const Project = ({
             </h2>
             <p className={styles.whatThisProjectIs}>
               If you made it this far, I assume you are probably interested in
-              this project. I hoped you liked it! If you did, don't doubt in
-              contacting me to build something similar, I would be happy to hear
-              your idea and develop it!
+              this project. I hoped you liked it! If you did, don&apos;t doubt
+              in contacting me to build something similar, I would be happy to
+              hear your idea and develop it!
             </p>
             <Button fontSize={18} href="/contact" txt="Let's do it!" />
           </section>

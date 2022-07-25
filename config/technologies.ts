@@ -24,6 +24,7 @@ import {
   SiJirasoftware,
   SiClickup,
   SiCplusplus,
+  SiVercel,
 } from "react-icons/si";
 
 // Actual technologies
@@ -137,6 +138,11 @@ export const cPlusPlus: Technology = {
   name: "C++",
 };
 
+export const vercel: Technology = {
+  logo: SiVercel,
+  name: "Vercel",
+};
+
 // All of them
 export const allTechnologies: Technology[] = [
   github,
@@ -161,6 +167,7 @@ export const allTechnologies: Technology[] = [
   jira,
   clickUp,
   cPlusPlus,
+  vercel,
 ];
 
 // Favs
@@ -178,7 +185,7 @@ export const favTechnologies: Technology[] = [
   html,
   css,
   nodeJS,
-  yarn,
+  vercel,
   redux,
   adobeXd,
   adobePhotoshop,

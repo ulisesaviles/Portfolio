@@ -3,12 +3,15 @@ import { Project } from "../types/projects";
 
 // Assets
 import me from "../public/assets/people/me.jpeg";
+import acner from "../public/assets/people/acner.jpg";
 import tendrishImages from "../public/assets/projects/tendrishDashboard/index";
 import goFishImages from "../public/assets/projects/goFish/index";
 import wordSearchImages from "../public/assets/projects/wordSearch/index";
 import blackJackImages from "../public/assets/projects/blackjack/index";
+import chomskyImages from "../public/assets/projects/chomsky/index";
 
 // Actual projects
+// Big
 export const tendrishDashboard: Project = {
   id: "tendrishDashboard",
   title: "Tendrish dashobard",
@@ -62,41 +65,42 @@ export const tendrishDashboard: Project = {
       title: "APP USER'S STATS",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.stats,
+      img: { src: tendrishImages.features.stats, type: "desktop" },
     },
     {
       title: "CREATE RECIPES",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.createRecipe,
+      img: { src: tendrishImages.features.createRecipe, type: "desktop" },
     },
     {
       title: "CHECK THE ADMIN'S AGENDA",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.agenda,
+      img: { src: tendrishImages.features.agenda, type: "desktop" },
     },
     {
       title: "VIEW EXISTING RECIPES",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.recipeFinder,
+      img: { src: tendrishImages.features.recipeFinder, type: "desktop" },
     },
     {
       title: "EDIT USER'S MEAL PLANS",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.userFinder,
+      img: { src: tendrishImages.features.userFinder, type: "desktop" },
     },
     {
       title: "CHECK THE ADMIN'S AGENDA",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.agenda,
+      img: { src: tendrishImages.features.agenda, type: "desktop" },
     },
   ],
 };
 
+// Medium
 export const turfmasters: Project = {
   id: "turfmasters",
   title: "Turfmasters website",
@@ -143,94 +147,110 @@ export const turfmasters: Project = {
       title: "Brand-friendly design code",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.stats,
+      img: { src: tendrishImages.features.stats, type: "desktop" },
     },
     {
       title: "Responsiveness",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.createRecipe,
+      img: { src: tendrishImages.features.createRecipe, type: "desktop" },
     },
     {
       title: "Product catalog",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.agenda,
+      img: { src: tendrishImages.features.agenda, type: "desktop" },
     },
     {
       title: "Multiple languages",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.recipeFinder,
+      img: { src: tendrishImages.features.recipeFinder, type: "desktop" },
     },
     {
       title: "contact form",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.userFinder,
+      img: { src: tendrishImages.features.userFinder, type: "desktop" },
     },
   ],
 };
 
+// Small
 export const chomsky: Project = {
   id: "chomsky",
   title: "Chomsky normal form tutorial",
   category: "Small school project",
-  cover: tendrishImages.cover,
+  cover: chomskyImages.cover,
   size: "small",
   description: {
     short:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate purus.",
-    large:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie  orci, eget condimentum nisi consequat vitae.\nDonec lectus felis, varius quis bibendum eu, convallis nec eros. Nam ultricies interdum laoreet. Integer non est sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ut viverra sem. Mauris in tortor sit amet purus tristique accumsan.\nSuspendisse ac diam velit. Suspendisse tellus velit, cursus id mi at, commodo semper ante.",
+      "A step by step guide in how to turn a context-free grammar into it's Chomsky normal form.",
+    large: `This project explains a complex computer science concept (more accurately, one of automata theory). When you have a context-free grammar, you may want to "normalize" its form to garantee that all the rules are in a certain format. That's why the Chomsky's normal form exists. This project explains how to transform any free-context grammar into it's Chomsky's normal form.`,
   },
   developmentProcess: {
     technologies: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      technologies: ["Next.js", "Github", "TypeScript"],
+        "This project was made using the TypeScript programming language with the Next.js reatc framework to build web apps. Github was used to control versions of the program. Vercel was used to host the app and make it avialable online.",
+      technologies: ["Next.js", "Github", "TypeScript", "Vercel"],
     },
     timeLine: {
       weeks: 0.5,
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "This project was pretty straight-forward. Since it is a single-page site and I used the tech stack I like the most, It could be developed in just a couple of days.",
     },
     team: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "The web-app was fully developed by me, but a friend (my teammate in the assignment) helped me with some of the videos in the app.",
       members: [
         {
           img: me,
           name: "Me",
         },
+        {
+          img: acner,
+          name: "Abner Silva",
+        },
       ],
     },
     deployment: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      link: "https://ulisesaviles.github.io/TurfMasters/contact/es",
-      // qr: me,
+        "This project was deployed into vercel, since I used their Next.js react framework and they work great together.",
+      link: "https://chomsky-normal-form.vercel.app/",
+      qr: chomskyImages.qr,
     },
   },
   type: "static web site",
   features: [
     {
-      title: "Explanatory videos",
+      title: "General explanation",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.stats,
+        "This site has the objective of explaining users a pretty complex topic. Therefore, the site starts giving users a general explanation of it.",
+      img: { src: chomskyImages.features.general, type: "desktop" },
+    },
+    {
+      title: "Step by step guide",
+      description:
+        "This problem is usually solved with a series of 5 steps that, if followed correctly, guarantee the correct result in all cases. Therefore, this site is structured in this way. Each step has a written explanation, a video explanation, and a short quiz.",
+      img: { src: chomskyImages.features.steps, type: "desktop" },
+    },
+    {
+      title: "Video explanations",
+      description:
+        "Most people appreciate visual explanations. That's why we decided to include a video explaining each step in detail and with examples.",
+      img: { src: chomskyImages.features.video, type: "desktop" },
     },
     {
       title: "Interactive quizes with each video",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.createRecipe,
+        "Once the users read the explanation and watched the video they are expected to understand the step, but it is not always the case. This site includes a short quiz to make sure that the user understood the topic.",
+      img: { src: chomskyImages.features.quiz, type: "desktop" },
     },
     {
       title: "Responsiveness",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: tendrishImages.features.agenda,
+        "Need to quickly refresh the topic? No problem! This site looks great wether you visit it from your phone, laptop or tablet!",
+      img: { src: chomskyImages.features.responsiveness, type: "phone" },
     },
   ],
 };
@@ -279,19 +299,19 @@ export const wordSearch: Project = {
     {
       title: "Enter the coordinates of your word",
       description: `When users start the game, the need to find the words from the word bank. If they do, they enter the coordinates from the first and last letter (As: "A1-C1").`,
-      img: wordSearchImages.features.default,
+      img: { src: wordSearchImages.features.default, type: "desktop" },
     },
     {
       title: "Watch it colored!",
       description:
         "If the coordinates that the used entered contained a valid word, it will be colored in yellow!",
-      img: wordSearchImages.features.colored,
+      img: { src: wordSearchImages.features.colored, type: "desktop" },
     },
     {
       title: "Hide scrambled leters",
       description:
         "Are you having problems to find words? No problem, you can hide the scrambled letters running the other script contained in the repository.",
-      img: wordSearchImages.features.hidden,
+      img: { src: wordSearchImages.features.hidden, type: "desktop" },
     },
   ],
 };
@@ -341,49 +361,49 @@ export const blackjack: Project = {
       title: "Enter the ammount of dollars you want to bet!",
       description:
         "At the start of the game, users are given 500 dollars to bet. They can choose any ammount to bet.",
-      img: blackJackImages.features.ammountToBet,
+      img: { src: blackJackImages.features.ammountToBet, type: "desktop" },
     },
     {
       title: "Read the instructions",
       description:
         "Since this game's menu has a lot of options, it has an instruction set to allow users to understand the game and all the available options.",
-      img: blackJackImages.features.instrucciones,
+      img: { src: blackJackImages.features.instrucciones, type: "desktop" },
     },
     {
       title: "Watch your hand",
       description:
         "Once you place your bet, you and the dealer are given 2 cards each, but you cannot see one of the dealer's. So you must choose a good strategy based on the available information!",
-      img: blackJackImages.features.watch,
+      img: { src: blackJackImages.features.watch, type: "desktop" },
     },
     {
       title: "Get another card",
       description:
         "Falling short? Get another card! If you are lower than 21, you can always hit for a new card (hoping no to pass 21!).",
-      img: blackJackImages.features.hit,
+      img: { src: blackJackImages.features.hit, type: "desktop" },
     },
     {
       title: "Double down!",
       description:
         "Feeling lucky? Double down! You double your bet and are given another card, which you will stay with. Good luck!",
-      img: blackJackImages.features.double,
+      img: { src: blackJackImages.features.double, type: "desktop" },
     },
     {
       title: "Stand",
       description:
         "You got a great play? Stay! Once you stay, you cannot get another card, and the dealer's cards are shown.",
-      img: blackJackImages.features.stand,
+      img: { src: blackJackImages.features.stand, type: "desktop" },
     },
     {
       title: "Surrender",
       description:
         "Your hand is not looking good? No problem, surrender! If you surrender the turn is over but you only loose half of the money you bet",
-      img: blackJackImages.features.surrender,
+      img: { src: blackJackImages.features.surrender, type: "desktop" },
     },
     {
       title: "Watch results",
       description:
         "Once the game is over, the dealer's cards are shown. If you got closer to 21 than him (under it), you double your money!",
-      img: blackJackImages.features.results,
+      img: { src: blackJackImages.features.results, type: "desktop" },
     },
   ],
 };
@@ -432,31 +452,31 @@ export const goFish: Project = {
       title: "Choose the ammout of players",
       description:
         "The game can be played by 2-4 players. They will play turns to play as if it was the real game, and the program will hide the cars of the players not in turn.",
-      img: goFishImages.features.choosePlayers,
+      img: { src: goFishImages.features.choosePlayers, type: "desktop" },
     },
     {
       title: "Choose where to draw your card from",
       description:
         "The players have the option to take cards from the deck or the pool, in which the deck is filled with 4 cards of each number and suffled as if it was a real one, and the pool has the card that the last player dropped. The pool is empty at the start of the game.",
-      img: goFishImages.features.whereToTake,
+      img: { src: goFishImages.features.whereToTake, type: "desktop" },
     },
     {
       title: "Choose to use a play",
       description:
         "Once you take a card from the pool or deck, the program will detect if you have a valid play (royal flush, full house, three of a kind, etc). If you do, it will ask you if you want to play with it, if not, then you will keep playing as normal.",
-      img: goFishImages.features.choosePlay,
+      img: { src: goFishImages.features.choosePlay, type: "desktop" },
     },
     {
       title: "Remove a card from your hand",
       description:
         "Once you choose your play (or not), you have to choose which card to remove from your hand. If you have a valid play and you choose to use it, the program will not let you remove a card that is part of that play.",
-      img: goFishImages.features.cardToThrow,
+      img: { src: goFishImages.features.cardToThrow, type: "desktop" },
     },
     {
       title: "Watch the result!",
       description:
         "Once a player chooses to use a play, it will be the last chance of the rest of the players to come out with something better. Once the last round is over, the program will print the winner.",
-      img: goFishImages.features.results,
+      img: { src: goFishImages.features.results, type: "desktop" },
     },
   ],
 };

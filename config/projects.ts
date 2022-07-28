@@ -10,6 +10,7 @@ import wordSearchImages from "../public/assets/projects/wordSearch/index";
 import blackJackImages from "../public/assets/projects/blackjack/index";
 import chomskyImages from "../public/assets/projects/chomsky/index";
 import turfImages from "../public/assets/projects/turfmasters/index";
+import stimbImages from "../public/assets/projects/stimb/index";
 
 // Actual projects
 // Big
@@ -192,7 +193,7 @@ export const turfmasters: Project = {
     {
       title: "Contact form",
       description:
-        "This page allows users to contect turfmasters via phone, email or directly via an email form in this page.",
+        "This page allows users to contact turfmasters via phone, email or directly via an email form in this page.",
       img: { src: turfImages.features.contact, type: "desktop" },
     },
     {
@@ -200,6 +201,110 @@ export const turfmasters: Project = {
       description:
         "As stated, Turfmasters wanted to reach more clients, that's why it was important to allow anyone to check your site at any time, in any device.",
       img: { src: turfImages.features.responsiveness, type: "phone" },
+    },
+  ],
+};
+
+export const stimb: Project = {
+  id: "stimb",
+  title: "STIMB's website",
+  category: "Medium-size free-lance project",
+  cover: stimbImages.cover,
+  size: "medium",
+  description: {
+    short:
+      "STIMB is a company that focuses in improving the efficiency of block machines. This website allows them to reach more clients and let them know the advantages of working with them.",
+    large:
+      "STIMB is a very succesfull company whose mission is to improve the efficiency of block machines. They achive this through various services, they restore, maintain, buy and sell block machines and their spare parts, as well as many other services specific to the client's needs. Currently the website is fully developed, but the images have not beet provided by STIMB yet.",
+  },
+  developmentProcess: {
+    technologies: {
+      description:
+        "This project was developed in Next.js, a react framework delivers better SEO performance. It was designed in AdobeXD, programmed in JavaScript, hosted in Vercel and the code is stored in a github repository.",
+      technologies: [
+        "ReactJS",
+        "Github",
+        "Next.js",
+        "Vercel",
+        "JavaScript",
+        "Adobe Xd",
+      ],
+    },
+    timeLine: {
+      weeks: 2,
+      description: "This project was desined and developed in two weeks.",
+    },
+    team: {
+      description: "I developed this project in my own.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+    },
+    deployment: {
+      description:
+        "This project is hosted in Vercel, and is currently available at the automatic vercel's domain, since it has not been officially deployed.",
+      link: "https://ulisesaviles.github.io/TurfMasters/",
+      qr: stimbImages.qr,
+    },
+  },
+  type: "static web site",
+  features: [
+    {
+      title: "Home screen",
+      description:
+        "STIMB is a company with more than 30 years of experience improving the efficiency of block machines. That experience has allowed them to deliver best-in-class service. Their home page tells users just that.",
+      img: { src: stimbImages.features.home, type: "desktop" },
+    },
+    {
+      title: "Services",
+      description:
+        "As stated, STIMB delivers a lot of services depending on the client's specific needs, but the two most important for them are machine restoration and purchase and sell of machines and spare parts. This page describes both services with great detail, and suggests users to get in touch in case they need something else.",
+      img: { src: stimbImages.features.services, type: "desktop" },
+    },
+    {
+      title: "Products",
+      description:
+        "This pages allows users to see all of STIMB's products as a simple grid, where they can see a photo and general details about the product. They can click the details button in case they are interested.",
+      img: { src: stimbImages.features.products, type: "desktop" },
+    },
+    {
+      title: "Product's details",
+      description:
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shonw this page, where they can find all of the details espacifications and photos.",
+      img: { src: stimbImages.features.product, type: "desktop" },
+    },
+    {
+      title: "Galery",
+      description:
+        "Not sure about the company's performance? Check out this page! Here users can find lots of great projects where STIMB did a great job!",
+      img: { src: stimbImages.features.galery, type: "desktop" },
+    },
+    {
+      title: "About us",
+      description:
+        "Want to know more about the compay? In this page STIMB shares all their characteristics that define them.",
+      img: { src: stimbImages.features.about, type: "desktop" },
+    },
+    {
+      title: "Contact form",
+      description:
+        "This page allows users to contact STIMB via phone, email, their social media or directly via an email form in this page.",
+      img: { src: stimbImages.features.contact, type: "desktop" },
+    },
+    {
+      title: "Modern design",
+      description:
+        "STIMB is fundamentally a tech company, that's why it was important for them to have a clean and modern design code, which was inspired by apple's macbook air m1's web page.",
+      img: { src: stimbImages.features.modernDesign, type: "desktop" },
+    },
+    {
+      title: "Responsiveness",
+      description:
+        "As stated, STIMB wanted to reach more clients, that's why it was important to allow anyone to check your site at any time, in any device.",
+      img: { src: stimbImages.features.responsiveness, type: "phone" },
     },
   ],
 };
@@ -515,6 +620,7 @@ export const allProjects: Project[] = [
   tendrishDashboard,
   // Medium
   turfmasters,
+  stimb,
   // Small
   chomsky,
   wordSearch,

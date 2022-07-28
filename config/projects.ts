@@ -9,6 +9,7 @@ import goFishImages from "../public/assets/projects/goFish/index";
 import wordSearchImages from "../public/assets/projects/wordSearch/index";
 import blackJackImages from "../public/assets/projects/blackjack/index";
 import chomskyImages from "../public/assets/projects/chomsky/index";
+import turfImages from "../public/assets/projects/turfmasters/index";
 
 // Actual projects
 // Big
@@ -116,13 +117,13 @@ export const turfmasters: Project = {
   id: "turfmasters",
   title: "Turfmasters website",
   category: "Medium-size free-lance project",
-  cover: tendrishImages.cover,
+  cover: turfImages.cover,
   size: "medium",
   description: {
     short:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate purus.",
+      "Turfmasters is a company that sells turf, synthetic grass and related products. Their website allows them to reach more clients and show them all their products and services in detail.",
     large:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie  orci, eget condimentum nisi consequat vitae.\nDonec lectus felis, varius quis bibendum eu, convallis nec eros. Nam ultricies interdum laoreet. Integer non est sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce ut viverra sem. Mauris in tortor sit amet purus tristique accumsan.\nSuspendisse ac diam velit. Suspendisse tellus velit, cursus id mi at, commodo semper ante.",
+      "Turfmasters is a very successfull company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the images have not beet provided by turfmasters yet.",
   },
   developmentProcess: {
     technologies: {
@@ -132,12 +133,10 @@ export const turfmasters: Project = {
     },
     timeLine: {
       weeks: 2,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+      description: "This project was desined and developed in two weeks.",
     },
     team: {
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+      description: "I developed this project in my own.",
       members: [
         {
           img: me,
@@ -147,42 +146,60 @@ export const turfmasters: Project = {
     },
     deployment: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      link: "https://ulisesaviles.github.io/TurfMasters/contact/es",
-      // qr: me,
+        "This project is hosted in github pages, and is currently available at the automatic github's domain, since it has not been officially deployed.",
+      link: "https://ulisesaviles.github.io/TurfMasters/",
+      qr: turfImages.qr,
     },
   },
   type: "static web site",
   features: [
     {
-      title: "Brand-friendly design code",
+      title: "Home screen",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.stats, type: "desktop" },
-    },
-    {
-      title: "Responsiveness",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.createRecipe, type: "desktop" },
+        "Turfmasters is a great company to work with, who's products are certified by FIFA, and that has worked for great projects. Their home page summarizes all that!",
+      img: { src: turfImages.features.home, type: "desktop" },
     },
     {
       title: "Product catalog",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.agenda, type: "desktop" },
+        "Turfmasters has lots of different products! (much more than I thought, at least). The product catalouge allows them to showcase all of them in a simple grid where clients can view their photo, description and recommendation. If clients whant to, they can click on the respective details button.",
+      img: { src: turfImages.features.catalouge, type: "desktop" },
     },
     {
-      title: "Multiple languages",
+      title: "Product's details",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.recipeFinder, type: "desktop" },
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shonw this page, where they can find all of the details espacifications and photos.",
+      img: { src: turfImages.features.product, type: "desktop" },
     },
     {
-      title: "contact form",
+      title: "Installation services",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
-      img: { src: tendrishImages.features.userFinder, type: "desktop" },
+        "Don't worry about the installation, just choose the product you want and turfmasters will take care of the rest.",
+      img: { src: turfImages.features.installation, type: "desktop" },
+    },
+    {
+      title: "Clients",
+      description:
+        "Not sure about the company's performance? Check out this page! Here users can find lots of great projects where turfmasters did a great job!",
+      img: { src: turfImages.features.clients, type: "desktop" },
+    },
+    {
+      title: "About us",
+      description:
+        "Want to know more about the compay? In this page turfmasters share who they are, as well as their mission and distinctive characteristics.",
+      img: { src: turfImages.features.about, type: "desktop" },
+    },
+    {
+      title: "Contact form",
+      description:
+        "This page allows users to contect turfmasters via phone, email or directly via an email form in this page.",
+      img: { src: turfImages.features.contact, type: "desktop" },
+    },
+    {
+      title: "Responsiveness",
+      description:
+        "As stated, Turfmasters wanted to reach more clients, that's why it was important to allow anyone to check your site at any time, in any device.",
+      img: { src: turfImages.features.responsiveness, type: "phone" },
     },
   ],
 };

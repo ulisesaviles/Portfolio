@@ -11,6 +11,7 @@ import blackJackImages from "../public/assets/projects/blackjack/index";
 import chomskyImages from "../public/assets/projects/chomsky/index";
 import turfImages from "../public/assets/projects/turfmasters/index";
 import stimbImages from "../public/assets/projects/stimb/index";
+import regressionImages from "../public/assets/projects/regression/index";
 
 // Actual projects
 // Big
@@ -246,7 +247,7 @@ export const stimb: Project = {
     deployment: {
       description:
         "This project is hosted in Vercel, and is currently available at the automatic vercel's domain, since it has not been officially deployed.",
-      link: "https://ulisesaviles.github.io/TurfMasters/",
+      link: "https://stimb.vercel.app/",
       qr: stimbImages.qr,
     },
   },
@@ -305,6 +306,78 @@ export const stimb: Project = {
       description:
         "As stated, STIMB wanted to reach more clients, that's why it was important to allow anyone to check your site at any time, in any device.",
       img: { src: stimbImages.features.responsiveness, type: "phone" },
+    },
+  ],
+};
+
+export const regressionCalculator: Project = {
+  id: "regressionCalculator",
+  title: "Regression Calculator",
+  category: "Medium-size school project",
+  cover: regressionImages.cover,
+  size: "medium",
+  description: {
+    short:
+      "This project allows users to get a mathematical function that fits the input coordinates.",
+    large:
+      "This project consists of a regression calculator, where users enter coordinates and select a regression method, which can be polinomial, logaritmic, exponential, power or auto-detect (minimizes the error). Then, users can read the mathemetical function, the error (the average distance between the given coordinates and the function) and a graph that descrives the function and shows the input coordinates. This regression calculator allow users to make predictions of future events based on existing data.",
+  },
+  developmentProcess: {
+    technologies: {
+      description:
+        "This project was developed in Vanilla JavaScript, and it's hosted in github pages.",
+      technologies: ["JavaScript", "HTML 5", "CSS 3", "Github"],
+    },
+    timeLine: {
+      weeks: 0.5,
+      description: "This project was desined and developed in three days.",
+    },
+    team: {
+      description: "I developed this project in my own.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+    },
+    deployment: {
+      description: "This project is hosted in github. Check it out!",
+      link: "https://ulisesaviles.github.io/Regression-Calculator/",
+      qr: regressionImages.qr,
+    },
+  },
+  type: "static web site",
+  features: [
+    {
+      title: "Auto-detect",
+      description:
+        "This option lets users to just enter the coordinates and they will be given the function that minimizes the error (the distance between the function and the given coordinates). This should be used wisely to avoid overfitting.",
+      img: { src: regressionImages.features.auto, type: "desktop" },
+    },
+    {
+      title: "Polinomial regression",
+      description:
+        "Calculates the mathematical function that better fits the inputs using the polinomial regression method.",
+      img: { src: regressionImages.features.poli, type: "desktop" },
+    },
+    {
+      title: "Logaritmic regression",
+      description:
+        "Calculates the mathematical function that better fits the inputs using the logaritmic regression method.",
+      img: { src: regressionImages.features.loga, type: "desktop" },
+    },
+    {
+      title: "Exponential regression",
+      description:
+        "Calculates the mathematical function that better fits the inputs using the exponential regression method.",
+      img: { src: regressionImages.features.expo, type: "desktop" },
+    },
+    {
+      title: "Power regression",
+      description:
+        "Calculates the mathematical function that better fits the inputs using the power regression method.",
+      img: { src: regressionImages.features.power, type: "desktop" },
     },
   ],
 };
@@ -621,6 +694,7 @@ export const allProjects: Project[] = [
   // Medium
   turfmasters,
   stimb,
+  regressionCalculator,
   // Small
   chomsky,
   wordSearch,

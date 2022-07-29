@@ -31,8 +31,8 @@ export default function Projects() {
             <p className={styles.description}>
               Every project I develop has de purpouse of helping people achieve
               better results. If you are looking for someone to develop the
-              tipping point of your company, oh boy I'm the one you are looking
-              for. Check out some of my projects and
+              tipping point of your company, oh boy I&apos;m the one you are
+              looking for. Check out some of my projects and
               <Link href="/contact">
                 <a className={styles.aInTxt}> contact me after that! </a>
               </Link>

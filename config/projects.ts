@@ -133,7 +133,7 @@ export const tendrishApp: Project = {
   developmentProcess: {
     technologies: {
       description:
-        "This app's front-end was fully developed using react native with expo-cli and EAS. It was programmed in JavaScript, but later I migrated it to TypeScript to improve scalability. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+        "This is a multi-platform app (works for android, iOS and the web). The front-end was fully developed using react native with expo-cli and EAS. It was programmed in JavaScript, but later I migrated it to TypeScript to improve scalability. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
       technologies: [
         "React native",
         "Expo",
@@ -273,75 +273,116 @@ export const liveChatApp: Project = {
   size: "large",
   description: {
     short:
-      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+      "This app was the final project my app development class. This app allows users to create an account, add friends, approve friend requests, chat with them and even call them via audio or video call!",
     large:
-      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+      'As stated, this app was developed for my app development class in may 2022. It was a great project since my teammate and I already had experience building apps, therefore this project (and the whole class) allowed us to give structure to our knowledge and fully understand the full development process (not just coding). This app allows users to create accounts or log in, to add friends and approve requests, to chat and video call them and many more great features! The name "Live chat app" comes from the fact that all happens in real time, via gRPC and WebRTC.',
   },
   developmentProcess: {
     technologies: {
       description:
-        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+        "This is a multi-platform app (works for android, iOS and the web). It was developed in react native with a workflow managed by Expo, and it was programmed using TypeScript. It has no hackend, the app communicates directly with the database with firestore rules as the security layer. We used ClickUp to manage the development process.",
       technologies: [
         "React native",
         "TypeScript",
         "Github",
-        "Cloud functions",
+        "Expo",
         "Firestore",
-        "NodeJS",
+        "ClickUp",
       ],
     },
     timeLine: {
-      weeks: 25,
+      weeks: 3,
       description:
-        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+        "This part was finished in three weeks. It could have been much less, but getting WebRTC (the communication protocol for the video call) to work was quite complicated to do in an expo managed workflow.",
     },
     team: {
-      description: "I developed this project on my own.",
+      description:
+        "I love to work with skilled people, Abner is one of them. He took care of the chat and the video call, while I developed the authentication module, the friends management, the come screen and the profile screen. We managed the development process using ClickUp.",
       members: [
         {
           img: me,
           name: "Me",
         },
+        {
+          img: acner,
+          name: "Abner Silva",
+        },
       ],
     },
     deployment: {
       description:
-        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
-      // link: "https://admin.tendrishmealplan.com/",
-      // qr: tendrishImages.qr,
+        "This project is published in expo. It can be runned in expo go.",
+      link: "https://expo.dev/@ulisesaviles/Live-chat-app",
+      qr: chatImages.qr,
     },
   },
   type: "mobile-app",
   features: [
     {
-      title: "APP'S PERFORMANCE'S STATS",
+      title: "Welcome screen",
       description:
-        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
-      img: { src: investImages.features.home, type: "phone" },
+        "wlcome to Live chat app! This screen tells user what the app is about and some of its key features.",
+      img: { src: chatImages.features.welcome, type: "phone" },
     },
     {
-      title: "CREATE INGREDIENTS",
+      title: "Log in",
       description:
-        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
-      img: { src: investImages.features.store, type: "phone" },
+        "If users already have an account, they can log into the app entering their email and password. If not, they will need to sign up.",
+      img: { src: chatImages.features.login, type: "phone" },
     },
     {
-      title: "CREATE RECIPES",
+      title: "Sign up",
       description:
-        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
-      img: { src: investImages.features.property, type: "phone" },
+        "In this screen, new users can create an account entering the required information. The user data is stored in firestore using firebase authentication to store it safely.",
+      img: { src: chatImages.features.signUp, type: "phone" },
     },
     {
-      title: "VIEW EXISTING RECIPES",
+      title: "Add friend",
       description:
-        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
-      img: { src: investImages.features.events, type: "phone" },
+        "Once users enter the app, they will not have any friends to chat with, so they will come to this screen to add new friends. Sending a friend request is as simpre as pressing a user in the list!",
+      img: { src: chatImages.features.addFriend, type: "phone" },
     },
     {
-      title: "Manage admin profiles",
+      title: "Friend requests",
       description:
-        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
-      img: { src: investImages.features.light, type: "phone" },
+        "If your friends fided you through the add friends screen, their requests will appear here! Press any of them, and a menu will pop up, asking if you want to aprove it or delete it.",
+      img: { src: chatImages.features.requests, type: "phone" },
+    },
+    {
+      title: "Friends",
+      description:
+        "This creen displays all you friends! if you press in any of them, a menu will pup up asking if you want to delete them from your friends list.",
+      img: { src: chatImages.features.friends, type: "phone" },
+    },
+    {
+      title: "Chats",
+      description:
+        "Once you have friends to chat with, they will apprear available in this creen to chat with them. If the conversation has not started yet, the app encourages you to saye hi to them!",
+      img: { src: chatImages.features.chats, type: "phone" },
+    },
+    {
+      title: "Chat",
+      description:
+        "This creen allows users to actually chat between them. They are able to send text messages or images. This screen allows users to delete the chat's messages if they press the three dots on the top right corner and select that option.",
+      img: { src: chatImages.features.chat, type: "phone" },
+    },
+    {
+      title: "Video call",
+      description:
+        "The video call screen uses allows users to communicate with their friends using camera (or not), using voide (or not) and using their front and back cammeras. This feature is only available in Android, since we had to pay for the apple's developer program to make it work on iOS (since WebRTC is a native module that is not supported in expo go).",
+      img: { src: chatImages.features.call, type: "phone" },
+    },
+    {
+      title: "Settings",
+      description:
+        "In this creen, users can view their photo and username. They can press any of the options presented. They can press the photo or the edit button to change their profile photo, which is shown to other users.",
+      img: { src: chatImages.features.profile, type: "phone" },
+    },
+    {
+      title: "Edit profile",
+      description:
+        "If users press the edit profile option, they will navigate to this screen, where they can change their password and name.",
+      img: { src: chatImages.features.editProfile, type: "phone" },
     },
   ],
 };

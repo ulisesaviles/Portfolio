@@ -29,13 +29,16 @@ export default function Projects() {
           <section className={styles.coverSection}>
             <h1 className={styles.title}>Projects</h1>
             <p className={styles.description}>
-              I am 20 year old full-stack developer with bast experience with
-              frameworks and tools like NextJS, React native and firebase that
-              allow me to create entire ecosystems of apps. I am a computer
-              science student and a lifelong learner.
+              Every project I develop has de purpouse of helping people achieve
+              better results. If you are looking for someone to develop the
+              tipping point of your company, oh boy I'm the one you are looking
+              for. Check out some of my projects and
+              <Link href="/contact">
+                <a className={styles.aInTxt}> contact me after that! </a>
+              </Link>
             </p>
-            <p className={styles.interested}>Interested?</p>
-            <Button fontSize={18} href="/contact" txt="Contact me!" />
+            {/* <p className={styles.interested}>Interested?</p>
+            <Button fontSize={18} href="/contact" txt="Contact me!" /> */}
           </section>
 
           <div style={{ height: 30 }} />

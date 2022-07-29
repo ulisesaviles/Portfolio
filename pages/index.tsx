@@ -33,32 +33,32 @@ export default function Home() {
     {
       title: "Discovery & Product Design",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+        "From zero to hero. Once you tell me your idea and discuse the details, I will shape, design and build the blueprint of your project. Most of my clients get very excited when they see the design of their dream project for the first time.",
     },
     {
       title: "Web Development",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+        "My intention is not to develop a beautiful web-app, but a great, functional (and beautiful) web solution. The difference relies in the fact that I'm always focused on the problem that the product is solving, not just in development tasks.",
     },
     {
       title: "Mobile apps",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+        "Great customers deserve great products. I love developing apps that provide users with great experiences that they will love. Just tell me your idea and I'll take care of the product design, ux, ui, fullstack development, deployment and maintenance.",
     },
     {
       title: "Ecommerce",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+        "It's not the twentieth century anymore, and now people love shopping from the confort of their home. Real developers are able to achieve a shopping experience that is comparable or better than it's physical counterpart. I will let your customer know why your products are worth every cent!",
     },
     {
       title: "Enterprise Solutions",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+        "I will research on ways to optimize your company's processes and procedures to help you achive better results! I'll take care of everything so you can focus on scaling your business.",
     },
     {
       title: "Support & Maintenance",
       decription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus libero aliquam commodo suscipit. Sed elementum, ipsum sed ultricies suscipit, augue lorem interdum est, at auctor odio nibh ut massa. Sed lobortis blandit vehicula. Etiam ex eros, dignissim ut nulla vitae, sagittis faucibus augue. Morbi nec metus sem. Duis ut nisl vel elit tempor cursus vitae eu mi. Pellentesque purus diam, accumsan non mattis in, blandit sit amet nisl.",
+        "Maintaining and supporting you product is my priority. With a well-maintained product, you will have peace of mind knowing that your product is on good hands.",
     },
   ];
   const [whatIDo, setWhatIDo] = useState(whatIDoData[whatIDoSelectedIndex]);

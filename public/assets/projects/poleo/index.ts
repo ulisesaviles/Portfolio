@@ -1,13 +1,14 @@
 // Imports
-import cobro from "./cobro.jpg";
-import create from "./create.jpg";
 import home from "./home.jpg";
+import txt from "./txt.jpg";
 import img from "./img.jpg";
 import money from "./money.jpg";
-import more from "./more.jpg";
+import cobro from "./cobro.jpg";
 import myPolls from "./myPolls.jpg";
-import txt from "./txt.jpg";
+import create from "./create.jpg";
+import more from "./more.jpg";
 import cover from "./cover.jpg";
+import qr from "./qr.jpg";
 
 // Exporter
 const Images = {
@@ -22,5 +23,6 @@ const Images = {
     myPolls,
     txt,
   },
+  qr,
 };
 export default Images;

@@ -395,17 +395,17 @@ export const poleo: Project = {
   size: "large",
   description: {
     short:
-      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+      "This is a mass polling app, where users can create polls (surveys) and watch the results live while it is being answered by other users. Or, users can just answer other user's polls to get paid.",
     large:
-      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+      "Poleo is a mass polling app intended to serve goverments, big and small companies or any individual that wants to know the public opinion about a topic. Once a poll is created, the creator pays a fee (depending on the number of questions and users to answer it). Most of the fee is used to pay other users to answer the poll, that way users stay incentivized to keep answering more and more polls.",
   },
   developmentProcess: {
     technologies: {
       description:
-        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+        "This is a multi-platform app (works for android, iOS and the web). The front-end was fully developed using react native with expo-cli and EAS. It was programmed in JavaScript. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
       technologies: [
         "React native",
-        "TypeScript",
+        "Expo",
         "Github",
         "Cloud functions",
         "Firestore",
@@ -413,57 +413,80 @@ export const poleo: Project = {
       ],
     },
     timeLine: {
-      weeks: 25,
+      weeks: 4,
       description:
-        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+        "Poleo's first beta came out after around a month of development. Most of the app works pretty well, but it's just missing the payments module.",
     },
     team: {
-      description: "I developed this project on my own.",
+      description:
+        "I developed most of the app, but since it was a big project, we outsourced some of the coding to a friend of us to finish faster.",
       members: [
         {
           img: me,
           name: "Me",
         },
+        {
+          img: acner,
+          name: "Abner Silva",
+        },
       ],
     },
     deployment: {
       description:
-        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
-      // link: "https://admin.tendrishmealplan.com/",
-      // qr: tendrishImages.qr,
+        "This project is published in expo. It can be runned in expo go.",
+      link: "https://expo.dev/@ulisesaviles/poleo-mobile-app",
+      qr: poleoImages.qr,
     },
   },
   type: "mobile-app",
   features: [
     {
-      title: "APP'S PERFORMANCE'S STATS",
+      title: "Home screen",
       description:
-        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
-      img: { src: investImages.features.home, type: "phone" },
+        "Once users enter the app, they are shown all the available polls that they can answer. This way, it is easier for users to just start answering polls if they have a few minutes free. Each poll has the name and photo of the creator, the estimated time that will take users to answer it and the ammount of money that they will get if they answer it.",
+      img: { src: poleoImages.features.home, type: "phone" },
     },
     {
-      title: "CREATE INGREDIENTS",
+      title: "Answer a poll",
       description:
-        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
-      img: { src: investImages.features.store, type: "phone" },
+        "Once users press in any available poll, they navigate to the poll screen, were they answer each question and get paid at the end. Questions are always multi-choice, they are never open questions to ensure that they can be answered faster and the results can be quantified.",
+      img: { src: poleoImages.features.txt, type: "phone" },
     },
     {
-      title: "CREATE RECIPES",
+      title: "Image question",
       description:
-        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
-      img: { src: investImages.features.property, type: "phone" },
+        "Question's options can be text or images. This is how an image question looks like!",
+      img: { src: poleoImages.features.img, type: "phone" },
     },
     {
-      title: "VIEW EXISTING RECIPES",
+      title: "Record",
       description:
-        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
-      img: { src: investImages.features.events, type: "phone" },
+        "When users answer polls, they get paid. This screen allows them to know their current balance, a graph that measures their performance and the total ammount that they have earned. Additionally, users can view the last polls that they answered.",
+      img: { src: poleoImages.features.money, type: "phone" },
     },
     {
-      title: "Manage admin profiles",
+      title: "Withdrawals",
       description:
-        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
-      img: { src: investImages.features.light, type: "phone" },
+        "Users can withdraw their money anytime, by the method they preffer. This feature has not been impementet yet, but I included it to make the idea it clear.",
+      img: { src: poleoImages.features.cobro, type: "phone" },
+    },
+    {
+      title: "My polls",
+      description:
+        "If users created polls in the past, they can view them in this screen. They are separated between the ones that are still being answered and the ones that are done. If users want to create a poll, they can press the create poll bottom at the right top of the screen.",
+      img: { src: poleoImages.features.myPolls, type: "phone" },
+    },
+    {
+      title: "Create poll",
+      description:
+        "This screen allows users to create polls. They enter the title, the number of users that will answer it (which affects the price of the poll) and a few additional settings. Then they start entering the questions, where its options can be text or images. If you want to make sure that only certain type of users answer the poll, then enter a filter question. It will kick out all users that selected an option that was not the correct one. Once the poll is finished, the user presses the 'next' button to pay for it, and that's it!",
+      img: { src: poleoImages.features.create, type: "phone" },
+    },
+    {
+      title: "More",
+      description:
+        "Poleo is a pretty straight-forward app. However, this screen displays all additional screens and options like edditing the profile and entering payment methods.",
+      img: { src: poleoImages.features.more, type: "phone" },
     },
   ],
 };

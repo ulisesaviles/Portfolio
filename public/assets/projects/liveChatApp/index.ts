@@ -1,7 +1,7 @@
 // Imports
 import welcome from "./welcome.jpg";
 import login from "./login.jpg";
-import signUp from "./signUp.jpg";
+import signUp from "./signup.jpg";
 import addFriend from "./addFriend.jpg";
 import requests from "./requests.jpg";
 import friends from "./friends.jpg";

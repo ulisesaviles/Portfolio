@@ -1,15 +1,15 @@
 // Imports
-import welcome from "./welcome.png";
-import login from "./login.png";
-import signUp from "./signUp.png";
-import addFriend from "./addFriend.png";
-import requests from "./requests.png";
-import friends from "./friends.png";
-import chats from "./chats.png";
-import chat from "./chat.png";
-import call from "./call.png";
-import profile from "./profile.png";
-import editProfile from "./editProfile.png";
+import welcome from "./welcome.jpg";
+import login from "./login.jpg";
+import signUp from "./signUp.jpg";
+import addFriend from "./addFriend.jpg";
+import requests from "./requests.jpg";
+import friends from "./friends.jpg";
+import chats from "./chats.jpg";
+import chat from "./chat.jpg";
+import call from "./call.jpg";
+import profile from "./profile.jpg";
+import editProfile from "./editProfile.jpg";
 import cover from "./cover.jpg";
 import qr from "./qr.jpg";
 

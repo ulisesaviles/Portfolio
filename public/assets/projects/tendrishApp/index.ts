@@ -1,21 +1,21 @@
 // Imports
-import home from "./home.png";
-import simpleSearch from "./simpleSearch.png";
-import complexSearch from "./complexSearch.png";
-import recipe from "./recipe.png";
-import nutriValues from "./nutriValues.png";
-import mealPlan from "./mealPlan.png";
-import changeRecipes from "./changeRecipes.png";
-import grocery from "./grocery.png";
-import more from "./more.png";
-import profile from "./profile.png";
-import scheduleAppo from "./scheduleAppo.png";
-import likedRecipes from "./likedRecipes.png";
-import exchanges from "./exchanges.png";
-import famPlan from "./famPlan.png";
-import settings from "./settings.png";
+import home from "./home.jpg";
+import simpleSearch from "./simpleSearch.jpg";
+import complexSearch from "./complexSearch.jpg";
+import recipe from "./recipe.jpg";
+import nutriValues from "./nutriValues.jpg";
+import mealPlan from "./mealPlan.jpg";
+import changeRecipes from "./changeRecipes.jpg";
+import grocery from "./grocery.jpg";
+import more from "./more.jpg";
+import profile from "./profile.jpg";
+import scheduleAppo from "./scheduleAppo.jpg";
+import likedRecipes from "./likedRecipes.jpg";
+import exchanges from "./exchanges.jpg";
+import famPlan from "./famPlan.jpg";
+import settings from "./settings.jpg";
 import cover from "./cover.jpg";
-import qr from "./qr.png";
+import qr from "./qr.jpg";
 
 // Exporter
 const Images = {

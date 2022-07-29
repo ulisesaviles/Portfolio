@@ -1,9 +1,9 @@
 // Imports
-import events from "./events.png";
-import home from "./home.png";
-import light from "./light.png";
-import property from "./property.png";
-import store from "./store.png";
+import events from "./events.jpg";
+import home from "./home.jpg";
+import light from "./light.jpg";
+import property from "./property.jpg";
+import store from "./store.jpg";
 import turnIntoCommodity from "./turnIntoCommodity.png";
 import cover from "./cover.jpg";
 import debt from "./debt.png";

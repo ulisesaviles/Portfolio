@@ -1162,7 +1162,7 @@ export const allProjects: Project[] = [
   tendrishDashboard,
   poleo,
   liveChatApp,
-  // investNGrow,
+  investNGrow,
   // Medium
   turfmasters,
   stimb,

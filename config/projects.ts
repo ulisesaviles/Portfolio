@@ -126,27 +126,27 @@ export const tendrishApp: Project = {
   size: "large",
   description: {
     short:
-      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+      "Tendrish is an app where users have a meal plan with in-house recipes desined by nutritionists. The meal plan can be customizes by users. Recipe's ingredients are added to a grocery list.",
     large:
-      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+      "Tendrish is a multi-app echosystem, in which nutritionists use a dashboard and users use this app. This project allows users to have a fully customizable meal plan, which means that users can modify any recipe in their meal plan according to their needs. All recipes include its nutritional information. All recipe's ingredients are automatically added to a grocery list. Users can search for recipes in a simple seach by name, or a complex search, which searches by ingredients to include, exclude, tags and name. Users are able to schedule appointments with nutritionists via the app. Users can create family plans to allow their relatives to look at and edit their meal plan. And much more features!",
   },
   developmentProcess: {
     technologies: {
       description:
-        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+        "This app's front-end was fully developed using react native with expo-cli and EAS. It was programmed in JavaScript, but later I migrated it to TypeScript to improve scalability. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
       technologies: [
         "React native",
+        "Expo",
         "TypeScript",
         "Github",
         "Cloud functions",
         "Firestore",
-        "NodeJS",
       ],
     },
     timeLine: {
       weeks: 25,
       description:
-        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the nutritionist's dashboard because it was develped in paralell.",
     },
     team: {
       description: "I developed this project on my own.",
@@ -159,42 +159,108 @@ export const tendrishApp: Project = {
     },
     deployment: {
       description:
-        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
-      // link: "https://admin.tendrishmealplan.com/",
-      // qr: tendrishImages.qr,
+        "This app is available for download in Apple's App Store and Google's Play Store.",
+      link: "https://apps.apple.com/ph/app/tendrish/id1602580443?platform=iphone",
+      qr: tendrishAppImages.qr,
     },
   },
   type: "mobile-app",
   features: [
     {
-      title: "APP'S PERFORMANCE'S STATS",
+      title: "home screen",
       description:
-        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
-      img: { src: investImages.features.home, type: "phone" },
+        'Tendrish home screen works as a "discover" page, where users are shown random seassonal recipes that can be added to their meal plan (if their meal plan is vegetarian, then the homescreen only displays vegetarian recipes).',
+      img: { src: tendrishAppImages.features.home, type: "phone" },
     },
     {
-      title: "CREATE INGREDIENTS",
+      title: "Simple search",
       description:
-        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
-      img: { src: investImages.features.store, type: "phone" },
+        "If users click the search button in the home's header, they will navigate to this screen. In a simple search, users can search recipes by name.",
+      img: { src: tendrishAppImages.features.simpleSearch, type: "phone" },
     },
     {
-      title: "CREATE RECIPES",
+      title: "More Search filters",
       description:
-        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
-      img: { src: investImages.features.property, type: "phone" },
+        'With more search filters users can select tags, ingredients to include and ingredients to exclude. For example, if you want to cook something baked that uses apple but you hate bananas, you can select the "baked" tag, include apple and exclude banana in your complex search!',
+      img: { src: tendrishAppImages.features.complexSearch, type: "phone" },
     },
     {
-      title: "VIEW EXISTING RECIPES",
+      title: "recipe",
       description:
-        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
-      img: { src: investImages.features.events, type: "phone" },
+        "Once users press in any recipe in any part of the app, they will navigate to this screen. Here, users can read the recipes ingredient's, instructions, like it, dislike it, and much more!",
+      img: { src: tendrishAppImages.features.recipe, type: "phone" },
     },
     {
-      title: "Manage admin profiles",
+      title: "Nutritional values",
       description:
-        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
-      img: { src: investImages.features.light, type: "phone" },
+        "Not sure how healthy a recipe is? not problem! You can view any recipe's nutritional information.",
+      img: { src: tendrishAppImages.features.nutriValues, type: "phone" },
+    },
+    {
+      title: "Meal plan",
+      description:
+        "The app's most important screen. Here, users can look at their meal plan in any date! Press a recipe to look at it, press options to remove or change it, or click an empty space to add a recipe!",
+      img: { src: tendrishAppImages.features.mealPlan, type: "phone" },
+    },
+    {
+      title: "Change/add recipes",
+      description:
+        "Didn't like a recipe in the meal plan? Change it! Once you choose to change or add a recipe, you will navigate to this screen, where you will only find recipes that can be exchanged by the one you didn't like, that means, for example, that you cannot have a snack recipe as a breakfast. You can also make ",
+      img: { src: tendrishAppImages.features.changeRecipes, type: "phone" },
+    },
+    {
+      title: "Grocery list",
+      description:
+        "Once your meal plan is ready, all the ingredients in a date range will be added to a grocery list, to make it eassier for you to buy them!",
+      img: { src: tendrishAppImages.features.grocery, type: "phone" },
+    },
+    {
+      title: "More",
+      description:
+        "Tought that was all? There's much more to Tendrish! In this screen, users can select more specific functions and screens.",
+      img: { src: tendrishAppImages.features.more, type: "phone" },
+    },
+    {
+      title: "Profile",
+      description:
+        "Tendrish users can personalize their profile adding their information. This data is only shown between members of a family plan and to Tendrish nutritionists in the dashboard.",
+      img: { src: tendrishAppImages.features.profile, type: "phone" },
+    },
+    {
+      title: "Schedule appointment",
+      description:
+        "In this screen, premium users can schedule an appointment with a Tendrish nutritionist. In the appointment, the nutritionist will ask questions to customize the user's meal plan according to their specific needs.",
+      img: { src: tendrishAppImages.features.scheduleAppo, type: "phone" },
+    },
+    {
+      title: "Liked recipes",
+      description:
+        "Everyone has their favourite recipes. In this screen, users can access their liked recipes to add them to their meal plan easily!",
+      img: { src: tendrishAppImages.features.likedRecipes, type: "phone" },
+    },
+    {
+      title: "Ingredient exchanges",
+      description:
+        "Are you having problems to find an ingredient, or don't like it at all? This screen displays the ingredient's equivalence to other ingredients of the same category. This allow users to have the same nutritional value in their meal plan, but with different ingredients.",
+      img: { src: tendrishAppImages.features.exchanges, type: "phone" },
+    },
+    {
+      title: "Familiar plan",
+      description:
+        "Sometimes, cooking is a team work. In Tendrish users can create a family plan, where all users in a family share the same meal plan and grocery list!",
+      img: { src: tendrishAppImages.features.famPlan, type: "phone" },
+    },
+    {
+      title: "Settings",
+      description:
+        "Everyone has specific needs! In this screen, users can customize their meal plan easily and fast. They can choose the type (vegetaria, without red meat, without sea-food, etc.), exclude ingredients, and many more settings. This screen also includes language and plan settings",
+      img: { src: tendrishAppImages.features.settings, type: "phone" },
+    },
+    {
+      title: "And much more!",
+      description:
+        "Tendrish is a big app. This features are the most prominent, but the app has many more screens, features and surprises for all it's users!",
+      img: { src: tendrishAppImages.cover, type: "desktop" },
     },
   ],
 };

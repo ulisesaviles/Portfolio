@@ -1,10 +1,10 @@
 // Imports
-import events from "./events.PNG";
-import home from "./home.PNG";
-import light from "./light.PNG";
-import property from "./property.PNG";
-import store from "./store.PNG";
-import turnIntoCommodity from "./turnIntoCommodity.PNG";
+import events from "./events.png";
+import home from "./home.png";
+import light from "./light.png";
+import property from "./property.png";
+import store from "./store.png";
+import turnIntoCommodity from "./turnIntoCommodity.png";
 import cover from "./cover.jpg";
 
 // Exporter

@@ -499,74 +499,84 @@ export const investNGrow: Project = {
   size: "large",
   description: {
     short:
-      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+      "This is a finantial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctiates depending in real-life-based events.",
     large:
-      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+      "This is a finantial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctiates depending in real-life-based events. The fun comes when users notice that purchasing properties and having them as a commodity may improve their life quality for a few rounds, but they soon will be ruined finantially. Turning them into assets is what makes them trully reach (like in real life). And of course, users can use debt to buy properties (which has de porpoise of showing how much faster is to get rich if you use debt the right way).",
   },
   developmentProcess: {
     technologies: {
       description:
-        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+        "This is a multi-platform app (works for android, iOS and the web). It was built in react native in an expo-managed workflow using JavaScript. It was designed using Adobe Xd. The code is stored in a github repository. The code needs to have a redux store to let components communicate between them.",
       technologies: [
         "React native",
-        "TypeScript",
+        "JavaScript",
         "Github",
-        "Cloud functions",
-        "Firestore",
-        "NodeJS",
+        "Adobe Xd",
+        "Expo",
+        "Redux",
       ],
     },
     timeLine: {
-      weeks: 25,
+      weeks: 3,
       description:
-        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+        "This project was fully built in three weeks. Not all the assets were hand crafted, that would have taken more time.",
     },
     team: {
-      description: "I developed this project on my own.",
+      description:
+        "I developed this project with the help of a classmate. He hand crafted some of the assets like the cybertruck and downloaded others like the expensive properties. Appart from that, I designed and coded the app in my own.",
       members: [
         {
           img: me,
           name: "Me",
         },
+        {
+          img: acner,
+          name: "Abner",
+        },
       ],
     },
     deployment: {
       description:
-        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
-      // link: "https://admin.tendrishmealplan.com/",
-      // qr: tendrishImages.qr,
+        "This project is published in expo. It can be runned in expo go.",
+      link: "https://expo.dev/@ulisesaviles/invest-n-grow",
+      qr: investImages.qr,
     },
   },
   type: "mobile-app",
   features: [
     {
-      title: "APP'S PERFORMANCE'S STATS",
+      title: "Home page",
       description:
-        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
-      img: { src: investImages.features.home, type: "phone" },
+        "In the home page, users can view their progress indicators at the top, which tells how close or far users are from a great life quality and herritage, as well as how much debt they have (they loose if the debt reaches 100M and have not enough money to oay for it). Then, users can view their properties in detail to find out how well they are doing. At the bottom, users can fin their properties as a list divided by assets and commodities.",
+      img: { src: investImages.features.debt, type: "phone" },
     },
     {
-      title: "CREATE INGREDIENTS",
+      title: "Turn a property into an asset or commodity",
       description:
-        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
+        "Once a users buy a property, they can turn it into an asset to increase their herritage or leave it as a commodity to increase their life quality.",
+      img: { src: investImages.features.turnIntoCommodity, type: "phone" },
+    },
+    {
+      title: "Property store",
+      description: "The store is the place where users can buy new properties.",
       img: { src: investImages.features.store, type: "phone" },
     },
     {
-      title: "CREATE RECIPES",
+      title: "Property details",
       description:
-        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
+        "Before buying a property, users should check out the property's stats to make sure they are making a good investment (in case they are buying it as an asset).",
       img: { src: investImages.features.property, type: "phone" },
     },
     {
-      title: "VIEW EXISTING RECIPES",
+      title: "Events",
       description:
-        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
+        "People get rich with time as their properties produce positive cashflow or produce capital gains. This game not only allows for time to pass (which increases debt), but it has several real-life-based events that directly impact the value and cashflow or all properties with multipliers.",
       img: { src: investImages.features.events, type: "phone" },
     },
     {
-      title: "Manage admin profiles",
+      title: "Light mode",
       description:
-        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
+        "Want to play in the sunlight? No problem! Play on light mode to play during day light!",
       img: { src: investImages.features.light, type: "phone" },
     },
   ],

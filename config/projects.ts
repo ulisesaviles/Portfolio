@@ -13,6 +13,9 @@ import turfImages from "../public/assets/projects/turfmasters/index";
 import stimbImages from "../public/assets/projects/stimb/index";
 import regressionImages from "../public/assets/projects/regression/index";
 import investImages from "../public/assets/projects/investNGrow/index";
+import tendrishAppImages from "../public/assets/projects/tendrishApp/index";
+import poleoImages from "../public/assets/projects/poleo/index";
+import chatImages from "../public/assets/projects/liveChatApp/index";
 
 // Actual projects
 // Big
@@ -115,11 +118,11 @@ export const tendrishDashboard: Project = {
   ],
 };
 
-export const investNGrow: Project = {
-  id: "investNGrow",
-  title: "Invest N' Grow!",
-  category: "Large school project",
-  cover: investImages.cover,
+export const tendrishApp: Project = {
+  id: "tendrishApp",
+  title: "Tendrish app",
+  category: "Large free-lance project",
+  cover: tendrishAppImages.cover,
   size: "large",
   description: {
     short:
@@ -132,7 +135,7 @@ export const investNGrow: Project = {
       description:
         "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
       technologies: [
-        "ReactJS",
+        "React native",
         "TypeScript",
         "Github",
         "Cloud functions",
@@ -161,7 +164,250 @@ export const investNGrow: Project = {
       // qr: tendrishImages.qr,
     },
   },
-  type: "web-app",
+  type: "mobile-app",
+  features: [
+    {
+      title: "APP'S PERFORMANCE'S STATS",
+      description:
+        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
+      img: { src: investImages.features.home, type: "phone" },
+    },
+    {
+      title: "CREATE INGREDIENTS",
+      description:
+        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
+      img: { src: investImages.features.store, type: "phone" },
+    },
+    {
+      title: "CREATE RECIPES",
+      description:
+        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
+      img: { src: investImages.features.property, type: "phone" },
+    },
+    {
+      title: "VIEW EXISTING RECIPES",
+      description:
+        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
+      img: { src: investImages.features.events, type: "phone" },
+    },
+    {
+      title: "Manage admin profiles",
+      description:
+        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
+      img: { src: investImages.features.light, type: "phone" },
+    },
+  ],
+};
+
+export const liveChatApp: Project = {
+  id: "liveChatApp",
+  title: "Live chat app",
+  category: "Large school project",
+  cover: chatImages.cover,
+  size: "large",
+  description: {
+    short:
+      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+    large:
+      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+  },
+  developmentProcess: {
+    technologies: {
+      description:
+        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+      technologies: [
+        "React native",
+        "TypeScript",
+        "Github",
+        "Cloud functions",
+        "Firestore",
+        "NodeJS",
+      ],
+    },
+    timeLine: {
+      weeks: 25,
+      description:
+        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+    },
+    team: {
+      description: "I developed this project on my own.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+    },
+    deployment: {
+      description:
+        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
+      // link: "https://admin.tendrishmealplan.com/",
+      // qr: tendrishImages.qr,
+    },
+  },
+  type: "mobile-app",
+  features: [
+    {
+      title: "APP'S PERFORMANCE'S STATS",
+      description:
+        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
+      img: { src: investImages.features.home, type: "phone" },
+    },
+    {
+      title: "CREATE INGREDIENTS",
+      description:
+        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
+      img: { src: investImages.features.store, type: "phone" },
+    },
+    {
+      title: "CREATE RECIPES",
+      description:
+        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
+      img: { src: investImages.features.property, type: "phone" },
+    },
+    {
+      title: "VIEW EXISTING RECIPES",
+      description:
+        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
+      img: { src: investImages.features.events, type: "phone" },
+    },
+    {
+      title: "Manage admin profiles",
+      description:
+        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
+      img: { src: investImages.features.light, type: "phone" },
+    },
+  ],
+};
+
+export const poleo: Project = {
+  id: "poleo",
+  title: "Poleo",
+  category: "Large free-lance project",
+  cover: poleoImages.cover,
+  size: "large",
+  description: {
+    short:
+      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+    large:
+      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+  },
+  developmentProcess: {
+    technologies: {
+      description:
+        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+      technologies: [
+        "React native",
+        "TypeScript",
+        "Github",
+        "Cloud functions",
+        "Firestore",
+        "NodeJS",
+      ],
+    },
+    timeLine: {
+      weeks: 25,
+      description:
+        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+    },
+    team: {
+      description: "I developed this project on my own.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+    },
+    deployment: {
+      description:
+        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
+      // link: "https://admin.tendrishmealplan.com/",
+      // qr: tendrishImages.qr,
+    },
+  },
+  type: "mobile-app",
+  features: [
+    {
+      title: "APP'S PERFORMANCE'S STATS",
+      description:
+        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
+      img: { src: investImages.features.home, type: "phone" },
+    },
+    {
+      title: "CREATE INGREDIENTS",
+      description:
+        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category, aditional information and needs to be able to sum them in a grocery list.",
+      img: { src: investImages.features.store, type: "phone" },
+    },
+    {
+      title: "CREATE RECIPES",
+      description:
+        "Once the ingredients were uploaded, nutritionists are ready to create recipes. They enter general information about the recipe, then add the preparation process, and finally optional data like notes and hashtags.",
+      img: { src: investImages.features.property, type: "phone" },
+    },
+    {
+      title: "VIEW EXISTING RECIPES",
+      description:
+        "Once recipes were created, Nutritionists can view them to check their data as it will be displayed in the app. They also can hide it from the app's users, make it available from non-premium users, edit and delete it.",
+      img: { src: investImages.features.events, type: "phone" },
+    },
+    {
+      title: "Manage admin profiles",
+      description:
+        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permissions to do it. In this page, admins with permisions can view all admin's non-private data and edit it (like their zoom call link, their referral code, their schedule for appointments, etc), as well as measure their performance.",
+      img: { src: investImages.features.light, type: "phone" },
+    },
+  ],
+};
+
+export const investNGrow: Project = {
+  id: "investNGrow",
+  title: "Invest N' Grow!",
+  category: "Large school project",
+  cover: investImages.cover,
+  size: "large",
+  description: {
+    short:
+      "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
+    large:
+      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments schedules via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+  },
+  developmentProcess: {
+    technologies: {
+      description:
+        "This web-app's front-end was made with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+      technologies: [
+        "React native",
+        "TypeScript",
+        "Github",
+        "Cloud functions",
+        "Firestore",
+        "NodeJS",
+      ],
+    },
+    timeLine: {
+      weeks: 25,
+      description:
+        "Tendrish was finished in around 25 weeks (counting designing and prototyping), however, this timeline includes the developement of the user's mobile app because it was develped in paralell.",
+    },
+    team: {
+      description: "I developed this project on my own.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+    },
+    deployment: {
+      description:
+        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
+      // link: "https://admin.tendrishmealplan.com/",
+      // qr: tendrishImages.qr,
+    },
+  },
+  type: "mobile-app",
   features: [
     {
       title: "APP'S PERFORMANCE'S STATS",
@@ -772,7 +1018,10 @@ export const goFish: Project = {
 // All projects
 export const allProjects: Project[] = [
   // Large
+  tendrishApp,
   tendrishDashboard,
+  poleo,
+  liveChatApp,
   investNGrow,
   // Medium
   turfmasters,

@@ -866,7 +866,7 @@ export const chomsky: Project = {
   developmentProcess: {
     technologies: {
       description:
-        "This project was made using the TypeScript programming language with the Next.js reatc framework to build web apps. Github was used to control versions of the program. Vercel was used to host the app and make it avialable online.",
+        "This project was made using the TypeScript programming language with the Next.js react framework to build web apps. Github was used to control versions of the program. Vercel was used to host the app and make it avialable online.",
       technologies: ["Next.js", "Github", "TypeScript", "Vercel"],
     },
     timeLine: {
@@ -906,17 +906,17 @@ export const chomsky: Project = {
     {
       title: "Step by step guide",
       description:
-        "This problem is usually solved with a series of 5 steps that, if followed correctly, guarantee the correct result in all cases. Therefore, this site is structured in this way. Each step has a written explanation, a video explanation, and a short quiz.",
+        "This problem is usually solved with a series of 5 steps that, if followed correctly, guarantee the correct result in all cases. Therefore, this site is structured in this way. Each step has a written explanation, a video explanation and a short quiz.",
       img: { src: chomskyImages.features.steps, type: "desktop" },
     },
     {
       title: "Video explanations",
       description:
-        "Most people appreciate visual explanations. That's why we decided to include a video explaining each step in detail and with examples.",
+        "Most people appreciate visual explanations. That's why we decided to include a video explaining each step in detail with examples.",
       img: { src: chomskyImages.features.video, type: "desktop" },
     },
     {
-      title: "Interactive quizes with each video",
+      title: "Interactive quizes with each step",
       description:
         "Once the users read the explanation and watched the video they are expected to understand the step, but it is not always the case. This site includes a short quiz to make sure that the user understood the topic.",
       img: { src: chomskyImages.features.quiz, type: "desktop" },

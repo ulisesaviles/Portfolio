@@ -126,7 +126,7 @@ export const tendrishApp: Project = {
   size: "large",
   description: {
     short:
-      "Tendrish is an app where users have a meal plan with in-house recipes desined by nutritionists. The meal plan can be customizes by users. Recipe's ingredients are added to a grocery list.",
+      "Tendrish is an app where users have a meal plan with in-house recipes designed by nutritionists. The meal plan can be customizes by users. Recipe's ingredients are added to a grocery list.",
     large:
       "Tendrish is a multi-app echosystem, in which nutritionists use a dashboard and users use this app. This project allows users to have a fully customizable meal plan, which means that users can modify any recipe in their meal plan according to their needs. All recipes include its nutritional information. All recipe's ingredients are automatically added to a grocery list. Users can search for recipes in a simple seach by name, or a complex search, which searches by ingredients to include, exclude, tags and name. Users are able to schedule appointments with nutritionists via the app. Users can create family plans to allow their relatives to look at and edit their meal plan. And much more features!",
   },

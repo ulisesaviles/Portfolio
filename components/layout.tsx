@@ -6,6 +6,7 @@ import NavBar from "../components/navBar";
 
 // Types
 import { availableTabs } from "../types/navigation";
+import Footer from "./footer";
 type props = {
   children: JSX.Element;
   selectedTabName: availableTabs;
@@ -25,6 +26,7 @@ export default function Layout({ children, selectedTabName }: props) {
       </Head>
       <NavBar selectedTabName={selectedTabName} />
       {children}
+      <Footer />
     </>
   );
 }

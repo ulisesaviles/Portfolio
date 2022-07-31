@@ -29,7 +29,7 @@ export default function Projects() {
           <section className={styles.coverSection}>
             <h1 className={styles.title}>Projects</h1>
             <p className={styles.description}>
-              Every project I develop has de purpouse of helping people achieve
+              Every project I develop has the purpouse of helping people achieve
               better results. If you are looking for someone to develop the
               tipping point of your company, oh boy I&apos;m the one you are
               looking for. Check out some of my projects and
@@ -37,8 +37,6 @@ export default function Projects() {
                 <a className={styles.aInTxt}> contact me after that! </a>
               </Link>
             </p>
-            {/* <p className={styles.interested}>Interested?</p>
-            <Button fontSize={18} href="/contact" txt="Contact me!" /> */}
           </section>
 
           <div style={{ height: 30 }} />
@@ -59,7 +57,7 @@ export default function Projects() {
                 <a className={styles.aInTxt}> get in touch with me </a>
               </Link>
               and let&apos;s have a chat about it. I would love to work with you
-              and your company!
+              and your team!
             </p>
           </section>
 

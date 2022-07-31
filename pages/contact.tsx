@@ -62,8 +62,8 @@ export default function Contact() {
     }
   };
 
-  const submitEmail = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const submitEmail = async (e?: FormEvent<HTMLFormElement>) => {
+    if (e != null) e.preventDefault();
 
     // Validate inputs
     if (!validateInputs()) return;
@@ -267,7 +267,7 @@ export default function Contact() {
                 <p className={styles.letsStart}>
                   Let&apos;s start building something great!
                 </p>
-                <input type={"submit"} className={btnStyles.button} />
+                <button className={btnStyles.button}>Submit</button>
               </div>
             </form>
           </section>

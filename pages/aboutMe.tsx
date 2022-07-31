@@ -145,7 +145,7 @@ export default function AboutMe() {
           </p>
           <Button fontSize={16} href="/contact" txt="Contact me" />
 
-          <div style={{ height: 70 }} />
+          <div style={{ height: 50 }} />
         </main>
       </Layout>
     </div>

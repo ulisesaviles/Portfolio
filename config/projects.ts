@@ -999,9 +999,9 @@ export const blackjack: Project = {
   size: "small",
   description: {
     short:
-      "The infamous blackjack game. In this game, players are able to play blackjack making bets versus a dealer that is programed with real life rules.",
+      "The infamous blackjack game. In this game, players are able to play blackjack making bets versus a dealer that is programed with real-life rules.",
     large:
-      "In this game, users are able to play blackjack versus a dealer that was programmed with real dealer rules (like not hittinng if thwy got more than 17). Users can bet money in their hands, then they can surrender if they didn't like it, hit another card if they are falling short, stand if they have a great play or double down if they feel lucky. At the end, the result is displayed and users can keep playing until they run out of money.",
+      "In this game, users are able to play blackjack versus a dealer that was programmed with real dealer rules (like not hittinng if they got more than 17). Users can bet money in their hands, then they can surrender if they didn't like them, hit another card if they are falling short, stand if they have a great play or double down if they feel lucky. At the end, the result is displayed and users can keep playing until they run out of money.",
   },
   developmentProcess: {
     technologies: {
@@ -1015,7 +1015,7 @@ export const blackjack: Project = {
         "This was the second time I programmed the blackjack game. The first time I did it in C++, but wthout bets, surrender and doble-down. So I had not much problem developing it in an easyer programming language, even with the new features.",
     },
     team: {
-      description: "I made this project on my own.",
+      description: "I made this developed on my own.",
       members: [
         {
           img: me,

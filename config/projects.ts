@@ -273,14 +273,14 @@ export const liveChatApp: Project = {
   size: "large",
   description: {
     short:
-      "This app was the final project my app development class. This app allows users to create an account, add friends, approve friend requests, chat with them and even call them via audio or video call!",
+      "This app was the final project my app-development class. This app allows users to create an account, add friends, approve friend requests, chat with them and even call them via audio or video call!",
     large:
-      'As stated, this app was developed for my app development class in may 2022. It was a great project since my teammate and I already had experience building apps, therefore this project (and the whole class) allowed us to give structure to our knowledge and fully understand the full development process (not just coding). This app allows users to create accounts or log in, to add friends and approve requests, to chat and video call them and many more great features! The name "Live chat app" comes from the fact that all happens in real time, via gRPC and WebRTC.',
+      'As stated, this app was developed for my app-development class in may 2022. It was a great project since my teammate and I already had experience building apps, therefore this project (and the whole class) allowed us to give structure to our knowledge and fully understand the full development process (not just coding). This app allows users to create accounts or log in, to add friends and approve requests, to chat and video call them and many more great features! The name "Live chat app" comes from the fact that all happens in real time, via gRPC and WebRTC.',
   },
   developmentProcess: {
     technologies: {
       description:
-        "This is a multi-platform app (works for Android, iOS and the web). It was developed in react native with a workflow managed by Expo, and it was programmed using TypeScript. It has no hackend, the app communicates directly with the database with firestore rules as the security layer. We used ClickUp to manage the development process.",
+        "This is a multi-platform app (works for Android, iOS and the web). It was developed in react native with a workflow managed by Expo, and it was programmed using TypeScript. It has no backend, the app communicates directly with the database with firestore rules as the security layer. We used ClickUp to manage the development process.",
       technologies: [
         "React native",
         "TypeScript",
@@ -293,11 +293,11 @@ export const liveChatApp: Project = {
     timeLine: {
       weeks: 3,
       description:
-        "This part was finished in three weeks. It could have been much less, but getting WebRTC (the communication protocol for the video call) to work was quite complicated to do in an Expo-managed workflow.",
+        "This project was developed in three weeks. It could have been much less, but getting WebRTC (the communication protocol for the video call) to work was quite complicated to do in an Expo-managed workflow.",
     },
     team: {
       description:
-        "I love to work with skilled people, Abner is one of them. He took care of the chat and the video call, while I developed the authentication module, the friends management, the come screen and the profile screen. We managed the development process using ClickUp.",
+        "I love to work with skilled people, Abner is one of them. He took care of the chat and the video call, while I developed the authentication module, the friends management, the home screen and the profile screen. We managed the development process using ClickUp.",
       members: [
         {
           img: me,
@@ -321,7 +321,7 @@ export const liveChatApp: Project = {
     {
       title: "Welcome screen",
       description:
-        "wlcome to Live chat app! This screen tells user what the app is about and some of its key features.",
+        "Welcome to Live chat app! This screen tells user what the app is about and some of its key features.",
       img: { src: chatImages.features.welcome, type: "phone" },
     },
     {
@@ -351,25 +351,25 @@ export const liveChatApp: Project = {
     {
       title: "Friends",
       description:
-        "This creen displays all you friends! if you press in any of them, a menu will pup up asking if you want to delete them from your friends list.",
+        "This creen displays all you friends! If you press in any of them, a menu will pup up asking if you want to delete them from your friends list.",
       img: { src: chatImages.features.friends, type: "phone" },
     },
     {
       title: "Chats",
       description:
-        "Once you have friends to chat with, they will apprear available in this creen to chat with them. If the conversation has not started yet, the app encourages you to saye hi to them!",
+        "Once you have friends to chat with, they will apprear in this creen to chat with them. If the conversation has not started yet, the app encourages you to say hi to them!",
       img: { src: chatImages.features.chats, type: "phone" },
     },
     {
       title: "Chat",
       description:
-        "This creen allows users to actually chat between them. They are able to send text messages or images. This screen allows users to delete the chat's messages if they press the three dots on the top right corner and select that option.",
+        "This screen allows users to actually chat between them. They are able to send text messages or images. This screen allows users to delete the chat's messages if they press the three dots on the top right corner and select that option.",
       img: { src: chatImages.features.chat, type: "phone" },
     },
     {
       title: "Video call",
       description:
-        "The video call screen uses allows users to communicate with their friends using camera (or not), using voide (or not) and using their front and back cammeras. This feature is only available in Android, since we had to pay for the apple's developer program to make it work on iOS (since WebRTC is a native module that is not supported in Expo go).",
+        "The video call screen allows users to communicate with their friends using camera (or not), using voice (or not) and using their front and back cameras. This feature is only available in Android, since we had to pay for the apple's developer program to make it work on iOS (since WebRTC is a native module that is not supported in Expo go).",
       img: { src: chatImages.features.call, type: "phone" },
     },
     {
@@ -381,7 +381,7 @@ export const liveChatApp: Project = {
     {
       title: "Edit profile",
       description:
-        "If users press the edit profile option, they will navigate to this screen, where they can change their password and name.",
+        "If users press the edit profile option, they will navigate to this screen where they can change their password and name.",
       img: { src: chatImages.features.editProfile, type: "phone" },
     },
   ],

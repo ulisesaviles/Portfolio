@@ -395,9 +395,9 @@ export const poleo: Project = {
   size: "large",
   description: {
     short:
-      "This is a mass polling app, where users can create polls (surveys) and watch the results live while it is being answered by other users. Or, users can just answer other user's polls to get paid.",
+      "This is a mass polling app, where users can create polls (surveys) and watch the results live while it is being answered by other users. Or, users can just answer other user's polls and get paid for it.",
     large:
-      "Poleo is a mass polling app intended to serve goverments, big and small companies or any individual that wants to know the public opinion about a topic. Once a poll is created, the creator pays a fee (depending on the number of questions and users to answer it). Most of the fee is used to pay other users to answer the poll, that way users stay incentivized to keep answering more and more polls.",
+      "Poleo is a mass polling app intended to serve goverments, big and small companies or any individual that wants to know the public opinion about a topic. Once a poll is created, the creator pays a fee (depending on the number of questions and users to answer it). Most of the fee is used to pay users to answer the poll, that way users stay incentivized to keep answering more and more polls.",
   },
   developmentProcess: {
     technologies: {
@@ -415,7 +415,7 @@ export const poleo: Project = {
     timeLine: {
       weeks: 4,
       description:
-        "Poleo's first beta came out after around a month of development. Most of the app works pretty well, but it's just missing the payments module.",
+        "Poleo's first beta came out after around a month of development. The app works perfectly, it's just missing the payments module.",
     },
     team: {
       description:
@@ -467,19 +467,19 @@ export const poleo: Project = {
     {
       title: "Withdrawals",
       description:
-        "Users can withdraw their money anytime, by the method they preffer. This feature has not been impementet yet, but I included it to make the idea it clear.",
+        "Users can withdraw their money anytime, by the method they preffer. This feature has not been impementet yet, but I included it to make the idea clear.",
       img: { src: poleoImages.features.cobro, type: "phone" },
     },
     {
       title: "My polls",
       description:
-        "If users created polls in the past, they can view them in this screen. They are separated between the ones that are still being answered and the ones that are done. If users want to create a poll, they can press the create poll bottom at the right top of the screen.",
+        "If users created polls in the past, they can view them in this screen. They are separated between the ones that are still being answered and the ones that are done. If users want to create a poll, they can press the create poll button at the right top of the screen.",
       img: { src: poleoImages.features.myPolls, type: "phone" },
     },
     {
       title: "Create poll",
       description:
-        "This screen allows users to create polls. They enter the title, the number of users that will answer it (which affects the price of the poll) and a few additional settings. Then they start entering the questions, where its options can be text or images. If you want to make sure that only certain type of users answer the poll, then enter a filter question. It will kick out all users that selected an option that was not the correct one. Once the poll is finished, the user presses the 'next' button to pay for it, and that's it!",
+        "This screen allows users to create polls. They enter the title, the number of users that will answer it (which affects the price of the poll) and a few additional settings. Then they start entering the questions, where its options can be text or images. If you want to make sure that only certain type of users answer the poll, then enter a filter question, which will kick out all users that selected an option that was not the correct one. Once the poll is finished, the user presses the 'next' button to pay for it, and that's it!",
       img: { src: poleoImages.features.create, type: "phone" },
     },
     {

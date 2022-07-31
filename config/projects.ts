@@ -1092,7 +1092,7 @@ export const goFish: Project = {
   description: {
     short:
       "Good old go-fish. This is a game for 2-4 players in which they play with all the real rules.",
-    large: `This project simulates the famous card game "Go-fish" with all the real rules, in which players can choose to take cards from the deck or the pool, then the program detects if they have a valid play (royal flush, full house, three of a kind, etc) and finally then they choose which card to throw. Then it's the next player's turn. This is not the biggest of my projects, but I decided to included since I developed it with around 3 months of experience programming. It was a big challange for me at the time, however, I made a great effort to deliver the assignment on time, and made it with (kind of) a visual interface.`,
+    large: `This project simulates the famous card game "Go-fish" with all the real rules, in which players can choose to take cards from the deck or the pool, then the program detects if they have a valid play (royal flush, full house, three of a kind, etc.) and finally then they choose which card to get rid of. Then it's the next player's turn. This is not the biggest of my projects, but I decided to included since I developed it with around 3 months of experience programming. It was a big challange for me at the time, however, I made a great effort to deliver the assignment on time, and made it with (kind of) a visual interface.`,
   },
   developmentProcess: {
     technologies: {
@@ -1103,7 +1103,7 @@ export const goFish: Project = {
     timeLine: {
       weeks: 0.5,
       description:
-        "As I said, this project was developed when I had just around 3 months programming. Therefore, a three-day deadline seemed insane. However, I did my best and was able to deliver it on time.",
+        "As I said, this project was developed when I had just around 3 months of experience programming. Therefore, a three-day deadline seemed insane. However, I did my best and was able to deliver it on time.",
     },
     team: {
       description: "I made this project on my own.",
@@ -1126,7 +1126,7 @@ export const goFish: Project = {
     {
       title: "Choose the ammout of players",
       description:
-        "The game can be played by 2-4 players. They will play turns to play as if it was the real game, and the program will hide the cars of the players not in turn.",
+        "The game can be played by 2-4 players. They will play turns to play as if it was the real game, and the program will hide the cards of the players not in turn.",
       img: { src: goFishImages.features.choosePlayers, type: "desktop" },
     },
     {

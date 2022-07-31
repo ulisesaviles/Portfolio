@@ -33,7 +33,7 @@ export default function Home() {
     {
       title: "Discovery & Product Design",
       decription:
-        "From zero to hero. Once you tell me your idea and discuse the details, I will shape, design and build the blueprint of your project. Most of my clients get very excited when they see the design of their dream project for the first time.",
+        "From zero to hero. Once you tell me your idea and discuse the details together, I will shape, design and build the blueprint of your project. Most of my clients get very excited when they see the design of their dream project for the first time.",
     },
     {
       title: "Web Development",
@@ -43,7 +43,7 @@ export default function Home() {
     {
       title: "Mobile apps",
       decription:
-        "Great customers deserve great products. I love developing apps that provide users with great experiences that they will love. Just tell me your idea and I'll take care of the product design, ux, ui, fullstack development, deployment and maintenance.",
+        "Great customers deserve great products. I love developing apps that provide users with great experiences that they'll love. Just tell me your idea and I'll take care of the product design, ux, ui, fullstack development, deployment and maintenance for you.",
     },
     {
       title: "Ecommerce",
@@ -53,7 +53,7 @@ export default function Home() {
     {
       title: "Enterprise Solutions",
       decription:
-        "I will research on ways to optimize your company's processes and procedures to help you achive better results! I'll take care of everything so you can focus on scaling your business.",
+        "I'll research on ways to optimize your company's processes and procedures to help you achive better results! I'll take care of everything so you can focus on scaling your business.",
     },
     {
       title: "Support & Maintenance",

@@ -594,7 +594,7 @@ export const turfmasters: Project = {
     short:
       "Turfmasters is a company that sells turf, synthetic grass and related products. Their website allows them to reach more clients and show them all their products and services in detail.",
     large:
-      "Turfmasters is a very successfull company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the real images have not beet provided by turfmasters yet.",
+      "Turfmasters is a very successfull company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the real images have not been provided by turfmasters yet.",
   },
   developmentProcess: {
     technologies: {
@@ -639,7 +639,7 @@ export const turfmasters: Project = {
     {
       title: "Product's details",
       description:
-        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shonw this page, where they can find all of the details, espacifications and photos.",
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shown this page, where they can find all of the details, espacifications and photos.",
       img: { src: turfImages.features.product, type: "desktop" },
     },
     {
@@ -685,12 +685,12 @@ export const stimb: Project = {
     short:
       "STIMB is a company that focuses in improving the efficiency of block machines. This website allows them to reach more clients and let them know the advantages of working with them.",
     large:
-      "STIMB is a very succesfull company whose mission is to improve the efficiency of block machines. They achive this through various services, they restore, maintain, buy and sell block machines and their spare parts, as well as many other services specific to the client's needs. Currently the website is fully developed, but the images have not beet provided by STIMB yet.",
+      "STIMB is a very succesfull company whose mission is to improve the efficiency of block machines. They achive this through various services. They restore, maintain, buy and sell block machines and their spare parts, as well as many other services specific to the client's needs. Currently the website is fully developed, but the final images have not been provided by STIMB yet.",
   },
   developmentProcess: {
     technologies: {
       description:
-        "This project was developed in Next.js, a react framework delivers better SEO performance. It was designed in AdobeXD, programmed in JavaScript, hosted in Vercel and the code is stored in a Github repository.",
+        "This project was developed in Next.js, a react framework that delivers better SEO performance. It was designed in Adobe Xd, programmed in JavaScript, hosted in Vercel and the code is stored in a Github repository.",
       technologies: [
         "ReactJS",
         "Github",
@@ -715,7 +715,7 @@ export const stimb: Project = {
     },
     deployment: {
       description:
-        "This project is hosted in Vercel, and is currently available at the automatic vercel's domain, since it has not been officially deployed.",
+        "This project is hosted in Vercel, and is currently available at the automatically-generated Vercel's domain, since it has not been officially deployed.",
       link: "https://stimb.vercel.app/",
       qr: stimbImages.qr,
     },
@@ -743,7 +743,7 @@ export const stimb: Project = {
     {
       title: "Product's details",
       description:
-        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shonw this page, where they can find all of the details espacifications and photos.",
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shown this page, where they can find all of the details espacifications and photos.",
       img: { src: stimbImages.features.product, type: "desktop" },
     },
     {

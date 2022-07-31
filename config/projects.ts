@@ -34,7 +34,7 @@ export const tendrishDashboard: Project = {
   developmentProcess: {
     technologies: {
       description:
-        "This web-app's front-end was developed with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with github. The backend stores the data in Firebase Firestore, stores the files in Firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
+        "This web-app's front-end was developed with ReactJS using JavaScript (I'm currently migrating it to TypeScript) and controlling versions with Github. The backend stores the data in Firebase Firestore, stores the files in Firebase storage and the logic is an API made with Firebase Cloud Functions in a NodeJS environment.",
       technologies: [
         "ReactJS",
         "TypeScript",
@@ -499,14 +499,14 @@ export const investNGrow: Project = {
   size: "large",
   description: {
     short:
-      "This is a finantial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctiates depending in real-life-based events.",
+      "This is a financial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctuates depending in real-life-based events.",
     large:
-      "This is a finantial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctiates depending in real-life-based events. The fun comes when users notice that purchasing properties and having them as a commodity may improve their life quality for a few rounds, but they soon will be ruined finantially. Turning them into assets is what makes them trully reach (like in real life). And of course, users can use debt to buy properties (which has de porpoise of showing how much faster is to get rich if you use debt the right way).",
+      "This is a financial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctuates depending in real-life-based events. The fun comes when users notice that purchasing properties and having them as a commodity may improve their life quality for a few rounds, but they soon will be ruined financially. Turning them into assets is what makes them trully reach (like in real life). And of course, users can use debt to buy properties (which has the purpose of showing how much faster is to get rich if you use debt the right way).",
   },
   developmentProcess: {
     technologies: {
       description:
-        "This is a multi-platform app (works for Android, iOS and the web). It was built in react native in an Expo-managed workflow using JavaScript. It was designed using Adobe Xd. The code is stored in a github repository. The code needs to have a redux store to let components communicate between them.",
+        "This is a multi-platform app (works for Android, iOS and the web). It was built in react native in an Expo-managed workflow using JavaScript. It was designed using Adobe Xd. The code is stored in a Github repository. The code needs to have a redux store to let components communicate between them.",
       technologies: [
         "React native",
         "JavaScript",
@@ -523,7 +523,7 @@ export const investNGrow: Project = {
     },
     team: {
       description:
-        "I developed this project with the help of a classmate. He hand crafted some of the assets like the cybertruck and downloaded others like the expensive properties. Appart from that, I designed and coded the app in my own.",
+        "I developed this project with the help of a classmate. He hand crafted some of the assets like the cybertruck and downloaded others like the expensive properties. Appart from that, I designed and coded all the app in my own.",
       members: [
         {
           img: me,
@@ -547,18 +547,19 @@ export const investNGrow: Project = {
     {
       title: "Home page",
       description:
-        "In the home page, users can view their progress indicators at the top, which tells how close or far users are from a great life quality and herritage, as well as how much debt they have (they loose if the debt reaches 100M and have not enough money to oay for it). Then, users can view their properties in detail to find out how well they are doing. At the bottom, users can fin their properties as a list divided by assets and commodities.",
+        "In the home page, users can view their progress indicators at the top, which tells how close or far users are from a great life quality and herritage, as well as how much debt they have (they loose if the debt reaches 100M and have not enough money to pay for it). Then, users can view their properties in detail to find out how well they are doing. At the bottom, users can find their properties as a list divided by assets and commodities.",
       img: { src: investImages.features.debt, type: "phone" },
     },
     {
       title: "Turn a property into an asset or commodity",
       description:
-        "Once a users buy a property, they can turn it into an asset to increase their herritage or leave it as a commodity to increase their life quality.",
+        "Once users buy a property, they can turn it into an asset to increase their herritage or leave it as a commodity to increase their life quality.",
       img: { src: investImages.features.turnIntoCommodity, type: "phone" },
     },
     {
       title: "Property store",
-      description: "The store is the place where users can buy new properties.",
+      description:
+        "The store is the place where users can buy new properties. The value shown below the image fluctuates according to the events (explained bellow), so buy properties before they get expensive!",
       img: { src: investImages.features.store, type: "phone" },
     },
     {
@@ -570,13 +571,13 @@ export const investNGrow: Project = {
     {
       title: "Events",
       description:
-        "People get rich with time as their properties produce positive cashflow or produce capital gains. This game not only allows for time to pass (which increases debt), but it has several real-life-based events that directly impact the value and cashflow or all properties with multipliers.",
+        "People get rich with time as their properties produce positive cashflow or capital gains. This game not only allows for time to pass (which increases debt), but it has several real-life-based events that directly impact the value and cashflow or all properties with multipliers.",
       img: { src: investImages.features.events, type: "phone" },
     },
     {
       title: "Light mode",
       description:
-        "Want to play in the sunlight? No problem! Play on light mode to play during day light!",
+        "Want to play in the sunlight? No problem! Play on light mode to play during the day!",
       img: { src: investImages.features.light, type: "phone" },
     },
   ],
@@ -616,7 +617,7 @@ export const turfmasters: Project = {
     },
     deployment: {
       description:
-        "This project is hosted in github pages, and is currently available at the automatic github's domain, since it has not been officially deployed.",
+        "This project is hosted in Github pages, and is currently available at the automatic Github's domain, since it has not been officially deployed.",
       link: "https://ulisesaviles.github.io/TurfMasters/",
       qr: turfImages.qr,
     },
@@ -689,7 +690,7 @@ export const stimb: Project = {
   developmentProcess: {
     technologies: {
       description:
-        "This project was developed in Next.js, a react framework delivers better SEO performance. It was designed in AdobeXD, programmed in JavaScript, hosted in Vercel and the code is stored in a github repository.",
+        "This project was developed in Next.js, a react framework delivers better SEO performance. It was designed in AdobeXD, programmed in JavaScript, hosted in Vercel and the code is stored in a Github repository.",
       technologies: [
         "ReactJS",
         "Github",
@@ -793,7 +794,7 @@ export const regressionCalculator: Project = {
   developmentProcess: {
     technologies: {
       description:
-        "This project was developed in Vanilla JavaScript, and it's hosted in github pages.",
+        "This project was developed in Vanilla JavaScript, and it's hosted in Github pages.",
       technologies: ["JavaScript", "HTML 5", "CSS 3", "Github"],
     },
     timeLine: {
@@ -810,7 +811,7 @@ export const regressionCalculator: Project = {
       ],
     },
     deployment: {
-      description: "This project is hosted in github. Check it out!",
+      description: "This project is hosted in Github. Check it out!",
       link: "https://ulisesaviles.github.io/Regression-Calculator/",
       qr: regressionImages.qr,
     },
@@ -963,7 +964,7 @@ export const wordSearch: Project = {
     },
     deployment: {
       description:
-        "This is a python script that can be downloaded from the github repository to be runned locally.",
+        "This is a python script that can be downloaded from the Github repository to be runned locally.",
       link: "https://github.com/ulisesaviles/Word-Search-Python",
       qr: wordSearchImages.qr,
     },
@@ -1024,7 +1025,7 @@ export const blackjack: Project = {
     },
     deployment: {
       description:
-        "This is a python script that can be downloaded from the github repository to be runned locally.",
+        "This is a python script that can be downloaded from the Github repository to be runned locally.",
       link: "https://github.com/ulisesaviles/BlackJack-Python",
       qr: blackJackImages.qr,
     },
@@ -1115,7 +1116,7 @@ export const goFish: Project = {
     },
     deployment: {
       description:
-        "Since the project was made using C++, the format of the file is .exe. It can be dowloaded from github, as well as the source code.",
+        "Since the project was made using C++, the format of the file is .exe. It can be dowloaded from Github, as well as the source code.",
       link: "https://github.com/ulisesaviles/Go-Fish-C-plus-plus",
       qr: goFishImages.qr,
     },

@@ -594,17 +594,17 @@ export const turfmasters: Project = {
     short:
       "Turfmasters is a company that sells turf, synthetic grass and related products. Their website allows them to reach more clients and show them all their products and services in detail.",
     large:
-      "Turfmasters is a very successfull company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the images have not beet provided by turfmasters yet.",
+      "Turfmasters is a very successfull company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the real images have not beet provided by turfmasters yet.",
   },
   developmentProcess: {
     technologies: {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu sodales, finibus turpis ac, finibus erat. Pellentesque mattis, nisi ac interdum vulputate, purus ligula interdum odio, nec dignissim nisi metus eget risus. Fusce consectetur molestie orci, eget condimentum nisi consequat vitae.",
+        "This project was developed using ReactJS with JavaScript. It was designed in Adobe Xd. The code is stored in a Github repository. It was deployed using Github pages.",
       technologies: ["ReactJS", "Github", "JavaScript", "Adobe Xd"],
     },
     timeLine: {
       weeks: 2,
-      description: "This project was desined and developed in two weeks.",
+      description: "This project was designed and developed in two weeks.",
     },
     team: {
       description: "I developed this project in my own.",
@@ -617,7 +617,7 @@ export const turfmasters: Project = {
     },
     deployment: {
       description:
-        "This project is hosted in Github pages, and is currently available at the automatic Github's domain, since it has not been officially deployed.",
+        "This project is hosted in Github pages, and is currently available at the automatically-generated Github's domain, since it has not been officially deployed.",
       link: "https://ulisesaviles.github.io/TurfMasters/",
       qr: turfImages.qr,
     },
@@ -639,7 +639,7 @@ export const turfmasters: Project = {
     {
       title: "Product's details",
       description:
-        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shonw this page, where they can find all of the details espacifications and photos.",
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shonw this page, where they can find all of the details, espacifications and photos.",
       img: { src: turfImages.features.product, type: "desktop" },
     },
     {
@@ -657,13 +657,13 @@ export const turfmasters: Project = {
     {
       title: "About us",
       description:
-        "Want to know more about the compay? In this page turfmasters share who they are, as well as their mission and distinctive characteristics.",
+        "Want to know more about the compay? In this page Turfmasters share who they are, as well as their mission and distinctive characteristics.",
       img: { src: turfImages.features.about, type: "desktop" },
     },
     {
       title: "Contact form",
       description:
-        "This page allows users to contact turfmasters via phone, email or directly via an email form in this page.",
+        "This page allows users to contact Turfmasters via phone, email or directly via an email form in this page.",
       img: { src: turfImages.features.contact, type: "desktop" },
     },
     {
@@ -702,7 +702,7 @@ export const stimb: Project = {
     },
     timeLine: {
       weeks: 2,
-      description: "This project was desined and developed in two weeks.",
+      description: "This project was designed and developed in two weeks.",
     },
     team: {
       description: "I developed this project in my own.",
@@ -799,7 +799,7 @@ export const regressionCalculator: Project = {
     },
     timeLine: {
       weeks: 0.5,
-      description: "This project was desined and developed in three days.",
+      description: "This project was designed and developed in three days.",
     },
     team: {
       description: "I developed this project in my own.",

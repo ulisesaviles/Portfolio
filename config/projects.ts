@@ -938,9 +938,9 @@ export const wordSearch: Project = {
   size: "small",
   description: {
     short:
-      "Clasic word search. In this program, users search for words from the word bank. When they found one, they must write down the coordinates of it, and if it is there, it will be colored.",
+      "Clasic word search. In this program, users search for words from the word bank. When they found one, they must write down the coordinates of it, and if it is there, it will be colored. They win when they found all the words.",
     large:
-      "In word search, users need to find words from the word bank. This game is usually played on a paper sheet, but in order to make it work in a python script, users enter the coordinates of the start and end of the word they found. If the word was there, it will be coloured in yellow. Users win when they found all the words. The logic behind this project was hard at the time I programmed it, since words are always re-shuffled and thet can cross each other, with letters overlapping. It is in this portfolio since it was a great project, even more considering that I developed it in my freshman year (in object-oriented-programming class).",
+      "In word search, users need to find words from the word bank. This game is usually played on a paper sheet, but in order to make it work in a python script, users enter the coordinates of the start and end of the word they found. If the word is there, it will be coloured in yellow. Users win when they found all the words. The logic behind this project was hard at the time I programmed it, since words are always re-shuffled and thet can cross each other, with letters overlapping. It is in this portfolio since it was a great project, even more considering that I developed it in my freshman year (in object-oriented-programming class).",
   },
   developmentProcess: {
     technologies: {

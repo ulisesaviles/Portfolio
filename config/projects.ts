@@ -16,9 +16,134 @@ import investImages from "../public/assets/projects/investNGrow/index";
 import tendrishAppImages from "../public/assets/projects/tendrishApp/index";
 import poleoImages from "../public/assets/projects/poleo/index";
 import chatImages from "../public/assets/projects/liveChatApp/index";
+import oneUpImages from "../public/assets/projects/1up";
+import maxifyImages from "../public/assets/projects/maxify";
 
 // Actual projects
 // Big
+export const maxify: Project = {
+  title: "Maxify",
+  id: "maxify",
+  category: "Large free-lance project",
+  size: "large",
+  type: "web-app",
+  description: {
+    short:
+      "Maxify is California's fastest solar and battery storage quoting tool, delivering instant solar estimates tailored specifically for homes or business in the state.",
+    large:
+      "Maxify is a comprehensive platform that streamlines the process of obtaining solar and battery storage quotes. By leveraging advanced algorithms, combining multiple data sources and a user-friendly interface, Maxify ensures that users receive accurate and personalized estimates in real-time.",
+  },
+  developmentProcess: {
+    technologies: {
+      technologies: [
+        "ReactJS",
+        "TypeScript",
+        "NodeJS",
+        "Github",
+        "Firestore",
+        "Vercel",
+      ],
+      description:
+        "This web-app was developed with ReactJS using TypeScript and controlling versions with Github. The backend stores the data in Firebase Firestore and the logic is an Next.js API made with NodeJS. The app is deployed using Vercel.",
+    },
+    team: {
+      description: "I developed this project on my own.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+    },
+    timeLine: {
+      weeks: 70,
+      description:
+        "Maxify has been developed for around 70 weeks (considering designing, prototyping and testing), and it is still being improved and updated.",
+    },
+    deployment: {
+      description:
+        "This project is deployed using Vercel. It is publicly available.",
+      link: "https://www.gomaxify.com/",
+      qr: maxifyImages.qr,
+    },
+  },
+  cover: maxifyImages.cover,
+  features: [
+    {
+      title: "Create a proposal in less than 10 seconds",
+      description:
+        "A solar proposal typically takes more than 10 minutes to create, but with Maxify, you can create one in less than 10 seconds! Just enter the address and the app will do the rest. This is achieved with a combination of algorithms, multiple data sources fetched via APIs and a user-friendly interface.",
+      img: { src: maxifyImages.features.liveProposal, type: "desktop" },
+    },
+    {
+      title: "Live editing",
+      description:
+        "With Maxify, you can edit your proposal in real-time, making it easy to adjust to any changes or requirements on the fly.",
+      img: { src: maxifyImages.features.liveEdit, type: "desktop" },
+    },
+    {
+      title: "Maxify website",
+      description:
+        "The Maxify website serves as the main hub for users to access the platform, providing information about its features, benefits, and pricing.",
+      img: { src: maxifyImages.features.website, type: "desktop" },
+    },
+    {
+      title: "Stats dashboard",
+      description:
+        "The Stats dashboard provides an overview of key metrics and performance indicators for the sales representatives using the Maxify platform.",
+      img: { src: maxifyImages.features.stats, type: "desktop" },
+    },
+    {
+      title: "Proposals view",
+      description:
+        "The Proposals view allows users to see all their created proposals, providing a comprehensive overview of their solar projects.",
+      img: { src: maxifyImages.features.proposals, type: "desktop" },
+    },
+    {
+      title: "Edit proposal",
+      description:
+        "The Edit proposal feature allows users to modify existing proposals, ensuring that they can make necessary adjustments to meet client needs. With admin control, users can edit every aspect of the proposal in detail.",
+      img: { src: maxifyImages.features.proposal, type: "desktop" },
+    },
+    {
+      title: "Customer view",
+      description:
+        "The Customer view allows customers to see the proposal that was tailored-made for them. This has no edit access for security purposes, but they can apply for financing directly from this view.",
+      img: { src: maxifyImages.features.customerView, type: "desktop" },
+    },
+    {
+      title: "Users management",
+      description:
+        "The Users management feature allows admin users to manage all users within the platform, including adding, editing, and removing users and teams as needed.",
+      img: { src: maxifyImages.features.teams, type: "desktop" },
+    },
+    {
+      title: "Maxia (AI Assistant)",
+      description:
+        "Maxia is an AI-powered assistant integrated into the Maxify platform, providing users with intelligent suggestions and automating repetitive tasks. Users can interact with Maxia through a text-based chat interface or conversation voice-to-voice.",
+      img: { src: maxifyImages.features.maxia, type: "desktop" },
+    },
+    {
+      title: "Advanced settings",
+      description:
+        "The Advanced settings feature allows users to customize various aspects of the Maxify platform, including pricing models, financial options, custom integrations, financial incentives, and more. Everything is modified through a user-friendly interface.",
+      img: { src: maxifyImages.features.settings, type: "desktop" },
+    },
+    {
+      title: "Responsiveness",
+      description:
+        "The Responsiveness feature ensures that the Maxify platform is fully functional and visually appealing across a wide range of devices and screen sizes.",
+      img: { src: maxifyImages.features.responsive, type: "phone" },
+    },
+    {
+      title: "And much more!",
+      description:
+        "The Maxify platform offers a wide range of features and capabilities to support solar sales representatives in their daily tasks and improve their overall efficiency.",
+      img: { src: maxifyImages.cover, type: "desktop" },
+    },
+  ],
+};
+
 export const tendrishDashboard: Project = {
   id: "tendrishDashboard",
   title: "Tendrish dashboard",
@@ -584,6 +709,82 @@ export const investNGrow: Project = {
 };
 
 // Medium
+export const oneUpSolar: Project = {
+  id: "1UpSolar",
+  title: "1Up Solar website",
+  size: "medium",
+  category: "Medium-size free-lance project",
+  description: {
+    short:
+      "1UP Solar is a solar energy company based in San Diego CA. I worked in 1UP as a full-stack developer focused on sales automation.",
+    large:
+      "1UP Solar is a solar energy company based in San Diego CA. I worked in 1UP for around a year and I mainly focused on developing websites, landing pages, automating their internal processes (like sales onboarding and project-accounting) and developing marketing automation to improve their sales funnel. However, I will only include the website project here, since it is the one that I can show publicly.",
+  },
+  type: "static web site",
+  developmentProcess: {
+    technologies: {
+      technologies: [
+        "ReactJS",
+        "TypeScript",
+        "Github",
+        "Next.js",
+        "Vercel",
+        "ClickUp",
+      ],
+      description:
+        "This web-app's front-end was developed with ReactJS using TypeScript and controlling versions with Github. The website is hosted in Vercel, which allows for easy deployment and hosting of Next.js applications. The project management was done using ClickUp.",
+    },
+    timeLine: {
+      weeks: 4,
+      description:
+        "The website was developed in around 4 weeks, including design, prototyping and testing.",
+    },
+    team: {
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+      ],
+      description:
+        "1UP hired a designer to design the website, but I was the only developer in charge of the project. I worked closely with the designer to ensure that the final product matched the design specifications.",
+    },
+    deployment: {
+      description:
+        "This project was deployed using Vercel, which allows for easy deployment and hosting of Next.js applications.",
+      link: "https://1upsolar.com/",
+      qr: oneUpImages.qr,
+    },
+  },
+  cover: oneUpImages.cover,
+  features: [
+    {
+      title: "Website",
+      img: { src: oneUpImages.features.website, type: "desktop" },
+      description:
+        "The website is a modern and responsive web application built with Next.js and TypeScript. I developed on my own, but the design was made by a professional designer hired by 1UP.",
+    },
+    {
+      title: "Lead Form",
+      img: { src: oneUpImages.features.leadForm, type: "desktop" },
+      description:
+        "The lead form is a crucial part of the website, allowing potential customers to easily get in touch with 1UP Solar. I implemented this feature to ensure a smooth user experience. Once the form is submitted, the data is sent to 1UP's CRM for automated follow-up.",
+    },
+    {
+      title: "Landing Pages",
+      img: { src: oneUpImages.features.landing, type: "desktop" },
+      description:
+        "The landing pages are designed to capture leads and provide information about 1UP Solar's services. I created multiple variations to optimize conversion rates.",
+    },
+    {
+      title: "Automation",
+      img: { src: oneUpImages.features.automation, type: "desktop" },
+      description:
+        "I implemented various automation workflows to streamline 1UP Solar's internal processes, including sales onboarding and project accounting.",
+    },
+  ],
+};
+
 export const turfmasters: Project = {
   id: "turfmasters",
   title: "Turfmasters website",
@@ -1159,12 +1360,14 @@ export const goFish: Project = {
 // All projects
 export const allProjects: Project[] = [
   // Large
+  maxify,
   tendrishApp,
   tendrishDashboard,
   poleo,
   liveChatApp,
   investNGrow,
   // Medium
+  oneUpSolar,
   turfmasters,
   stimb,
   regressionCalculator,

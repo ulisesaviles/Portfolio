@@ -33,7 +33,7 @@ export default function AboutMe() {
               <div className={styles.coverTextContainer}>
                 <h1 className={styles.title}>I&apos;m Ulises Aviles.</h1>
                 <p className={styles.description}>
-                  My name is Ulises Eduardo Aviles Ibarra. I&apos;m a 21 year
+                  My name is Ulises Eduardo Aviles Ibarra. I&apos;m a 23 year
                   old Mexican mobile app and web developer that loves to grow
                   and learn (professionally and personally). <br />I have always
                   loved logical problem-solving and business, therefore being a
@@ -54,7 +54,7 @@ export default function AboutMe() {
               About Why I&apos;m a developer
             </h2>
             <p className={styles.txt}>
-              As stated, I have allways loved to solve problems using logic and
+              As stated, I have always loved to solve problems using logic and
               doing business.
               <br />
               That&apos;s why being a developer was the best career for me,

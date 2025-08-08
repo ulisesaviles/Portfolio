@@ -65,7 +65,7 @@ export default function Home() {
   const [whatIDoRightClass, setWhatIDoRightClass] = useState("displayed");
 
   // Handlers
-  const hanldeWhatIDo = async (index: number) => {
+  const handleWhatIDo = async (index: number) => {
     setWhatIDoSelectedIndex(index);
     setWhatIDoRightClass("hidden");
     await sleep(200);
@@ -95,7 +95,7 @@ export default function Home() {
                   full-stack developer.
                 </h1>
                 <p className={styles.description}>
-                  I&apos;m a 21 year old full-stack developer with bast
+                  I&apos;m a 23 year old full-stack developer with vast
                   experience building solutions that go from static site
                   development to entire ecosystems of mobile and web apps.
                   I&apos;m currently in senior year of computer science.
@@ -132,7 +132,7 @@ export default function Home() {
                     <div
                       key={item.title}
                       className={styles.whatIDoItemContainer}
-                      onClick={() => hanldeWhatIDo(index)}
+                      onClick={() => handleWhatIDo(index)}
                     >
                       <p
                         className={`${styles.whatIDoItem} ${

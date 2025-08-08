@@ -21,7 +21,7 @@ import chatImages from "../public/assets/projects/liveChatApp/index";
 // Big
 export const tendrishDashboard: Project = {
   id: "tendrishDashboard",
-  title: "Tendrish dashobard",
+  title: "Tendrish dashboard",
   category: "Large free-lance project",
   cover: tendrishImages.cover,
   size: "large",
@@ -29,7 +29,7 @@ export const tendrishDashboard: Project = {
     short:
       "The Tendrish Dashboard is a nutritionist's platform in which they can upload, edit, hide or delete recipes to the app, as well edit their user's meal plan, check stats, etc.",
     large:
-      "Tendrish is a multi-app echosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments scheduled via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
+      "Tendrish is a multi-app ecosystem, in which users use a mobile app and nutritionists use this dashboard. This project allow nutritionists to check the stats of the overall app performance, add other nutritionists as users (and edit their schedule, and check their performance), check their own agendas (for appointments scheduled via the mobile app), create and view ingredients that will be used in recipes, create, edit, view, hide and delete recipes, view and edit user's meal plans, create app events, create app ads and many more features.",
   },
   developmentProcess: {
     technologies: {
@@ -47,7 +47,7 @@ export const tendrishDashboard: Project = {
     timeLine: {
       weeks: 25,
       description:
-        "Tendrish was developed in around 25 weeks (counting designing, prototyping and testing), however, this timeline includes the developement of the user's mobile app because it was developed in parallel.",
+        "Tendrish was developed in around 25 weeks (counting designing, prototyping and testing), however, this timeline includes the development of the user's mobile app because it was developed in parallel.",
     },
     team: {
       description: "I developed this project on my own.",
@@ -60,7 +60,7 @@ export const tendrishDashboard: Project = {
     },
     deployment: {
       description:
-        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publically available.",
+        "This project was deployed using Github pages, since all the backend logic is safely managed in an API. This dashboard's use is meant only for Tendrish's nutritionists, therefore it is not publicly available.",
       // link: "https://admin.tendrishmealplan.com/",
       // qr: tendrishImages.qr,
     },
@@ -70,13 +70,13 @@ export const tendrishDashboard: Project = {
     {
       title: "APP'S PERFORMANCE'S STATS",
       description:
-        "Since Tendrish is a real product, they need access to key data to meassure the performance of the app and its use among users.",
+        "Since Tendrish is a real product, they need access to key data to measure the performance of the app and its use among users.",
       img: { src: tendrishImages.features.stats, type: "desktop" },
     },
     {
       title: "CREATE INGREDIENTS",
       description:
-        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seassons in which they are available, their category and aditional information. It also needs to be able to sum them in a grocery list.",
+        "Tendrish's major goal is to provide users with a meal plan, which is conformed by recipes that use ingredients. Those ingredients are created in this page. They cannot be just plain text because the app uses their nutritional value, the seasons in which they are available, their category and additional information. It also needs to be able to sum them in a grocery list.",
       img: { src: tendrishImages.features.ingredients, type: "desktop" },
     },
     {
@@ -94,7 +94,7 @@ export const tendrishDashboard: Project = {
     {
       title: "Manage admin profiles",
       description:
-        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permission to do it. In this page, admins with permision can view all admin's non-private data and edit it (like their zoom call link, their referral code, their availability for appointments, etc.), as well as measure their performance.",
+        "To be able to access this dashboard, you need an admin profile, which can only be created by an admin with permission to do it. In this page, admins with permission can view all admin's non-private data and edit it (like their zoom call link, their referral code, their availability for appointments, etc.), as well as measure their performance.",
       img: { src: tendrishImages.features.profiles, type: "desktop" },
     },
     {
@@ -128,7 +128,7 @@ export const tendrishApp: Project = {
     short:
       "Tendrish is an app where users have a meal plan with in-house recipes designed by nutritionists. The meal plan can be customized by users. Recipe's ingredients are added to a grocery list.",
     large:
-      "Tendrish is a multi-app echosystem, in which nutritionists use a dashboard and users use this app. This project allows users to have a fully customizable meal plan, which means that they can change any recipe in their meal plan according to their needs. All recipes include its nutritional information. All recipe's ingredients are automatically added to a grocery list. Users can search for recipes in a simple seach by name, or a complex search, which searches by ingredients to include, exclude, tags and name. Users are able to schedule appointments with nutritionists via the app. Users can create family plans to allow their relatives to look at and edit their meal plan. And much more features!",
+      "Tendrish is a multi-app ecosystem, in which nutritionists use a dashboard and users use this app. This project allows users to have a fully customizable meal plan, which means that they can change any recipe in their meal plan according to their needs. All recipes include its nutritional information. All recipe's ingredients are automatically added to a grocery list. Users can search for recipes in a simple search by name, or a complex search, which searches by ingredients to include, exclude, tags and name. Users are able to schedule appointments with nutritionists via the app. Users can create family plans to allow their relatives to look at and edit their meal plan. And much more features!",
   },
   developmentProcess: {
     technologies: {
@@ -146,7 +146,7 @@ export const tendrishApp: Project = {
     timeLine: {
       weeks: 25,
       description:
-        "Tendrish was developed in around 25 weeks (counting designing, prototyping and testing), however, this timeline includes the developement of the nutritionist's dashboard because it was develped in parallel.",
+        "Tendrish was developed in around 25 weeks (counting designing, prototyping and testing), however, this timeline includes the development of the nutritionist's dashboard because it was developed in parallel.",
     },
     team: {
       description: "I developed this project on my own.",
@@ -169,7 +169,7 @@ export const tendrishApp: Project = {
     {
       title: "home screen",
       description:
-        'Tendrish home screen works as a "discover" page, where users are shown random seassonal recipes that can be added to their meal plan. This means that if their meal plan is vegetarian, then the homescreen only displays vegetarian recipes.',
+        'Tendrish home screen works as a "discover" page, where users are shown random seasonal recipes that can be added to their meal plan. This means that if their meal plan is vegetarian, then the home-screen only displays vegetarian recipes.',
       img: { src: tendrishAppImages.features.home, type: "phone" },
     },
     {
@@ -211,7 +211,7 @@ export const tendrishApp: Project = {
     {
       title: "Grocery list",
       description:
-        "Once the user's meal plan is ready, all the ingredients in a date range will be added to a grocery list, to make it eassier for yhem to buy them!",
+        "Once the user's meal plan is ready, all the ingredients in a date range will be added to a grocery list, to make it easier for them to buy them!",
       img: { src: tendrishAppImages.features.grocery, type: "phone" },
     },
     {
@@ -311,7 +311,7 @@ export const liveChatApp: Project = {
     },
     deployment: {
       description:
-        "This project is published in Expo. It can be runned in Expo go.",
+        "This project is published in Expo. It can be run in Expo go.",
       link: "https://expo.dev/@ulisesaviles/Live-chat-app",
       qr: chatImages.qr,
     },
@@ -339,25 +339,25 @@ export const liveChatApp: Project = {
     {
       title: "Add friend",
       description:
-        "Once users enter the app, they will not have any friends to chat with, so they will come to this screen to add new friends. Sending a friend request is as simpre as pressing a user in the list!",
+        "Once users enter the app, they will not have any friends to chat with, so they will come to this screen to add new friends. Sending a friend request is as simple as pressing a user in the list!",
       img: { src: chatImages.features.addFriend, type: "phone" },
     },
     {
       title: "Friend requests",
       description:
-        "If your friends fided you through the add friends screen, their requests will appear here! Press any of them, and a menu will pop up, asking if you want to aprove it or delete it.",
+        "If your friends added you through the add friends screen, their requests will appear here! Press any of them, and a menu will pop up, asking if you want to approve it or delete it.",
       img: { src: chatImages.features.requests, type: "phone" },
     },
     {
       title: "Friends",
       description:
-        "This creen displays all you friends! If you press in any of them, a menu will pup up asking if you want to delete them from your friends list.",
+        "This screen displays all you friends! If you press in any of them, a menu will pup up asking if you want to delete them from your friends list.",
       img: { src: chatImages.features.friends, type: "phone" },
     },
     {
       title: "Chats",
       description:
-        "Once you have friends to chat with, they will apprear in this creen to chat with them. If the conversation has not started yet, the app encourages you to say hi to them!",
+        "Once you have friends to chat with, they will appear in this screen to chat with them. If the conversation has not started yet, the app encourages you to say hi to them!",
       img: { src: chatImages.features.chats, type: "phone" },
     },
     {
@@ -375,7 +375,7 @@ export const liveChatApp: Project = {
     {
       title: "Settings",
       description:
-        "In this creen, users can view their photo and username. They can press any of the options presented. They can press the photo or the edit button to change their profile photo, which is shown to other users.",
+        "In this screen, users can view their photo and username. They can press any of the options presented. They can press the photo or the edit button to change their profile photo, which is shown to other users.",
       img: { src: chatImages.features.profile, type: "phone" },
     },
     {
@@ -397,7 +397,7 @@ export const poleo: Project = {
     short:
       "This is a mass polling app, where users can create polls (surveys) and watch the results live while it is being answered by other users. Or, users can just answer other user's polls and get paid for it.",
     large:
-      "Poleo is a mass polling app intended to serve goverments, big and small companies or any individual that wants to know the public opinion about a topic. Once a poll is created, the creator pays a fee (depending on the number of questions and users to answer it). Most of the fee is used to pay users to answer the poll, that way users stay incentivized to keep answering more and more polls.",
+      "Poleo is a mass polling app intended to serve governments, big and small companies or any individual that wants to know the public opinion about a topic. Once a poll is created, the creator pays a fee (depending on the number of questions and users to answer it). Most of the fee is used to pay users to answer the poll, that way users stay incentivized to keep answering more and more polls.",
   },
   developmentProcess: {
     technologies: {
@@ -433,7 +433,7 @@ export const poleo: Project = {
     },
     deployment: {
       description:
-        "This project is published in Expo. It can be runned in Expo go.",
+        "This project is published in Expo. It can be run in Expo go.",
       link: "https://expo.dev/@ulisesaviles/poleo-mobile-app",
       qr: poleoImages.qr,
     },
@@ -443,7 +443,7 @@ export const poleo: Project = {
     {
       title: "Home screen",
       description:
-        "Once users enter the app, they are shown all the available polls that they can answer. This way, it is easier for users to just start answering polls if they have a few minutes free. Each poll has the name and photo of the creator, the estimated time that will take users to answer it and the ammount of money that they will get if they answer it.",
+        "Once users enter the app, they are shown all the available polls that they can answer. This way, it is easier for users to just start answering polls if they have a few minutes free. Each poll has the name and photo of the creator, the estimated time that will take users to answer it and the amount of money that they will get if they answer it.",
       img: { src: poleoImages.features.home, type: "phone" },
     },
     {
@@ -461,13 +461,13 @@ export const poleo: Project = {
     {
       title: "Record",
       description:
-        "When users answer polls, they get paid. This screen allows them to know their current balance, a graph that measures their performance and the total ammount that they have earned. Additionally, users can view the last polls that they answered.",
+        "When users answer polls, they get paid. This screen allows them to know their current balance, a graph that measures their performance and the total amount that they have earned. Additionally, users can view the last polls that they answered.",
       img: { src: poleoImages.features.money, type: "phone" },
     },
     {
       title: "Withdrawals",
       description:
-        "Users can withdraw their money anytime, by the method they preffer. This feature has not been impementet yet, but I included it to make the idea clear.",
+        "Users can withdraw their money anytime, by the method they prefer. This feature has not been implemented yet, but I included it to make the idea clear.",
       img: { src: poleoImages.features.cobro, type: "phone" },
     },
     {
@@ -485,7 +485,7 @@ export const poleo: Project = {
     {
       title: "More",
       description:
-        "Poleo is a pretty straight-forward app. However, this screen displays all additional screens and options like edditing the profile and entering payment methods.",
+        "Poleo is a pretty straight-forward app. However, this screen displays all additional screens and options like editing the profile and entering payment methods.",
       img: { src: poleoImages.features.more, type: "phone" },
     },
   ],
@@ -501,7 +501,7 @@ export const investNGrow: Project = {
     short:
       "This is a financial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctuates depending in real-life-based events.",
     large:
-      "This is a financial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctuates depending in real-life-based events. The fun comes when users notice that purchasing properties and having them as a commodity may improve their life quality for a few rounds, but they soon will be ruined financially. Turning them into assets is what makes them trully reach (like in real life). And of course, users can use debt to buy properties (which has the purpose of showing how much faster is to get rich if you use debt the right way).",
+      "This is a financial-education game, where users can purchase properties like real estate, crypto currencies, stocks and cars whose value fluctuates depending in real-life-based events. The fun comes when users notice that purchasing properties and having them as a commodity may improve their life quality for a few rounds, but they soon will be ruined financially. Turning them into assets is what makes them truly rich (like in real life). And of course, users can use debt to buy properties (which has the purpose of showing how much faster is to get rich if you use debt the right way).",
   },
   developmentProcess: {
     technologies: {
@@ -523,7 +523,7 @@ export const investNGrow: Project = {
     },
     team: {
       description:
-        "I developed this project with the help of a classmate. He hand crafted some of the assets like the cybertruck and downloaded others like the expensive properties. Appart from that, I designed and coded all the app in my own.",
+        "I developed this project with the help of a classmate. He hand crafted some of the assets like the cyber-truck and downloaded others like the expensive properties. Apart from that, I designed and coded all the app in my own.",
       members: [
         {
           img: me,
@@ -537,7 +537,7 @@ export const investNGrow: Project = {
     },
     deployment: {
       description:
-        "This project is published in Expo. It can be runned in Expo go.",
+        "This project is published in Expo. It can be run in Expo go.",
       link: "https://expo.dev/@ulisesaviles/invest-n-grow",
       qr: investImages.qr,
     },
@@ -547,13 +547,13 @@ export const investNGrow: Project = {
     {
       title: "Home page",
       description:
-        "In the home page, users can view their progress indicators at the top, which tells how close or far users are from a great life quality and herritage, as well as how much debt they have (they loose if the debt reaches 100M and have not enough money to pay for it). Then, users can view their properties in detail to find out how well they are doing. At the bottom, users can find their properties as a list divided by assets and commodities.",
+        "In the home page, users can view their progress indicators at the top, which tells how close or far users are from a great life quality and heritage, as well as how much debt they have (they loose if the debt reaches 100M and have not enough money to pay for it). Then, users can view their properties in detail to find out how well they are doing. At the bottom, users can find their properties as a list divided by assets and commodities.",
       img: { src: investImages.features.debt, type: "phone" },
     },
     {
       title: "Turn a property into an asset or commodity",
       description:
-        "Once users buy a property, they can turn it into an asset to increase their herritage or leave it as a commodity to increase their life quality.",
+        "Once users buy a property, they can turn it into an asset to increase their heritage or leave it as a commodity to increase their life quality.",
       img: { src: investImages.features.turnIntoCommodity, type: "phone" },
     },
     {
@@ -594,7 +594,7 @@ export const turfmasters: Project = {
     short:
       "Turfmasters is a company that sells turf, synthetic grass and related products. Their website allows them to reach more clients and show them all their products and services in detail.",
     large:
-      "Turfmasters is a very successfull company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the real images have not been provided by turfmasters yet.",
+      "Turfmasters is a very successful company that sells and installs turf, synthetic grass and related products. They needed a website to allow potential clients know their brand, products, the advantages of working with them and all the cases in where they delivered excellent results to their clients. Currently the website is fully developed, but the real images have not been provided by turfmasters yet.",
   },
   developmentProcess: {
     technologies: {
@@ -633,13 +633,13 @@ export const turfmasters: Project = {
     {
       title: "Product catalog",
       description:
-        "Turfmasters has lots of different products! (much more than I thought, at least). The product catalouge allows them to showcase all of them in a simple grid where clients can view their photo, description and recommendation. If clients whant to, they can click on the respective details button.",
+        "Turfmasters has lots of different products! (much more than I thought, at least). The product catalogue allows them to showcase all of them in a simple grid where clients can view their photo, description and recommendation. If clients want to, they can click on the respective details button.",
       img: { src: turfImages.features.catalouge, type: "desktop" },
     },
     {
       title: "Product's details",
       description:
-        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shown this page, where they can find all of the details, espacifications and photos.",
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shown this page, where they can find all of the details, specifications and photos.",
       img: { src: turfImages.features.product, type: "desktop" },
     },
     {
@@ -657,7 +657,7 @@ export const turfmasters: Project = {
     {
       title: "About us",
       description:
-        "Want to know more about the compay? In this page Turfmasters share who they are, as well as their mission and distinctive characteristics.",
+        "Want to know more about the company? In this page Turfmasters share who they are, as well as their mission and distinctive characteristics.",
       img: { src: turfImages.features.about, type: "desktop" },
     },
     {
@@ -685,7 +685,7 @@ export const stimb: Project = {
     short:
       "STIMB is a company that focuses in improving the efficiency of block machines. This website allows them to reach more clients and let them know the advantages of working with them.",
     large:
-      "STIMB is a very succesfull company whose mission is to improve the efficiency of block machines. They achive this through various services. They restore, maintain, buy and sell block machines and their spare parts, as well as many other services specific to the client's needs. Currently the website is fully developed, but the final images have not been provided by STIMB yet.",
+      "STIMB is a very successful company whose mission is to improve the efficiency of block machines. They achieve this through various services. They restore, maintain, buy and sell block machines and their spare parts, as well as many other services specific to the client's needs. Currently the website is fully developed, but the final images have not been provided by STIMB yet.",
   },
   developmentProcess: {
     technologies: {
@@ -743,11 +743,11 @@ export const stimb: Project = {
     {
       title: "Product's details",
       description:
-        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shown this page, where they can find all of the details espacifications and photos.",
+        "Did you liked a product? Then find out if that's the one perfect for you! Once users click on the details button they are shown this page, where they can find all of the details, specifications and photos.",
       img: { src: stimbImages.features.product, type: "desktop" },
     },
     {
-      title: "Galery",
+      title: "Gallery",
       description:
         "Not sure about the company's performance? Check out this page! Here users can find lots of great projects where STIMB did a great job!",
       img: { src: stimbImages.features.galery, type: "desktop" },
@@ -755,7 +755,7 @@ export const stimb: Project = {
     {
       title: "About us",
       description:
-        "Want to know more about the compay? In this page STIMB shares all their characteristics that define them.",
+        "Want to know more about the company? In this page STIMB shares all their characteristics that define them.",
       img: { src: stimbImages.features.about, type: "desktop" },
     },
     {
@@ -767,7 +767,7 @@ export const stimb: Project = {
     {
       title: "Modern design",
       description:
-        "STIMB is fundamentally a tech company, that's why it was important for them to have a clean and modern design code, which was inspired by apple's macbook air m1's web page.",
+        "STIMB is fundamentally a tech company, that's why it was important for them to have a clean and modern design code, which was inspired by Apple's MacBook Pro M1's web page.",
       img: { src: stimbImages.features.modernDesign, type: "desktop" },
     },
     {
@@ -789,7 +789,7 @@ export const regressionCalculator: Project = {
     short:
       "This project allows users to get a mathematical function that fits the input coordinates.",
     large:
-      "This project consists of a regression calculator, where users enter coordinates and select a regression method, which can be polinomial, logaritmic, exponential, power or auto-detect (minimizes the error). Then, users can read the mathemetical function, the error (the average distance between the given coordinates and the function) and a graph that descrives the function and shows the input coordinates. This regression calculator allow users to make predictions of future events based on existing data.",
+      "This project consists of a regression calculator, where users enter coordinates and select a regression method, which can be polynomial, logarithmic, exponential, power or auto-detect (minimizes the error). Then, users can read the mathematical function, the error (the average distance between the given coordinates and the function) and a graph that describes the function and shows the input coordinates. This regression calculator allow users to make predictions of future events based on existing data.",
   },
   developmentProcess: {
     technologies: {
@@ -821,19 +821,19 @@ export const regressionCalculator: Project = {
     {
       title: "Auto-detect",
       description:
-        "This option lets users to just enter the coordinates and they will be given the function that minimizes the error (the distance between the function and the given coordinates). This should be used wisely to avoid overfitting.",
+        "This option lets users to just enter the coordinates and they will be given the function that minimizes the error (the distance between the function and the given coordinates). This should be used wisely to avoid over-fitting.",
       img: { src: regressionImages.features.auto, type: "desktop" },
     },
     {
-      title: "Polinomial regression",
+      title: "Polynomial regression",
       description:
-        "Calculates the mathematical function that better fits the inputs using the polinomial regression method.",
+        "Calculates the mathematical function that better fits the inputs using the polynomial regression method.",
       img: { src: regressionImages.features.poli, type: "desktop" },
     },
     {
-      title: "Logaritmic regression",
+      title: "Logarithmic regression",
       description:
-        "Calculates the mathematical function that better fits the inputs using the logaritmic regression method.",
+        "Calculates the mathematical function that better fits the inputs using the logarithmic regression method.",
       img: { src: regressionImages.features.loga, type: "desktop" },
     },
     {
@@ -861,12 +861,12 @@ export const chomsky: Project = {
   description: {
     short:
       "A step by step guide in how to turn a context-free grammar into it's Chomsky normal form.",
-    large: `This project explains a complex computer science concept (more accurately, one of automata theory). When you have a context-free grammar, you may want to "normalize" its form to garantee that all the rules are in a certain format. That's why the Chomsky's normal form exists. This project explains how to transform any free-context grammar into it's Chomsky's normal form.`,
+    large: `This project explains a complex computer science concept (more accurately, one of automata theory). When you have a context-free grammar, you may want to "normalize" its form to guarantee that all the rules are in a certain format. That's why the Chomsky's normal form exists. This project explains how to transform any free-context grammar into it's Chomsky's normal form.`,
   },
   developmentProcess: {
     technologies: {
       description:
-        "This project was made using the TypeScript programming language with the Next.js react framework to build web apps. Github was used to control versions of the program. Vercel was used to host the app and make it avialable online.",
+        "This project was made using the TypeScript programming language with the Next.js react framework to build web apps. Github was used to control versions of the program. Vercel was used to host the app and make it available online.",
       technologies: ["Next.js", "Github", "TypeScript", "Vercel"],
     },
     timeLine: {
@@ -916,7 +916,7 @@ export const chomsky: Project = {
       img: { src: chomskyImages.features.video, type: "desktop" },
     },
     {
-      title: "Interactive quizes with each step",
+      title: "Interactive quizzes with each step",
       description:
         "Once the users read the explanation and watched the video they are expected to understand the step, but it is not always the case. This site includes a short quiz to make sure that the user understood the topic.",
       img: { src: chomskyImages.features.quiz, type: "desktop" },
@@ -938,9 +938,9 @@ export const wordSearch: Project = {
   size: "small",
   description: {
     short:
-      "Clasic word search. In this program, users search for words from the word bank. When they found one, they must write down the coordinates of it, and if it is there, it will be colored. They win when they found all the words.",
+      "Classic word search. In this program, users search for words from the word bank. When they found one, they must write down the coordinates of it, and if it is there, it will be colored. They win when they found all the words.",
     large:
-      "In word search, users need to find words from the word bank. This game is usually played on a paper sheet, but in order to make it work in a python script, users enter the coordinates of the start and end of the word they found. If the word is there, it will be coloured in yellow. Users win when they found all the words. The logic behind this project was hard at the time I programmed it, since words are always re-shuffled and thet can cross each other, with letters overlapping. It is in this portfolio since it was a great project, even more considering that I developed it in my freshman year (in object-oriented-programming class).",
+      "In word search, users need to find words from the word bank. This game is usually played on a paper sheet, but in order to make it work in a python script, users enter the coordinates of the start and end of the word they found. If the word is there, it will be coloured in yellow. Users win when they found all the words. The logic behind this project was hard at the time I programmed it, since words are always re-shuffled and they can cross each other, with letters overlapping. It is in this portfolio since it was a great project, even more considering that I developed it in my freshman year (in object-oriented-programming class).",
   },
   developmentProcess: {
     technologies: {
@@ -951,7 +951,7 @@ export const wordSearch: Project = {
     timeLine: {
       weeks: 0.5,
       description:
-        "This was an object-oriented-programming assingment, and we had 3 days to finish it. I was hard and I put every hour I could into it to deliver a great project, but the effort was worth it.",
+        "This was an object-oriented-programming assignment, and we had 3 days to finish it. I was hard and I put every hour I could into it to deliver a great project, but the effort was worth it.",
     },
     team: {
       description: "I made this project on my own.",
@@ -964,7 +964,7 @@ export const wordSearch: Project = {
     },
     deployment: {
       description:
-        "This is a python script that can be downloaded from the Github repository to be runned locally.",
+        "This is a python script that can be downloaded from the Github repository to be run locally.",
       link: "https://github.com/ulisesaviles/Word-Search-Python",
       qr: wordSearchImages.qr,
     },
@@ -983,7 +983,7 @@ export const wordSearch: Project = {
       img: { src: wordSearchImages.features.colored, type: "desktop" },
     },
     {
-      title: "Hide scrambled leters",
+      title: "Hide scrambled letters",
       description:
         "Are you having problems to find words? No problem, you can hide the scrambled letters running the other script contained in the repository.",
       img: { src: wordSearchImages.features.hidden, type: "desktop" },
@@ -1001,7 +1001,7 @@ export const blackjack: Project = {
     short:
       "The infamous blackjack game. In this game, players are able to play blackjack making bets versus a dealer that is programed with real-life rules.",
     large:
-      "In this game, users are able to play blackjack versus a dealer that was programmed with real dealer rules (like not hittinng if they got more than 17). Users can bet money in their hands, then they can surrender if they didn't like them, hit another card if they are falling short, stand if they have a great play or double down if they feel lucky. At the end, the result is displayed and users can keep playing until they run out of money.",
+      "In this game, users are able to play blackjack versus a dealer that was programmed with real dealer rules (like not hitting if they got more than 17). Users can bet money in their hands, then they can surrender if they didn't like them, hit another card if they are falling short, stand if they have a great play or double down if they feel lucky. At the end, the result is displayed and users can keep playing until they run out of money.",
   },
   developmentProcess: {
     technologies: {
@@ -1012,7 +1012,7 @@ export const blackjack: Project = {
     timeLine: {
       weeks: 0.5,
       description:
-        "This was the second time I programmed the blackjack game. The first time I did it in C++, but wthout bets, surrender and doble-down. So I had not much problem developing it in an easyer programming language, even with the new features.",
+        "This was the second time I programmed the blackjack game. The first time I did it in C++, but without bets, surrender and double-down. So I had not much problem developing it in an easer programming language, even with the new features.",
     },
     team: {
       description: "I made this developed on my own.",
@@ -1025,7 +1025,7 @@ export const blackjack: Project = {
     },
     deployment: {
       description:
-        "This is a python script that can be downloaded from the Github repository to be runned locally.",
+        "This is a python script that can be downloaded from the Github repository to be run locally.",
       link: "https://github.com/ulisesaviles/BlackJack-Python",
       qr: blackJackImages.qr,
     },
@@ -1033,9 +1033,9 @@ export const blackjack: Project = {
   type: "console game",
   features: [
     {
-      title: "Enter the ammount of dollars you want to bet!",
+      title: "Enter the amount of dollars you want to bet!",
       description:
-        "At the start of the game, users are given 500 dollars to bet. They can choose any ammount to bet.",
+        "At the start of the game, users are given 500 dollars to bet. They can choose any amount to bet.",
       img: { src: blackJackImages.features.ammountToBet, type: "desktop" },
     },
     {
@@ -1092,7 +1092,7 @@ export const goFish: Project = {
   description: {
     short:
       "Good old go-fish. This is a game for 2-4 players in which they play with all the real rules.",
-    large: `This project simulates the famous card game "Go-fish" with all the real rules, in which players can choose to take cards from the deck or the pool, then the program detects if they have a valid play (royal flush, full house, three of a kind, etc.) and finally then they choose which card to get rid of. Then it's the next player's turn. This is not the biggest of my projects, but I decided to included since I developed it with around 3 months of experience programming. It was a big challange for me at the time, however, I made a great effort to deliver the assignment on time, and made it with (kind of) a visual interface.`,
+    large: `This project simulates the famous card game "Go-fish" with all the real rules, in which players can choose to take cards from the deck or the pool, then the program detects if they have a valid play (royal flush, full house, three of a kind, etc.) and finally then they choose which card to get rid of. Then it's the next player's turn. This is not the biggest of my projects, but I decided to included since I developed it with around 3 months of experience programming. It was a big challenge for me at the time, however, I made a great effort to deliver the assignment on time, and made it with (kind of) a visual interface.`,
   },
   developmentProcess: {
     technologies: {
@@ -1116,7 +1116,7 @@ export const goFish: Project = {
     },
     deployment: {
       description:
-        "Since the project was made using C++, the format of the file is .exe. It can be dowloaded from Github, as well as the source code.",
+        "Since the project was made using C++, the format of the file is .exe. It can be downloaded from Github, as well as the source code.",
       link: "https://github.com/ulisesaviles/Go-Fish-C-plus-plus",
       qr: goFishImages.qr,
     },
@@ -1124,7 +1124,7 @@ export const goFish: Project = {
   type: "console game",
   features: [
     {
-      title: "Choose the ammout of players",
+      title: "Choose the amount of players",
       description:
         "The game can be played by 2-4 players. They will play turns to play as if it was the real game, and the program will hide the cards of the players not in turn.",
       img: { src: goFishImages.features.choosePlayers, type: "desktop" },
@@ -1132,7 +1132,7 @@ export const goFish: Project = {
     {
       title: "Choose where to draw your card from",
       description:
-        "The players have the option to take cards from the deck or the pool, in which the deck is filled with 4 cards of each number and suffled as if it was a real one, and the pool has the card that the last player dropped. The pool is empty at the start of the game.",
+        "The players have the option to take cards from the deck or the pool, in which the deck is filled with 4 cards of each number and shuffled as if it was a real one, and the pool has the card that the last player dropped. The pool is empty at the start of the game.",
       img: { src: goFishImages.features.whereToTake, type: "desktop" },
     },
     {

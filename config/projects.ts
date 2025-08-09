@@ -18,9 +18,113 @@ import poleoImages from "../public/assets/projects/poleo/index";
 import chatImages from "../public/assets/projects/liveChatApp/index";
 import oneUpImages from "../public/assets/projects/1up";
 import maxifyImages from "../public/assets/projects/maxify";
+import opletaImages from "../public/assets/projects/opleta";
 
 // Actual projects
 // Big
+export const opleta: Project = {
+  title: "Opleta",
+  id: "opleta",
+  category: "Large free-lance project",
+  description: {
+    short:
+      "Opleta is more than just a gym app; it's your personal fitness partner designed to help you achieve your health and fitness goals with ease and precision, while sharing your progress with friends.",
+    large:
+      "Opleta offers a wide range of features to help you stay on track with your fitness journey, including personalized workout plans, a goal center, and social sharing capabilities.",
+  },
+  size: "large",
+  cover: opletaImages.cover,
+  type: "mobile-app",
+  developmentProcess: {
+    technologies: {
+      description:
+        "This is a multi-platform app (works for Android, iOS and the web). The front-end was fully developed using react native with Expo-cli and EAS. It was programmed in TypeScript. The backend stores the data in Firebase Firestore, stores the files in Firebase storage and the logic is an API made with Vercel Functions in a NodeJS environment.",
+      technologies: [
+        "React native",
+        "Expo",
+        "TypeScript",
+        "Github",
+        "ClickUp",
+        "Firestore",
+        "NodeJS",
+      ],
+    },
+    timeLine: {
+      weeks: 100,
+      description:
+        "Opleta has been developed for around 100 weeks (considering designing, prototyping and testing), and it is still being improved and updated.",
+    },
+    team: {
+      description:
+        "I developed this project on my own, however, I hired my friend Abner a few sprints to speed up the development process.",
+      members: [
+        {
+          img: me,
+          name: "Me",
+        },
+        {
+          img: acner,
+          name: "Acner",
+        },
+      ],
+    },
+    deployment: {
+      description:
+        "This app is available for download in Apple's App Store and Google's Play Store.",
+      link: "https://apps.apple.com/us/app/opleta/id6477989677",
+      qr: opletaImages.qr,
+    },
+  },
+  features: [
+    {
+      title: "Intuitive sign-up experience",
+      description:
+        "Opleta offers a seamless and user-friendly sign-up process, allowing users to quickly create an account and start their fitness journey.",
+      img: { src: opletaImages.features.signUp, type: "phone" },
+    },
+    {
+      title: "Workout session",
+      description:
+        "Opleta provides users with the ability to track their workout sessions in real-time, offering insights and analytics to help them improve their performance.",
+      img: { src: opletaImages.features.workoutSession, type: "phone" },
+    },
+    {
+      title: "Home screen",
+      description:
+        "Opleta's home screen is all about friends and tracking! Users can easily see their friends workouts at the top in an Instagram-story-like format, a calendar where they keep track of their own workouts sessions, and the groups they belong to!",
+      img: { src: opletaImages.features.home, type: "phone" },
+    },
+    {
+      title: "Groups",
+      description:
+        "Opleta allows users to create and join groups with friends, fostering a sense of community and accountability in their fitness journeys.",
+      img: { src: opletaImages.features.groups, type: "phone" },
+    },
+    {
+      title: "Workouts screen",
+      description:
+        "Opleta's workouts screen provides users with a comprehensive view of their workout plan for the week, as well as other workouts and plans they have created or saved (from other users) in the past",
+      img: { src: opletaImages.features.workouts, type: "phone" },
+    },
+    {
+      title: "Workout screen",
+      description:
+        "Maybe the most important screen (or at least the one where users spend the most time) Opleta's workout screen provides users with a detailed view of their current workout, including exercise instructions, timers, sets, and images for each exercise.",
+      img: { src: opletaImages.features.workout, type: "phone" },
+    },
+    // {
+    // -- Rutinas
+    // -- AI routines
+    // -- Filtered search
+    // -- Goal center
+    // -- Chat
+    // -- Social media
+    // -- Design (con los assets del App Store)
+    // -- And muuuuuuch more
+    // }
+  ],
+};
+
 export const maxify: Project = {
   title: "Maxify",
   id: "maxify",
@@ -712,7 +816,7 @@ export const investNGrow: Project = {
 export const oneUpSolar: Project = {
   id: "1UpSolar",
   title: "1Up Solar website",
-  size: "medium",
+  size: "large",
   category: "Medium-size free-lance project",
   description: {
     short:
@@ -1360,14 +1464,15 @@ export const goFish: Project = {
 // All projects
 export const allProjects: Project[] = [
   // Large
+  opleta,
   maxify,
+  oneUpSolar,
   tendrishApp,
   tendrishDashboard,
   poleo,
   liveChatApp,
   investNGrow,
   // Medium
-  oneUpSolar,
   turfmasters,
   stimb,
   regressionCalculator,

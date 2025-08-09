@@ -112,16 +112,54 @@ export const opleta: Project = {
         "Maybe the most important screen (or at least the one where users spend the most time) Opleta's workout screen provides users with a detailed view of their current workout, including exercise instructions, timers, sets, and images for each exercise.",
       img: { src: opletaImages.features.workout, type: "phone" },
     },
-    // {
-    // -- Rutinas
-    // -- AI routines
-    // -- Filtered search
-    // -- Goal center
-    // -- Chat
-    // -- Social media
-    // -- Design (con los assets del App Store)
-    // -- And muuuuuuch more
-    // }
+    {
+      title: "Workout plans",
+      description:
+        "Opleta allows users to create and customize their own workout plans (a collection of workouts), tailoring them to their individual fitness goals and preferences.",
+      img: { src: opletaImages.features.routine, type: "phone" },
+    },
+    {
+      title: "AI-powered workout plans",
+      description:
+        "Opleta leverages AI to create personalized workout plans for users considering their specific goals and progress, adapting to their progress and preferences over time.",
+      img: { src: opletaImages.features.aiRoutine, type: "phone" },
+    },
+    {
+      title: "Filtered search",
+      description:
+        "Opleta offers advanced filtering options to help users find the perfect exercises by equipment and muscle group.",
+      img: { src: opletaImages.features.search, type: "phone" },
+    },
+    {
+      title: "Goal center",
+      description:
+        "Opleta's goal center allows users to set, track, and achieve their fitness goals with personalized insights and recommendations.",
+      img: { src: opletaImages.features.goalCenter, type: "phone" },
+    },
+    {
+      title: "Chat",
+      description:
+        "Opleta includes a chat feature that allows users to communicate with their friends and trainers, share progress, react to workout sessions, send workouts and workout plans, and stay motivated.",
+      img: { src: opletaImages.features.chat, type: "phone" },
+    },
+    {
+      title: "Social media",
+      description:
+        "While not having to do strictly with software development, I think there's value in the fact that I've been managing Opleta's social media presence, creating content, and engaging with users. This gives me valuable insights into user needs and preferences.",
+      img: { src: opletaImages.features.socialMedia, type: "phone" },
+    },
+    {
+      title: "Graphic design",
+      description:
+        "I have experience in graphic design, creating visually appealing assets for Opleta's marketing materials, social media, and in-app content.",
+      img: { src: opletaImages.features.design, type: "desktop" },
+    },
+    {
+      title: "And muuuch more",
+      description:
+        "Opleta is by far my most ambitious project and it encompasses a wide range of features and functionalities aimed at enhancing the user experience. Give it a try!",
+      img: { src: opletaImages.features.more, type: "phone" },
+    },
   ],
 };
 

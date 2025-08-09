@@ -15,6 +15,7 @@ import socialMedia from "./Social media.png";
 import workout from "./Workout.png";
 import workouts from "./Workouts.png";
 import workoutSession from "./workoutSesh.png";
+import appStore from "./App store assets EN.png";
 
 // Exporter
 const Images = {
@@ -22,7 +23,7 @@ const Images = {
   features: {
     aiRoutine,
     chat,
-    design,
+    design: appStore,
     goalCenter,
     groups,
     home,

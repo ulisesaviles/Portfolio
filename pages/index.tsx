@@ -79,7 +79,10 @@ export default function Home() {
       {/* Headers */}
       <Head>
         <title>Ulises Aviles | Home</title>
-        <meta name="description" content="Description" />
+        <meta
+          name="description"
+          content="Ulises Aviles is a Mexican full-stack developer specializing in creating web and mobile applications."
+        />
       </Head>
 
       {/* Content */}

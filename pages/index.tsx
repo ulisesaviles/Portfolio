@@ -95,10 +95,11 @@ export default function Home() {
                   full-stack developer.
                 </h1>
                 <p className={styles.description}>
-                  I&apos;m a 23 year old full-stack developer with vast
-                  experience building solutions that go from static site
-                  development to entire ecosystems of mobile and web apps.
-                  I&apos;m currently in senior year of computer science.
+                  I&apos;m a 23-year-old full-stack developer with extensive
+                  experience creating everything from static websites to
+                  complete ecosystems of mobile and web applications. I earned
+                  my degree in Computer Science Engineering from Cetys
+                  University in July 2023, graduating with a 98/100 GPA.
                 </p>
               </div>
               <div className={styles.meImageContainer}>
